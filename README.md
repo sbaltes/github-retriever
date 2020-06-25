@@ -2,6 +2,8 @@
 
 Retrieve information from GitHub repositories that is not available via the GitHub API.
 
+[![DOI](https://zenodo.org/badge/274931763.svg)](https://zenodo.org/badge/latestdoi/274931763)
+
 # Setup
 
 Python 3 is required. The dependencies are specified in `requirements.txt`.
