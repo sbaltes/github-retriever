@@ -41,10 +41,7 @@ class Repo(object):
                 return
 
     def retrieve_features(self):
-        # reduce request frequency to prevent getting blocked
-        delay_ms = randint(100, 1000)
-        time.sleep(delay_ms / 1000)
-
+        self.delay_next_request()
         self.attempts = self.attempts + 1
         response = None
         try:
@@ -61,11 +58,17 @@ class Repo(object):
                 feature = item.xpath('a/span/text()')
                 self.process_feature(feature)
             if self.all_features_false():
-                logger.info("Feature retrieval failed, trying again...")
+                logger.error("Feature retrieval failed, trying again...")
             else:
                 logger.info("Successfully retrieved features.")
         else:
             logger.error("An error occurred while accessing repo: " + str(self))
+
+    @staticmethod
+    def delay_next_request():
+        # reduce request frequency to prevent getting blocked
+        delay_ms = randint(100, 1000)
+        time.sleep(delay_ms / 1000)
 
     def process_feature(self, feature):
         # feature can be either be the name of the feature or the name plus a number
@@ -98,8 +101,41 @@ class Repo(object):
             logger.error("Unknown feature: " + feature_name)
 
     def all_features_false(self):
-        return (self.code or self.issues or self.pull_requests or self.discussions or self.actions or\
+        return (self.code or self.issues or self.pull_requests or self.discussions or self.actions or \
                 self.projects or self.wiki or self.security or self.insights) is False
+
+    def retrieve_discussions(self):
+        self.delay_next_request()
+        response = None
+        page = 1
+        try:
+            # retrieve first discussion page
+            response = self.get_discussions_page(page)
+        except ConnectionError:
+            logger.error("An error occurred while accessing discussions page of repo: " + str(self))
+
+        while response and response.ok:
+            if page > 1 and self.reached_last_page:
+                break
+            logger.info("Successfully accessed discussions page " + str(page) + " of repo: " + str(self))
+            tree = html.fromstring(response.content)
+            links = tree.xpath('//a[contains(@data-hovercard-type, "discussion")]/@href')
+            if len(links) == 0:
+                logger.info("No discussions found on page: " + str(page))
+            for link in links:
+                print(str(link))
+            page = page + 1
+            response = self.get_discussions_page(page)
+
+        logger.info("No discussions found on page: " + str(page))
+
+    def get_discussions_page(self, page):
+        return self.session.get(self.uri + "/discussions?page=" + str(page))
+
+    @staticmethod
+    def reached_last_page(tree):
+        h3 = tree.xpath('//div[contains(@class, "blankslate")]/h3/text()')
+        return len(h3) == 1 and str(h3[0]).strip() == "There aren't any discussions."
 
     def get_column_values(self):
         return [self.full_name, self.code, self.issues, self.pull_requests, self.discussions, self.actions,
