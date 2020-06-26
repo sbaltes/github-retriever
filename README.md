@@ -27,13 +27,13 @@ and [virtualenv](https://github.com/pyenv/pyenv-virtualenv) before executing the
 
 Basic usage:
 
-    python3 github-retriever.py -i <path_to_input_file> -o <path_to_output_dir>
+    python3 github-retriever.py -i <path_to_input_file> -o <path_to_output_dir> -f <True-or-False> -r <True-or-False>
 
 Call without parameters to get information about possible parameters:
 
-    python3 <VERSION>-retriever.py
-    
-    usage: ...
+    usage: github-retriever.py [-h] -i INPUT_FILE -o OUTPUT_DIR [-d DELIMITER] -f
+                               RETRIEVE_FEATURES -r RETRIEVE_DISCUSSIONS
+    github-retriever.py: error: the following arguments are required: -i/--input-file, -o/--output-dir, -f/--retrieve-features, -r/--retrieve-discussions
     
 # Configuration
 
@@ -50,7 +50,7 @@ An exemplary input file can be found [here](input/repos.csv):
 
 To retrieve the activated features (issues, pull requests, discussions, etc.) for the configured repos, you just need to run the following command:
 
-    python3 github-retriever.py -i input/repos.csv -o output/
+    python3 github-retriever.py -i input/repos.csv -o output/ -f True -e False
 
 The tool logs the retrieval process:
 
@@ -70,3 +70,7 @@ And writes the [retrieved data](output/repos.csv) to the configured output direc
 |------|------|--------|---------------|-------------|---------|----------|------|----------|----------|
 | facebook/react | True | True | True | False | True | True | True | True | True |
 | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
+
+Further, to retrieve the content of discussions, execute:
+
+    python3 github-retriever.py -i input/repos_discussions.csv -o output/ -f False -e True
