@@ -52,7 +52,7 @@ class RepoList(object):
         self.filename = os.path.basename(self.input_file)
         logger.info(str(len(self.repos)) + " repos have been imported.")
 
-    def retrieve_features(self):
+    def retrieve_features(self, features, discussions):
         n = len(self.repos)
         for index, repo in enumerate(self.repos):
             if (index+1) % 50 == 0:
@@ -62,7 +62,10 @@ class RepoList(object):
                 progress = round((index + 1)/n*100, 2)
                 logger.info("Reached {0}%, backing up retrieved information...".format(progress))
                 self.write_to_csv()
-            repo.retrieve_activated_feature()
+            if features:
+                repo.retrieve_activated_feature()
+            if discussions:
+                repo.retrieve_discussions()
 
     def write_to_csv(self):
         """
