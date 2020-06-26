@@ -53,12 +53,14 @@ class RepoList(object):
         logger.info(str(len(self.repos)) + " repos have been imported.")
 
     def retrieve_features(self):
+        n = len(self.repos)
         for index, repo in enumerate(self.repos):
             if (index+1) % 50 == 0:
                 # wait every 50th request for 5 seconds to prevent getting blocked
                 time.sleep(5)
             if (index + 1) % 500 == 0:
-                logger.info("Backing up retrieved information...")
+                progress = round((index + 1)/n*100, 2)
+                logger.info("Reached {0}%, backing up retrieved information...".format(progress))
                 self.write_to_csv()
             repo.retrieve_activated_feature()
 
