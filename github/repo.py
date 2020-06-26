@@ -29,16 +29,23 @@ class Repo(object):
         # session for data retrieval
         self.session = requests.Session()
 
+        # count number of attempts
+        self.attempts = 0
+
     def retrieve_activated_feature(self):
         # deal with failing requests...
         while self.all_features_false():
             self.retrieve_features()
+            if self.attempts > 100:
+                logger.error("Reached 100 attempts, giving up.")
+                return
 
     def retrieve_features(self):
         # reduce request frequency to prevent getting blocked
         delay_ms = randint(100, 1000)
         time.sleep(delay_ms / 1000)
 
+        self.attempts = self.attempts + 1
         response = None
         try:
             # retrieve repo start page
@@ -53,7 +60,10 @@ class Repo(object):
             for item in items:
                 feature = item.xpath('a/span/text()')
                 self.process_feature(feature)
-            logger.info("Successfully retrieved features.")
+            if self.all_features_false():
+                logger.info("Feature retrieval failed, trying again...")
+            else:
+                logger.info("Successfully retrieved features.")
         else:
             logger.error("An error occurred while accessing repo: " + str(self))
 

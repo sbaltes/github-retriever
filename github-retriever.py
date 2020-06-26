@@ -38,10 +38,10 @@ def main():
     args = parser.parse_args()
 
     # process venues
-    repo_list = RepoList()
-    repo_list.read_from_csv(args.input_file, args.delimiter)
+    repo_list = RepoList(args.input_file, args.output_dir, args.delimiter)
+    repo_list.read_from_csv()
     repo_list.retrieve_features()
-    repo_list.write_to_csv(args.output_dir, args.delimiter)
+    repo_list.write_to_csv()
 
 
 if __name__ == '__main__':
