@@ -31,14 +31,14 @@ def get_argument_parser():
     )
     arg_parser.add_argument(
         '-f', '--retrieve-features',
-        required=False,
+        required=True,
         default=False,
         help='retrieve features from repos (default: False)',
         dest='retrieve_features'
     )
     arg_parser.add_argument(
         '-r', '--retrieve-discussions',
-        required=False,
+        required=True,
         default=False,
         help='retrieve discussions from repos (default: False)',
         dest='retrieve_discussions'
