@@ -120,7 +120,7 @@ class Repo(object):
             logger.error("An error occurred while accessing discussions page of repo: " + str(self))
 
         while response and response.ok:
-            if page > 1 and self.reached_last_page:
+            if page > 1 and self.reached_last_page(response):
                 break
             logger.info("Successfully accessed discussions page " + str(page) + " of repo: " + str(self))
             tree = html.fromstring(response.content)
@@ -140,9 +140,10 @@ class Repo(object):
         return self.session.get(self.uri + "/discussions?page=" + str(page))
 
     @staticmethod
-    def reached_last_page(tree):
+    def reached_last_page(response):
+        tree = html.fromstring(response.content)
         h3 = tree.xpath('//div[contains(@class, "blankslate")]/h3/text()')
-        return len(h3) == 1 and str(h3[0]).strip() == "There aren't any discussions."
+        return h3 and str(h3).strip() == "There aren't any discussions."
 
     def get_column_values(self):
         return [self.full_name, self.has_code, self.has_issues, self.has_pull_requests, self.has_discussions, self.has_actions,
