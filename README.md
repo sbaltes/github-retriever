@@ -66,11 +66,38 @@ The tool logs the retrieval process:
 
 And writes the [retrieved data](output/repos.csv) to the configured output directory:
 
-| repo | has_code | has_issues | has_pull_requests | has_discussions | has_actions | has_projects | has_wiki | has_security | has_insights |
+| repo_name | has_code | has_issues | has_pull_requests | has_discussions | has_actions | has_projects | has_wiki | has_security | has_insights |
 |------|------|--------|---------------|-------------|---------|----------|------|----------|----------|
 | facebook/react | True | True | True | False | True | True | True | True | True |
 | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
 
 Further, to retrieve the content of discussions, execute:
 
-    python3 github-retriever.py -i input/repos_discussions.csv -o output/ -f False -e True
+    python3 github-retriever.py -i input/repos_filtered.csv -o output/ -f False -e True
+
+The tool logs the retrieval process:
+
+    2020-06-27 11:00:17,692 github-retriever_logger INFO: Reading repos from input/repos_filtered.csv...
+    2020-06-27 11:00:17,714 github-retriever_logger INFO: 90 repos have been imported.
+    2020-06-27 11:00:19,185 github-retriever_logger INFO: Successfully accessed discussions page 1 of repo: twbs/bootstrap
+    2020-06-27 11:00:19,210 github-retriever_logger INFO: 25 discussions found on page: 1
+    2020-06-27 11:00:19,896 github-retriever_logger INFO: Successfully accessed discussions page 2 of repo: twbs/bootstrap
+    2020-06-27 11:00:19,937 github-retriever_logger INFO: 25 discussions found on page: 2
+    2020-06-27 11:00:20,419 github-retriever_logger INFO: Successfully accessed discussions page 3 of repo: twbs/bootstrap
+    2020-06-27 11:00:20,430 github-retriever_logger INFO: 1 discussions found on page: 3
+    2020-06-27 11:00:20,821 github-retriever_logger INFO: Successfully accessed discussions page 4 of repo: twbs/bootstrap
+    2020-06-27 11:00:20,842 github-retriever_logger INFO: No discussions found on page: 4
+    ...
+    2020-06-27 11:04:20,577 github-retriever_logger INFO: Exporting discussions to output/repos_filtered_discussions.csv...
+    2020-06-27 11:04:20,606 github-retriever_logger INFO: 5306 discussion(s) has/have been exported.
+
+And writes the [retrieved data](output/repos_filtered_discussions.csv) to the configured output directory:
+
+| repo_name | discussion |
+|------|------|
+| twbs/bootstrap | https://github.com/twbs/bootstrap/discussions/31146 |
+| twbs/bootstrap | https://github.com/twbs/bootstrap/discussions/30887 |
+| twbs/bootstrap | https://github.com/twbs/bootstrap/discussions/31147 |
+| twbs/bootstrap | https://github.com/twbs/bootstrap/discussions/31159 |
+| twbs/bootstrap | https://github.com/twbs/bootstrap/discussions/31158 |
+| ... | ... |
