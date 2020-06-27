@@ -66,7 +66,7 @@ The tool logs the retrieval process:
 
 And writes the [retrieved data](output/repos.csv) to the configured output directory:
 
-| repo | code | issues | pull_requests | discussions | actions | projects | wiki | security | insights |
+| repo | has_code | has_issues | has_pull_requests | has_discussions | has_actions | has_projects | has_wiki | has_security | has_insights |
 |------|------|--------|---------------|-------------|---------|----------|------|----------|----------|
 | facebook/react | True | True | True | False | True | True | True | True | True |
 | ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |

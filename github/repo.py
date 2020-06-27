@@ -5,6 +5,8 @@ import time
 from random import randint
 from lxml import html
 
+from github.discussion import Discussion
+
 logger = logging.getLogger("github-retriever_logger")
 
 
@@ -16,15 +18,15 @@ class Repo(object):
         self.uri = "https://github.com/" + self.full_name
 
         # features
-        self.code = False
-        self.issues = False
-        self.pull_requests = False
-        self.discussions = False
-        self.actions = False
-        self.projects = False
-        self.wiki = False
-        self.security = False
-        self.insights = False
+        self.has_code = False
+        self.has_issues = False
+        self.has_pull_requests = False
+        self.has_discussions = False
+        self.has_actions = False
+        self.has_projects = False
+        self.has_wiki = False
+        self.has_security = False
+        self.has_insights = False
 
         # session for data retrieval
         self.session = requests.Session()
@@ -32,15 +34,18 @@ class Repo(object):
         # count number of attempts
         self.attempts = 0
 
-    def retrieve_activated_feature(self):
+        # discussion in this repo
+        self.discussions = []
+
+    def retrieve_features(self):
         # deal with failing requests...
         while self.all_features_false():
-            self.retrieve_features()
+            self._retrieve_features()
             if self.attempts > 100:
                 logger.error("Reached 100 attempts, giving up.")
                 return
 
-    def retrieve_features(self):
+    def _retrieve_features(self):
         self.delay_next_request()
         self.attempts = self.attempts + 1
         response = None
@@ -80,29 +85,29 @@ class Repo(object):
             logger.error("Unknown feature: " + str(feature))
 
         if feature_name == "Code":
-            self.code = True
+            self.has_code = True
         elif feature_name == "Issues":
-            self.issues = True
+            self.has_issues = True
         elif feature_name == "Pull requests":
-            self.pull_requests = True
+            self.has_pull_requests = True
         elif feature_name == "Discussions":
-            self.discussions = True
+            self.has_discussions = True
         elif feature_name == "Actions":
-            self.actions = True
+            self.has_actions = True
         elif feature_name == "Projects":
-            self.projects = True
+            self.has_projects = True
         elif feature_name == "Wiki":
-            self.wiki = True
+            self.has_wiki = True
         elif feature_name == "Security":
-            self.security = True
+            self.has_security = True
         elif feature_name == "Insights":
-            self.insights = True
+            self.has_insights = True
         else:
             logger.error("Unknown feature: " + feature_name)
 
     def all_features_false(self):
-        return (self.code or self.issues or self.pull_requests or self.discussions or self.actions or \
-                self.projects or self.wiki or self.security or self.insights) is False
+        return (self.has_code or self.has_issues or self.has_pull_requests or self.has_discussions or self.has_actions or \
+                self.has_projects or self.has_wiki or self.has_security or self.has_insights) is False
 
     def retrieve_discussions(self):
         self.delay_next_request()
@@ -110,7 +115,7 @@ class Repo(object):
         page = 1
         try:
             # retrieve first discussion page
-            response = self.get_discussions_page(page)
+            response = self.retrieve_discussions_page(page)
         except ConnectionError:
             logger.error("An error occurred while accessing discussions page of repo: " + str(self))
 
@@ -120,16 +125,18 @@ class Repo(object):
             logger.info("Successfully accessed discussions page " + str(page) + " of repo: " + str(self))
             tree = html.fromstring(response.content)
             links = tree.xpath('//a[contains(@data-hovercard-type, "discussion")]/@href')
-            if len(links) == 0:
+            if len(links) > 0:
+                logger.info(str(len(links)) + " discussions found on page: " + str(page))
+            else:
                 logger.info("No discussions found on page: " + str(page))
             for link in links:
-                print(str(link))
+                self.discussions.append(Discussion(self, link))
             page = page + 1
-            response = self.get_discussions_page(page)
+            response = self.retrieve_discussions_page(page)
 
         logger.info("No discussions found on page: " + str(page))
 
-    def get_discussions_page(self, page):
+    def retrieve_discussions_page(self, page):
         return self.session.get(self.uri + "/discussions?page=" + str(page))
 
     @staticmethod
@@ -138,13 +145,19 @@ class Repo(object):
         return len(h3) == 1 and str(h3[0]).strip() == "There aren't any discussions."
 
     def get_column_values(self):
-        return [self.full_name, self.code, self.issues, self.pull_requests, self.discussions, self.actions,
-                self.projects, self.wiki, self.security, self.insights]
+        return [self.full_name, self.has_code, self.has_issues, self.has_pull_requests, self.has_discussions, self.has_actions,
+                self.has_projects, self.has_wiki, self.has_security, self.has_insights]
 
     @classmethod
     def get_column_names(cls):
-        return ["repo_name", "code", "issues", "pull_requests", "discussions", "actions",
-                "projects", "wiki", "security", "insights"]
+        return ["repo_name", "has_code", "has_issues", "has_pull_requests", "has_discussions", "has_actions",
+                "has_projects", "has_wiki", "has_security", "has_insights"]
+
+    def get_discussion_rows(self):
+        rows = []
+        for discussion in self.discussions:
+            rows.append(discussion.get_column_values())
+        return rows
 
     def __str__(self):
         return str(self.full_name)

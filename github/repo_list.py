@@ -4,6 +4,7 @@ import logging
 import os
 import time
 
+from github.discussion import Discussion
 from github.repo import Repo
 from util.exceptions import IllegalArgumentError
 
@@ -23,8 +24,6 @@ class RepoList(object):
     def read_from_csv(self):
         """
         Read repo names from a CSV file (header required).
-        :param input_file: Path to the CSV file.
-        :param delimiter: Column delimiter in CSV file (typically ',').
         """
 
         # read CSV as UTF-8 encoded file (see also http://stackoverflow.com/a/844443)
@@ -52,7 +51,7 @@ class RepoList(object):
         self.filename = os.path.basename(self.input_file)
         logger.info(str(len(self.repos)) + " repos have been imported.")
 
-    def retrieve_features(self, features, discussions):
+    def retrieve_data(self, features, discussions):
         n = len(self.repos)
         for index, repo in enumerate(self.repos):
             if (index+1) % 50 == 0:
@@ -61,17 +60,18 @@ class RepoList(object):
             if (index + 1) % 500 == 0:
                 progress = round((index + 1)/n*100, 2)
                 logger.info("Reached {0}%, backing up retrieved information...".format(progress))
-                self.write_to_csv()
+                if features:
+                    self.write_repos_to_csv()
+                if discussions:
+                    self.write_discussions_to_csv()
             if features:
-                repo.retrieve_activated_feature()
+                repo.retrieve_features()
             if discussions:
                 repo.retrieve_discussions()
 
-    def write_to_csv(self):
+    def write_repos_to_csv(self):
         """
         Export repos along with retrieved features to a CSV file.
-        :param output_dir: Target directory for generated CSV file.
-        :param delimiter: Column delimiter in CSV file (typically ',').
         """
 
         if len(self.repos) == 0:
@@ -108,3 +108,46 @@ class RepoList(object):
                     logger.error("Encoding error while writing data for repo: " + repo.full_name)
 
             logger.info(str(count) + ' repos have been exported.')
+
+    def write_discussions_to_csv(self):
+        """
+        Export discussion retrieved from repos to a CSV file.
+        """
+
+        # TODO: Refactor list operations (see similar code above)
+
+        if len(self.repos) == 0:
+            logger.info("Nothing to export.")
+            return
+
+        if not os.path.exists(self.output_dir):
+            os.makedirs(self.output_dir)
+
+        file_path = os.path.join(self.output_dir, self.filename.replace(".csv", "_discussions.csv"))
+
+        # write discussions to UTF8-encoded CSV file (see also http://stackoverflow.com/a/844443)
+        with codecs.open(file_path, 'w', encoding='utf8') as fp:
+            logger.info('Exporting repos to ' + file_path + '...')
+            writer = csv.writer(fp, delimiter=self.delimiter)
+
+            column_names = Discussion.get_column_names()
+
+            # write header of CSV file
+            writer.writerow(column_names)
+
+            count = 0
+            for repo in self.repos:
+                rows = repo.get_discussion_rows()
+                for row in rows:
+                    try:
+                        if len(row) == len(column_names):
+                            writer.writerow(row)
+                            count = count + 1
+                        else:
+                            raise IllegalArgumentError(
+                                str(len(column_names) - len(row)) + " parameter(s) is/are missing for discussions"
+                                                                    " in repo " + repo.full_name)
+                    except UnicodeEncodeError:
+                        logger.error("Encoding error while writing discussions in repo: " + repo.full_name)
+
+            logger.info(str(count) + ' discussions have been exported.')

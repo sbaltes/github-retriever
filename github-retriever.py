@@ -50,12 +50,17 @@ def main():
     # parse command line arguments
     parser = get_argument_parser()
     args = parser.parse_args()
+    retrieve_features = args.retrieve_features == "True"
+    retrieve_discussions = args.retrieve_discussions == "True"
 
-    # process venues
+    # process repos
     repo_list = RepoList(args.input_file, args.output_dir, args.delimiter)
     repo_list.read_from_csv()
-    repo_list.retrieve_features(args.retrieve_features, args.retrieve_discussions)
-    repo_list.write_to_csv()
+    repo_list.retrieve_data(retrieve_features, retrieve_discussions)
+    if args.retrieve_features:
+        repo_list.write_repos_to_csv()
+    if args.retrieve_discussions:
+        repo_list.write_discussions_to_csv()
 
 
 if __name__ == '__main__':
