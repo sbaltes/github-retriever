@@ -57,9 +57,9 @@ def main():
     repo_list = RepoList(args.input_file, args.output_dir, args.delimiter)
     repo_list.read_from_csv()
     repo_list.retrieve_data(retrieve_features, retrieve_discussions)
-    if args.retrieve_features:
+    if retrieve_features:
         repo_list.write_repos_to_csv()
-    if args.retrieve_discussions:
+    if retrieve_discussions:
         repo_list.write_discussions_to_csv()
 
 
