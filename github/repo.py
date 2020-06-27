@@ -128,7 +128,7 @@ class Repo(object):
             if len(links) > 0:
                 logger.info(str(len(links)) + " discussions found on page: " + str(page))
             else:
-                logger.info("No discussions found on page: " + str(page))
+                break
             for link in links:
                 self.discussions.append(Discussion(self, link))
             page = page + 1
@@ -155,8 +155,11 @@ class Repo(object):
 
     def get_discussion_rows(self):
         rows = []
-        for discussion in self.discussions:
-            rows.append(discussion.get_column_values())
+        if len(self.discussions) == 0:
+            rows.append([self.full_name, "n/a"])
+        else:
+            for discussion in self.discussions:
+                rows.append(discussion.get_column_values())
         return rows
 
     def __str__(self):
