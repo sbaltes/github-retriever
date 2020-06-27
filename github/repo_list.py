@@ -107,7 +107,7 @@ class RepoList(object):
                 except UnicodeEncodeError:
                     logger.error("Encoding error while writing data for repo: " + repo.full_name)
 
-            logger.info(str(count) + ' repos have been exported.')
+            logger.info(str(count) + ' repo(s) has/have been exported.')
 
     def write_discussions_to_csv(self):
         """
@@ -127,7 +127,7 @@ class RepoList(object):
 
         # write discussions to UTF8-encoded CSV file (see also http://stackoverflow.com/a/844443)
         with codecs.open(file_path, 'w', encoding='utf8') as fp:
-            logger.info('Exporting repos to ' + file_path + '...')
+            logger.info('Exporting discussions to ' + file_path + '...')
             writer = csv.writer(fp, delimiter=self.delimiter)
 
             column_names = Discussion.get_column_names()
@@ -150,4 +150,4 @@ class RepoList(object):
                     except UnicodeEncodeError:
                         logger.error("Encoding error while writing discussions in repo: " + repo.full_name)
 
-            logger.info(str(count) + ' discussions have been exported.')
+            logger.info(str(count) + ' discussion(s) has/have been exported.')
