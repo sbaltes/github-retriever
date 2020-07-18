@@ -5,6 +5,7 @@ import os
 import time
 
 from github.discussion import Discussion
+from github.post import Post
 from github.repo import Repo
 from util.exceptions import IllegalArgumentError
 
@@ -51,7 +52,7 @@ class RepoList(object):
         self.filename = os.path.basename(self.input_file)
         logger.info(str(len(self.repos)) + " repos have been imported.")
 
-    def retrieve_data(self, features, discussions):
+    def retrieve_data(self, features, discussions, discussion_posts):
         n = len(self.repos)
         for index, repo in enumerate(self.repos):
             if (index+1) % 50 == 0:
@@ -64,10 +65,12 @@ class RepoList(object):
                     self.write_repos_to_csv()
                 if discussions:
                     self.write_discussions_to_csv()
+                if discussion_posts:
+                    self.write_discussion_posts_to_csv()
             if features:
                 repo.retrieve_features()
             if discussions:
-                repo.retrieve_discussions()
+                repo.retrieve_discussions(discussion_posts)
 
     def write_repos_to_csv(self):
         """
@@ -111,10 +114,10 @@ class RepoList(object):
 
     def write_discussions_to_csv(self):
         """
-        Export discussion retrieved from repos to a CSV file.
+        Export discussions retrieved from repos to a CSV file.
         """
 
-        # TODO: Refactor list operations (see similar code above)
+        # TODO: Refactor list operations (see similar code above and below)
 
         if len(self.repos) == 0:
             logger.info("Nothing to export.")
@@ -151,3 +154,44 @@ class RepoList(object):
                         logger.error("Encoding error while writing discussions in repo: " + repo.full_name)
 
             logger.info(str(count) + ' discussion(s) has/have been exported.')
+
+    def write_discussion_posts_to_csv(self):
+        """
+        Export discussion posts retrieved from repos to a CSV file.
+        """
+
+        if len(self.repos) == 0:
+            logger.info("Nothing to export.")
+            return
+
+        if not os.path.exists(self.output_dir):
+            os.makedirs(self.output_dir)
+
+        file_path = os.path.join(self.output_dir, self.filename.replace(".csv", "_discussion_posts.csv"))
+
+        # write discussions to UTF8-encoded CSV file (see also http://stackoverflow.com/a/844443)
+        with codecs.open(file_path, 'w', encoding='utf8') as fp:
+            logger.info('Exporting discussion posts to ' + file_path + '...')
+            writer = csv.writer(fp, delimiter=self.delimiter)
+
+            column_names = Post.get_column_names()
+
+            # write header of CSV file
+            writer.writerow(column_names)
+
+            count = 0
+            for repo in self.repos:
+                rows = repo.get_post_rows()
+                for row in rows:
+                    try:
+                        if len(row) == len(column_names):
+                            writer.writerow(row)
+                            count = count + 1
+                        else:
+                            raise IllegalArgumentError(
+                                str(len(column_names) - len(row)) + " parameter(s) is/are missing for discussion post"
+                                                                    " in repo " + repo.full_name)
+                    except UnicodeEncodeError:
+                        logger.error("Encoding error while writing discussion posts in repo: " + repo.full_name)
+
+            logger.info(str(count) + ' discussion post(s) has/have been exported.')

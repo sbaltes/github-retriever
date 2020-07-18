@@ -1,11 +1,10 @@
 import logging
 import requests
-import time
 
-from random import randint
 from lxml import html
 
 from github.discussion import Discussion
+from util.requests import delay_next_request
 
 logger = logging.getLogger("github-retriever_logger")
 
@@ -37,6 +36,34 @@ class Repo(object):
         # discussion in this repo
         self.discussions = []
 
+    def get_column_values(self):
+        return [self.full_name, self.has_code, self.has_issues, self.has_pull_requests, self.has_discussions, self.has_actions,
+                self.has_projects, self.has_wiki, self.has_security, self.has_insights]
+
+    @classmethod
+    def get_column_names(cls):
+        return ["repo_name", "has_code", "has_issues", "has_pull_requests", "has_discussions", "has_actions",
+                "has_projects", "has_wiki", "has_security", "has_insights"]
+
+    def get_discussion_rows(self):
+        rows = []
+        if len(self.discussions) == 0:
+            rows.append([self.full_name, "n/a"])
+        else:
+            for discussion in self.discussions:
+                rows.append(discussion.get_column_values())
+        return rows
+
+    def get_post_rows(self):
+        rows = []
+        for discussion in self.discussions:
+            for post in discussion.posts:
+                rows.append(post.get_column_values())
+        return rows
+
+    def __str__(self):
+        return str(self.full_name)
+
     def retrieve_features(self):
         # deal with failing requests...
         while self.all_features_false():
@@ -46,7 +73,7 @@ class Repo(object):
                 return
 
     def _retrieve_features(self):
-        self.delay_next_request()
+        delay_next_request()
         self.attempts = self.attempts + 1
         response = None
         try:
@@ -68,12 +95,6 @@ class Repo(object):
                 logger.info("Successfully retrieved features.")
         else:
             logger.error("An error occurred while accessing repo: " + str(self))
-
-    @staticmethod
-    def delay_next_request():
-        # reduce request frequency to prevent getting blocked
-        delay_ms = randint(100, 1000)
-        time.sleep(delay_ms / 1000)
 
     def process_feature(self, feature):
         # feature can be either be the name of the feature or the name plus a number
@@ -109,13 +130,13 @@ class Repo(object):
         return (self.has_code or self.has_issues or self.has_pull_requests or self.has_discussions or self.has_actions or \
                 self.has_projects or self.has_wiki or self.has_security or self.has_insights) is False
 
-    def retrieve_discussions(self):
-        self.delay_next_request()
+    def retrieve_discussions(self, discussion_posts):
+        delay_next_request()
         response = None
         page = 1
         try:
             # retrieve first discussion page
-            response = self.retrieve_discussions_page(page)
+            response = self._retrieve_discussions_page(page)
         except ConnectionError:
             logger.error("An error occurred while accessing discussions page of repo: " + str(self))
 
@@ -130,13 +151,16 @@ class Repo(object):
             else:
                 break
             for link in links:
-                self.discussions.append(Discussion(self, link))
+                discussion = Discussion(self, link)
+                self.discussions.append(discussion)
+                if discussion_posts:
+                    discussion.retrieve_discussion_posts(self.session)
             page = page + 1
-            response = self.retrieve_discussions_page(page)
+            response = self._retrieve_discussions_page(page)
 
         logger.info("No discussions found on page: " + str(page))
 
-    def retrieve_discussions_page(self, page):
+    def _retrieve_discussions_page(self, page):
         return self.session.get(self.uri + "/discussions?page=" + str(page))
 
     @staticmethod
@@ -144,24 +168,3 @@ class Repo(object):
         tree = html.fromstring(response.content)
         h3 = tree.xpath('//div[contains(@class, "blankslate")]/h3/text()')
         return h3 and str(h3).strip() == "There aren't any discussions."
-
-    def get_column_values(self):
-        return [self.full_name, self.has_code, self.has_issues, self.has_pull_requests, self.has_discussions, self.has_actions,
-                self.has_projects, self.has_wiki, self.has_security, self.has_insights]
-
-    @classmethod
-    def get_column_names(cls):
-        return ["repo_name", "has_code", "has_issues", "has_pull_requests", "has_discussions", "has_actions",
-                "has_projects", "has_wiki", "has_security", "has_insights"]
-
-    def get_discussion_rows(self):
-        rows = []
-        if len(self.discussions) == 0:
-            rows.append([self.full_name, "n/a"])
-        else:
-            for discussion in self.discussions:
-                rows.append(discussion.get_column_values())
-        return rows
-
-    def __str__(self):
-        return str(self.full_name)
