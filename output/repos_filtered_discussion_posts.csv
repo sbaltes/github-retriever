@@ -1,0 +1,1413 @@
+repo_name,discussion,author,timestamp,reactions,is_part_of_selected_answer,content
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9292,abhijithurs,2020-07-11T20:05:00Z,,False,<p>when ever i type npm start after creating the react app confusion folder i am getting an error saying missing:script.</p>
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9292,YajanaRao,2020-07-11T20:30:41Z,,False,"<p>Please give more information about the issue. Project structure or package.json content, etc. You can refer to a template as well.</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9292,HemanthDavuluri,2020-07-17T08:10:29Z,,False,<p>log file details would be helpful!</p>
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9292,HemanthDavuluri,2020-07-17T08:14:31Z,,False,"<p>Okay i tried to recreate the error and i found the reason. make sure you have <code>""scripts"": { ""start"": ""react-scripts start"", ""build"": ""react-scripts build"", ""test"": ""react-scripts test"", ""eject"": ""react-scripts eject"" },</code><br>
+in your package.json file.<br>
+if this script code is missing you will get the error.<br>
+check the screenshot!<br>
+<a target=""_blank"" rel=""noopener noreferrer"" href=""https://user-images.githubusercontent.com/35726027/87764135-847ea100-c833-11ea-934f-e0fb37550f84.png""><img src=""https://user-images.githubusercontent.com/35726027/87764135-847ea100-c833-11ea-934f-e0fb37550f84.png"" alt=""image"" style=""max-width:100%;""></a><br>
+After removing the selected code i got the missing script error.</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9313,adityataps,2020-07-16T05:08:14Z,,False,"<p>Hi,</p>
+<p>I've been having some issue with starting the development server.</p>
+<p>I have two computers; when I clone my repo and run <code>npm install</code> and <code>npm start</code> on one computer, there is no issue. However, when I clone the same repo into my other computer and run the same commands, <code>npm install</code> works fine but <code>npm start</code> doesn't start the development server as expected. localhost:3000 also shows a 'page not found'... but no errors are thrown at the time of running <code>npm start</code>. Any advice? This issue is only happening on this single computer with any react webapp, and I have already reinstalled node_modules multiple times and even reinstalled Node twice with no success.</p>
+<p>Below is the command run with the <code>--verbose</code> tag.</p>
+<p><a target=""_blank"" rel=""noopener noreferrer"" href=""https://user-images.githubusercontent.com/39311849/87629181-84ca4f80-c700-11ea-80e4-a44294572732.png""><img src=""https://user-images.githubusercontent.com/39311849/87629181-84ca4f80-c700-11ea-80e4-a44294572732.png"" alt=""image"" style=""max-width:100%;""></a></p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9203,sylvainDNS,2020-06-23T14:53:48Z,"[['👍'], [1]]",False,"<p>Hi guys!</p>
+<p>I'm trying to make an electron app, with a CRA ""inside"".</p>
+<p>I need to interract with host system, so we want to use Rust with <a href=""https://neon-bindings.com/"" rel=""nofollow"">Neon Bindings</a>.</p>
+<p>They made a tutorial to use it in Electron, but not with Webpack : <a rel=""nofollow"" href=""https://neon-bindings.com/docs/electron-apps"">https://neon-bindings.com/docs/electron-apps</a></p>
+<p>We tried many things (including overiding conf with <a href=""https://github.com/gsoft-inc/craco"">craco</a> with Webpack plugins &amp; <code>externals</code> field), but none of them work <g-emoji class=""g-emoji"" alias=""disappointed"" fallback-src=""https://github.githubassets.com/images/icons/emoji/unicode/1f61e.png"">😞</g-emoji></p>
+<p>Does someone already done it ?</p>
+<p>I made a repo with a simple webpack config if someone want to test : <a href=""https://github.com/sylvainDNS/webpack-native-module"">https://github.com/sylvainDNS/webpack-native-module</a></p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9203,xiaoxiangmoe,2020-06-28T14:19:41Z,,True,"<p>using <code>(window as any).require('./foo.node')</code>;</p>
+<p>Also, see example here: <a href=""https://github.com/xiaoxiangmoe/cra-electron"">https://github.com/xiaoxiangmoe/cra-electron</a></p>
+<p>Thank you for your reply, your repo is exactly what I want to do. <g-emoji class=""g-emoji"" alias=""heart_eyes"" fallback-src=""https://github.githubassets.com/images/icons/emoji/unicode/1f60d.png"">😍</g-emoji><br>
+I just came to test it, and I really like your 'monorepo' architecture. I will try it in my own project.</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9203,xiaoxiangmoe,2020-06-28T16:26:52Z,"[['👍', '❤️'], [1, 2]]",True,"<p>Also, see example here: <a href=""https://github.com/xiaoxiangmoe/cra-electron"">https://github.com/xiaoxiangmoe/cra-electron</a></p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9203,sylvainDNS,2020-07-15T15:54:39Z,,True,"<p>Thank you for your reply, your repo is exactly what I want to do. <g-emoji class=""g-emoji"" alias=""heart_eyes"" fallback-src=""https://github.githubassets.com/images/icons/emoji/unicode/1f60d.png"">😍</g-emoji><br>
+I just came to test it, and I really like your 'monorepo' architecture. I will try it in my own project.</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9306,DiegoMcDipster,2020-07-14T21:17:36Z,,False,"<p>Hi,</p>
+<p>To see what's performing and more importantly what's not performing well, i would like to output the processes and timings (duration for each process) when i execute: npm start.</p>
+<p>But I don't know how to do that.  So, could someone please advise me on how to create log files and where to find them?</p>
+<p>Note, I'm having an issue with the performance of npm start. (I've already raised the issue <a class=""issue-link js-issue-link"" data-error-text=""Failed to load title"" data-id=""656055911"" data-permission-text=""Title is private"" data-url=""https://github.com/facebook/create-react-app/issues/9299"" data-hovercard-type=""issue"" data-hovercard-url=""/facebook/create-react-app/issues/9299/hovercard"" href=""https://github.com/facebook/create-react-app/issues/9299"">#9299</a>).  And being able to create the log will help me get to the root of the problem.</p>
+<p>Thanks!</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9246,akp2020,2020-07-02T07:28:17Z,,False,"<p>Hi,</p>
+<p>what is the best way to store authentication tokens..<br>
+Coz browsers are going to stop cookies .. so, where else can we store?<br>
+in .env file??<br>
+even I stored it in local-storage .. everything is fine but can't run lighthouse..as it flushes storage while generating report..<br>
+if storing in a js var then on refresh it will ask for log-in...</p>
+<p>Regards,<br>
+Anjan</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9246,zachcoss,2020-07-04T15:32:57Z,,False,"<p>Typically, authentication tokens are stored in Local Storage and passed to the endpoints within the Authentication Header. Those tokens, though technically public, are only secure if the server can verify them.</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9246,eddiemonge,2020-07-06T16:21:03Z,,False,"<p>This is a React/general web dev question and not a React question. It would be better to ask it on Stackoverflow with a React tag</p>
+<p><code>can't run lighthouse..as it flushes storage while generating report</code> what does that mean?</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9246,israelKusayev,2020-07-14T19:26:02Z,"[['👍'], [1]]",False,"<p>If you mean lighthouse in browser devtools you can uncheck the ""Clear storage""</p>
+<p><a target=""_blank"" rel=""noopener noreferrer"" href=""https://user-images.githubusercontent.com/42112796/87467664-fdf27580-c620-11ea-95e1-5c4c7fcc1169.png""><img src=""https://user-images.githubusercontent.com/42112796/87467664-fdf27580-c620-11ea-95e1-5c4c7fcc1169.png"" alt=""image"" style=""max-width:100%;""></a></p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9246,israelKusayev,2020-07-14T19:28:35Z,,False,"<p>If you mean lighthouce CI you can read their documentation</p>
+<p><a href=""https://github.com/GoogleChrome/lighthouse/blob/master/docs/authenticated-pages.md"">Running Lighthouse on Authenticated Pages</a></p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9131,kentcdodds,2020-06-09T23:14:10Z,"[['👍'], [12]]",False,"<p>Hi friends!</p>
+<p>Is v4 held up by the issues in <a href=""https://github.com/facebook/create-react-app/projects/9"">the project</a>? If not, what else is there? If so, what help is needed to get v4 released? I'd really love to have the latest version of everything (especially jest and babel) :) Thanks!</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9131,kentcdodds,2020-06-09T23:21:25Z,"[['❤️'], [4]]",False,"<p>Just went through the issues on the v4 project and two of them are locked, one has a PR that I think is ready, and the other seems like it would be pretty quick (unless I misunderstand it).</p>
+<p>Trying to find where I can pitch in :)</p>
+<p><a class=""user-mention"" data-hovercard-type=""user"" data-hovercard-url=""/users/kentcdodds/hovercard"" data-octo-click=""hovercard-link-click"" data-octo-dimensions=""link_type:self"" href=""https://github.com/kentcdodds"">@kentcdodds</a> The two bigger things we were waiting for was ESLint 7 (some plugins were still being updated), and <a class=""user-mention"" data-hovercard-type=""user"" data-hovercard-url=""/users/ianschmitz/hovercard"" data-octo-click=""hovercard-link-click"" data-octo-dimensions=""link_type:self"" href=""https://github.com/ianschmitz"">@ianschmitz</a> was working on Jest/jsdom updates. He might be able to share more.</p>
+<p>Thanks for all of your help!</p>
+<p>Jest is merged in.</p>
+<p>ESLint is close, waiting on a11y plugin: <a class=""issue-link js-issue-link"" data-error-text=""Failed to load title"" data-id=""615152908"" data-permission-text=""Title is private"" data-url=""https://github.com/facebook/create-react-app/issues/8978"" data-hovercard-type=""pull_request"" data-hovercard-url=""/facebook/create-react-app/pull/8978/hovercard"" href=""https://github.com/facebook/create-react-app/pull/8978"">#8978</a>.</p>
+<p>Only waiting for <code>eslint-plugin-testing-library</code> (which itself is waiting for <code>eslint-plugin-node</code> &amp; <code>eslint-plugin-promise</code>) to have ESLint 7.x compatibility now: <a class=""issue-link js-issue-link"" data-error-text=""Failed to load title"" data-id=""612895023"" data-permission-text=""Title is private"" data-url=""https://github.com/facebook/create-react-app/issues/8963"" data-hovercard-type=""pull_request"" data-hovercard-url=""/facebook/create-react-app/pull/8963/hovercard?comment_id=648096950&amp;comment_type=issue_comment"" href=""https://github.com/facebook/create-react-app/pull/8963#issuecomment-648096950"">#8963 (comment)</a></p>
+<p>But this can go into 4.1 too if that's keeping the package from the 4.0 release</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9131,mrmckeb,2020-06-10T06:41:28Z,,False,"<p><a class=""user-mention"" data-hovercard-type=""user"" data-hovercard-url=""/users/kentcdodds/hovercard"" data-octo-click=""hovercard-link-click"" data-octo-dimensions=""link_type:self"" href=""https://github.com/kentcdodds"">@kentcdodds</a> The two bigger things we were waiting for was ESLint 7 (some plugins were still being updated), and <a class=""user-mention"" data-hovercard-type=""user"" data-hovercard-url=""/users/ianschmitz/hovercard"" data-octo-click=""hovercard-link-click"" data-octo-dimensions=""link_type:self"" href=""https://github.com/ianschmitz"">@ianschmitz</a> was working on Jest/jsdom updates. He might be able to share more.</p>
+<p>Thanks for all of your help!</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9131,ianschmitz,2020-06-10T14:21:18Z,"[['👍'], [7]]",False,"<p>Jest is merged in.</p>
+<p>ESLint is close, waiting on a11y plugin: <a class=""issue-link js-issue-link"" data-error-text=""Failed to load title"" data-id=""615152908"" data-permission-text=""Title is private"" data-url=""https://github.com/facebook/create-react-app/issues/8978"" data-hovercard-type=""pull_request"" data-hovercard-url=""/facebook/create-react-app/pull/8978/hovercard"" href=""https://github.com/facebook/create-react-app/pull/8978"">#8978</a>.</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9131,MichaelDeBoey,2020-06-24T08:13:54Z,"[['👍', '😄'], [4, 1]]",False,"<p>Only waiting for <code>eslint-plugin-testing-library</code> (which itself is waiting for <code>eslint-plugin-node</code> &amp; <code>eslint-plugin-promise</code>) to have ESLint 7.x compatibility now: <a class=""issue-link js-issue-link"" data-error-text=""Failed to load title"" data-id=""612895023"" data-permission-text=""Title is private"" data-url=""https://github.com/facebook/create-react-app/issues/8963"" data-hovercard-type=""pull_request"" data-hovercard-url=""/facebook/create-react-app/pull/8963/hovercard?comment_id=648096950&amp;comment_type=issue_comment"" href=""https://github.com/facebook/create-react-app/pull/8963#issuecomment-648096950"">#8963 (comment)</a></p>
+<p>But this can go into 4.1 too if that's keeping the package from the 4.0 release</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9131,ianschmitz,2020-06-26T22:49:15Z,"[['👍'], [2]]",False,"<p>The last two PRs we're trying to get in:</p>
+<ul>
+<li>Service worker improvements: <a class=""issue-link js-issue-link"" data-error-text=""Failed to load title"" data-id=""643957052"" data-permission-text=""Title is private"" data-url=""https://github.com/facebook/create-react-app/issues/9205"" data-hovercard-type=""pull_request"" data-hovercard-url=""/facebook/create-react-app/pull/9205/hovercard"" href=""https://github.com/facebook/create-react-app/pull/9205"">#9205</a>
+</li>
+<li>Additional linting rules (time permitting): <a class=""issue-link js-issue-link"" data-error-text=""Failed to load title"" data-id=""612895023"" data-permission-text=""Title is private"" data-url=""https://github.com/facebook/create-react-app/issues/8963"" data-hovercard-type=""pull_request"" data-hovercard-url=""/facebook/create-react-app/pull/8963/hovercard"" href=""https://github.com/facebook/create-react-app/pull/8963"">#8963</a>
+</li>
+</ul>
+<p>Are the service worker improvements crucial to this release? I don't know the analytics on it but my guess is that service workers are ignored by the vast majority of users and so that could be pushed to the next release?</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9131,eddiemonge,2020-06-30T16:38:06Z,"[['👍'], [16]]",False,<p>Are the service worker improvements crucial to this release? I don't know the analytics on it but my guess is that service workers are ignored by the vast majority of users and so that could be pushed to the next release?</p>
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9131,Svish,2020-07-14T13:37:25Z,"[['👍'], [4]]",False,<p>Any updates on this?</p>
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9131,bennettdams,2020-07-14T16:58:21Z,"[['👍'], [3]]",False,"<p>While we wait: Should we prepare documentation on how to actually use the new ESLint configuration together with VS Code (and TypeScript &amp; Prettier)?</p>
+<p>I created a proposal some weeks ago:<br>
+<a class=""issue-link js-issue-link"" data-error-text=""Failed to load title"" data-id=""601976939"" data-permission-text=""Title is private"" data-url=""https://github.com/facebook/create-react-app/issues/8849"" data-hovercard-type=""issue"" data-hovercard-url=""/facebook/create-react-app/issues/8849/hovercard"" href=""https://github.com/facebook/create-react-app/issues/8849"">#8849</a> <em>Recommended way of config integration with ESLint, TypeScript, Prettier and VS Code</em></p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9295,ezepale,2020-07-12T16:47:46Z,"[['😕'], [1]]",False,"<p><a href=""url"">file:///C:/Users/MI%20PC/Pictures/help.png</a></p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9295,eddiemonge,2020-07-13T17:46:52Z,,False,"<p><code>ls</code> does not work on windows. You want <code>dir</code> instead</p>
+<p>Unless using powershell, in that case, ls is a valid command</p>
+<p>or using WSL2 like I highly recommed</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9295,psyycker,2020-07-13T22:23:58Z,,False,"<p>Unless using powershell, in that case, ls is a valid command</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9295,eddiemonge,2020-07-14T16:04:03Z,"[['👍'], [1]]",False,<p>or using WSL2 like I highly recommed</p>
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9305,Svish,2020-07-14T13:28:38Z,"[['👍'], [1]]",False,"<p>Is there any roadmap or anything anywhere giving some sort of an ETA on when the next release of this comes out?</p>
+<p>We're using <code>create-react-app</code> for our apps, but also <code>eslint-config-react-app</code> as basis for the shared eslint configuration in our company. And several versions of eslint plugins are lagging behind now, because the latest <code>eslint-config-react-app@5.2.1</code> on NPM is restricting them to older major versions:</p>
+<pre><code>npm WARN eslint-config-react-app@5.2.1 requires a peer of @typescript-eslint/eslint-plugin@2.x but none is installed. You must install peer dependencies yourself.
+npm WARN eslint-config-react-app@5.2.1 requires a peer of @typescript-eslint/parser@2.x but none is installed. You must install peer dependencies yourself.
+npm WARN eslint-config-react-app@5.2.1 requires a peer of eslint@6.x but none is installed. You must install peer dependencies yourself.
+npm WARN eslint-config-react-app@5.2.1 requires a peer of eslint-plugin-flowtype@3.x || 4.x but none is installed. You must install peer dependencies yourself.
+npm WARN eslint-config-react-app@5.2.1 requires a peer of eslint-plugin-react-hooks@1.x || 2.x but none is installed. You must install peer dependencies yourself.
+</code></pre>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9305,bennettdams,2020-07-14T13:30:43Z,"[['👍'], [1]]",True,"<p>There's another thread for CRA version 4 with the new ESLint, which hopefully will be released soon:   <a class=""issue-link js-issue-link"" data-error-text=""Failed to load title"" data-id=""6163"" data-permission-text=""Title is private"" data-url=""https://github.com/facebook/create-react-app/discussions/9131"" data-hovercard-type=""discussion"" data-hovercard-url=""/facebook/create-react-app/discussions/9131/hovercard"" href=""https://github.com/facebook/create-react-app/discussions/9131"">#9131</a></p>
+<p>Ah, cool, thanks <g-emoji class=""g-emoji"" alias=""slightly_smiling_face"" fallback-src=""https://github.githubassets.com/images/icons/emoji/unicode/1f642.png"">🙂</g-emoji><g-emoji class=""g-emoji"" alias=""+1"" fallback-src=""https://github.githubassets.com/images/icons/emoji/unicode/1f44d.png"">👍</g-emoji></p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9305,Svish,2020-07-14T13:33:02Z,,True,"<p>Ah, cool, thanks <g-emoji class=""g-emoji"" alias=""slightly_smiling_face"" fallback-src=""https://github.githubassets.com/images/icons/emoji/unicode/1f642.png"">🙂</g-emoji><g-emoji class=""g-emoji"" alias=""+1"" fallback-src=""https://github.githubassets.com/images/icons/emoji/unicode/1f44d.png"">👍</g-emoji></p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9291,dephraiim,2020-07-10T19:26:14Z,,False,"<p>Today was much worse for me.</p>
+<p><code>npx create-react-app my-app</code> took over an two hour. It kept installing and unistalling the packages.</p>
+<p>Logs in terminal.<br>
+<a rel=""nofollow"" href=""https://gist.github.com/dephraiim/d19b8ad8c2ad9eeed457bf96eeb795a4"">https://gist.github.com/dephraiim/d19b8ad8c2ad9eeed457bf96eeb795a4</a></p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9291,eddiemonge,2020-07-13T17:45:46Z,,False,"<p>Issue was opened at <a class=""issue-link js-issue-link"" data-error-text=""Failed to load title"" data-id=""654989464"" data-permission-text=""Title is private"" data-url=""https://github.com/facebook/create-react-app/issues/9290"" data-hovercard-type=""issue"" data-hovercard-url=""/facebook/create-react-app/issues/9290/hovercard"" href=""https://github.com/facebook/create-react-app/issues/9290"">#9290</a> already</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9277,Buuntu,2020-07-07T23:44:28Z,"[['👍'], [1]]",False,"<p>It would be good to have a recommended workflow using Docker, for example when working on a full stack application (both frontend and backend).  I know Docker is outside of the scope of create-react-app but feel like this is a pretty common workflow, and judging by the popularity of some Stackoverflow threads I think this is common enough that it might warrant a discussion:</p>
+<p><a rel=""nofollow"" href=""https://stackoverflow.com/questions/30043872/docker-compose-node-modules-not-present-in-a-volume-after-npm-install-succeeds"">https://stackoverflow.com/questions/30043872/docker-compose-node-modules-not-present-in-a-volume-after-npm-install-succeeds</a><br>
+<a rel=""nofollow"" href=""https://stackoverflow.com/questions/38425996/docker-compose-volume-on-node-modules-but-is-empty"">https://stackoverflow.com/questions/38425996/docker-compose-volume-on-node-modules-but-is-empty</a><br>
+<a rel=""nofollow"" href=""https://stackoverflow.com/questions/38758361/create-react-app-with-docker"">https://stackoverflow.com/questions/38758361/create-react-app-with-docker</a></p>
+<p>None of these threads have very clean solutions, since they often significantly increase start/build times or have edge cases when building from scratch and/or updating packages.</p>
+<p>I myself am having issue setting this up with docker-compose and hot reloading without jumping through a lot of hoops .  Many of the issues stem around node_modules and the fact that create-react-app expects these in src and doesn't allow you to use absolute paths for NODE_PATH to keep node_modules outside of your mounted volume.  Basically this old issue: <a class=""issue-link js-issue-link"" data-error-text=""Failed to load title"" data-id=""354301676"" data-permission-text=""Title is private"" data-url=""https://github.com/facebook/create-react-app/issues/4928"" data-hovercard-type=""issue"" data-hovercard-url=""/facebook/create-react-app/issues/4928/hovercard"" href=""https://github.com/facebook/create-react-app/issues/4928"">#4928</a></p>
+<p>It would be great if there was a short section in documentation or a README describing how to do this, or if it's too complicated, maybe describing why you shouldn't develop in Docker at all.</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9277,avindra,2020-07-08T18:23:22Z,,False,"<p><a class=""user-mention"" data-hovercard-type=""user"" data-hovercard-url=""/users/Buuntu/hovercard"" data-octo-click=""hovercard-link-click"" data-octo-dimensions=""link_type:self"" href=""https://github.com/Buuntu"">@Buuntu</a> the <code>NODE_PATH</code> trick may not work, but the <code>jsconfig</code> / <code>tsconfig</code> option should work for you, it's documented here:</p>
+<p><a rel=""nofollow"" href=""https://create-react-app.dev/docs/importing-a-component/#absolute-imports"">https://create-react-app.dev/docs/importing-a-component/#absolute-imports</a></p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9277,Buuntu,2020-07-09T01:56:27Z,,False,"<blockquote>
+<p><a class=""user-mention"" data-hovercard-type=""user"" data-hovercard-url=""/users/Buuntu/hovercard"" data-octo-click=""hovercard-link-click"" data-octo-dimensions=""link_type:self"" href=""https://github.com/Buuntu"">@Buuntu</a> the <code>NODE_PATH</code> trick may not work, but the <code>jsconfig</code> / <code>tsconfig</code> option should work for you, it's documented here:</p>
+<p><a href=""https://create-react-app.dev/docs/importing-a-component/#absolute-imports"" rel=""nofollow"">https://create-react-app.dev/docs/importing-a-component/#absolute-imports</a></p>
+</blockquote>
+<p>That's for importing libraries in code, it still doesn't solve most of the common issues (linked above) around Docker workflows and node_modules though.</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9277,Vanuan,2020-07-13T15:56:47Z,,False,"<p>I'd say that node_modules is the issue only in OS X, due to the well known performance issue with osxfs.<br>
+If you're using ubuntu, just don't try to put node_modules inside the volume, let it be in src.</p>
+<pre><code># docker/docker-compose.yml
+
+  node:
+    build: ./node
+    volumes:
+      - ../:/src
+    working_dir: /src
+    ports: [""127.0.0.1:3000:3000""]
+
+# docker/node/Dockerfile
+
+FROM node:12.13.0
+RUN curl --compressed -o- -L https://yarnpkg.com/install.sh | bash
+
+# docker/start
+
+#!/bin/bash
+set -e
+cd $(dirname $0)
+docker-compose -f docker-compose.yml build node
+docker-compose -f docker-compose.yml run --rm --service-ports node yarn start $@
+
+# docker/run
+
+#!/bin/bash
+set -e
+cd $(dirname $0)
+docker-compose -f docker-compose.yml build node
+docker-compose -f docker-compose.yml run --rm --no-deps node $@
+</code></pre>
+<p>Usage:</p>
+<pre><code>./docker/run yarn install
+./docker/start
+</code></pre>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9276,seansean11,2020-07-07T13:53:20Z,,False,"<p>I was going to create an <code>issue</code> for this, but I figure I should ask first.  I am using <code>react-app-polyfill</code> to get IE11 support and following the instructions on the Readme to import both <code>react-app-polyfill/ie11</code> and <code>react-app-polyfill/stable</code> in that order to the top of my <code>index.js</code> entrypoint.  This does give me the ie11 support I need and adds about <code>37kb</code> to the production bundle size.</p>
+<p>Out of curiosity, I started to play with the <code>browserslist</code> to see if using different browser support would change the polyfills from <code>core-js</code> that got bundled, and it didn't.  Regardless of the browser support I define it includes what seems to be all of <code>core-js/stable</code> (not even just the ie11 support).</p>
+<p>It seems to me that either <code>@babel/preset-env</code> or the implementation of it is broken when used in conjunction with <code>browserslist</code>.  I wanted to confirm this suspicion before creating an <code>issue</code>.</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9276,MasterCassim,2020-07-09T21:53:33Z,,False,<p>Have you deleted node_modules/.cache after changing browserlist?</p>
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9161,alicialics,2020-06-15T18:28:01Z,"[['👍'], [1]]",False,"<p>In the end of this article <a rel=""nofollow"" href=""https://web.dev/granular-chunking-nextjs/"">https://web.dev/granular-chunking-nextjs/</a><br>
+I've tested this briefly and it seem to be able to provide better chunking results than the current default.  Should the current default be changed?</p>
+<p><a rel=""nofollow"" href=""https://glitch.com/edit/#!/webpack-granular-split-chunks?path=webpack.config.js%3A1%3A0"">https://glitch.com/edit/#!/webpack-granular-split-chunks?path=webpack.config.js%3A1%3A0</a></p>
+<pre><code>config.optimization = {
+  …
+  splitChunks: {
+    name: false,
+    chunks: `all`,
+    cacheGroups: {
+      default: false,
+      vendors: false,
+      commons: {
+        name: `commons`,
+        chunks: `all`,
+        // if a chunk is used more than half the components count,
+        // we can assume it's pretty global
+        minChunks: componentsCount &gt; 2 ? componentsCount * 0.5 : 2,
+      },
+      react: {
+        name: `commons`,
+        chunks: `all`,
+        test: /[\\/]node_modules[\\/](react|react-dom|scheduler)[\\/]/,
+      },
+</code></pre>
+<pre><code>optimization: {
+    splitChunks: {
+      chunks: 'all',
+      maxInitialRequests: 25,
+      minSize: 20000,
+      cacheGroups: {
+        default: false,
+        vendors: false,
+        framework: {
+          chunks: 'all',
+          name: 'framework',
+          test: /[\\/]node_modules[\\/](react|react-dom|scheduler|prop-types|use-subscription)[\\/]/,
+          priority: 40,
+          enforce: true
+        },
+        lib: {
+          test(module) {
+            return (
+              module.size() &gt; 150000 &amp;&amp; // 150KB cut off for any npm library (change this value to meet your requirements)
+              /node_modules[/\\]/.test(module.identifier())
+            );
+          },
+          name(module) {
+            const hash = crypto.createHash(`sha1`)
+            hash.update(module.libIdent({ context: 'dir' }))
+
+            return 'lib-' + hash.digest(`hex`).substring(0, 8)          
+          },
+          priority: 30,
+          minChunks: 1,
+          reuseExistingChunk: true
+        },
+        commons: {
+          name: 'commons',
+          minChunks: 3, // define (or pass in) the total number of pages here
+          priority: 20
+        },
+        shared: {
+          name(module, chunks) {
+            const hash = crypto
+              .createHash(`sha1`)
+              .update(chunks.reduce((acc, chunk) =&gt; acc + chunk.name, ``))
+              .digest(`hex`)
+
+            return hash
+          },
+          priority: 10,
+          minChunks: 2,
+          reuseExistingChunk: true
+        }
+      }
+    }
+</code></pre>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9161,ianschmitz,2020-06-19T03:31:55Z,,False,"<p>Can you be more specific? How are you measuring the difference?</p>
+<p>Obviously SPAs are different than NextJS and GatsbyJS, but I really like the idea of splitting into smaller lib bundles and increasing the framework chunk size.</p>
+<p>Custom webpack output:<br>
+<a target=""_blank"" rel=""noopener noreferrer"" href=""https://user-images.githubusercontent.com/31378877/85193651-71ea6980-b27f-11ea-9cd7-06f975a430d8.png""><img width=""595"" alt=""Screen Shot 2020-06-19 at 10 51 02 PM"" src=""https://user-images.githubusercontent.com/31378877/85193651-71ea6980-b27f-11ea-9cd7-06f975a430d8.png"" style=""max-width:100%;""></a></p>
+<p>CRA output:<br>
+<a target=""_blank"" rel=""noopener noreferrer"" href=""https://user-images.githubusercontent.com/31378877/85193652-73b42d00-b27f-11ea-9a4b-5bd9d5e0bcfc.png""><img width=""604"" alt=""Screen Shot 2020-06-19 at 10 51 11 PM"" src=""https://user-images.githubusercontent.com/31378877/85193652-73b42d00-b27f-11ea-9a4b-5bd9d5e0bcfc.png"" style=""max-width:100%;""></a><br>
+The lib chunks are smaller and can be better cached when there are no changes, and the framework chunk is larger than the runtime chunk in CRA.  The article probably can describe this better:<br>
+<a rel=""nofollow"" href=""https://web.dev/granular-chunking-nextjs/#improved-chunking"">https://web.dev/granular-chunking-nextjs/#improved-chunking</a></p>
+<blockquote>
+<p>Splitting large libraries and framework dependencies into separate chunks reduces the possibility of cache invalidation since both are unlikely to change until an upgrade is made.</p>
+</blockquote>
+<p>I used source-map-explorer to look at the lib chunks, one of date-fns-timezone, one was lodash, another was an internal ui library that gets changed on every release.</p>
+<p>In Chrome lighthouse (serving CRA/custom build output via http-server) I see a small difference for Max Potential First Input Delay (1350ms vs 1920ms), I think because Chrome is parsing a bunch of smaller files and can do it in parallel.  For the other metrics, I had assumed smaller chunks would result in better timing (FCP/TTI) but this doesn't show up in the runs.  I believe it is because the total bundle size downloaded is still the same, and since lighthouse is throttling network traffic, downloading the chunks in parallel does not make total download time any faster.</p>
+<p>Thanks. The tricky thing here is each application is unique - what may be optimal for one could be suboptimal for another. We've tried to strike a balance between total # of requests and cachability. We also don't have the idea of ""pages"" as mentioned. When there are too many chunks that are required as part of the critical rendering path, you start to run into HTTP request concurrency limits of the browsers.</p>
+<p>That's not to say our current configuration couldn't be improved. I'd love to hear if there's any obvious improvements that apply to projects of all shapes and sizes. We'd want to compare any chunking strategy changes across a variety of projects (varying amounts of first party code, varying amounts of third party, total number of third party libs, etc.) to compare metrics.</p>
+<p>Yep, I agree with your points.  Webpack has the maxInitialRequests to configure the number of initial requests. At the end of the day, not sure whether CRA want to optimize for the 100% (all sites, including HTTP/1, maxInitialRequests =3) or whether we want to optimize for only (HTTP/2, maxInitialRequests=25).</p>
+<p>For the first case, I think a net win is to put react libraries into it as well since they rarely change, much less than changing other packages in node_modules.  That only increases the number of requests by one, and better long term caching than what we have today.</p>
+<p>similar to:</p>
+<pre><code>framework: {
+          chunks: 'all',
+          name: 'framework',
+          test: /[\\/]node_modules[\\/](react|react-dom|scheduler|prop-types|use-subscription)[\\/]/,
+          priority: 40,
+          enforce: true
+        },
+</code></pre>
+<p>For the second case, we can split larger vendor chunks out as well, to increase browser js parsing speed. From my tests, since we only have one entry point, the number of initial bundles only increased by a small amount in any case (four in my case for an insanely large 5MB bundle).  Also, since Gatsby and Next is using this as default, so it can't be that bad as an initial default.  Finally HTTP/1 sites might not take a huge performance hit because the sites will load fine anyway with a slight delay if we hit the HTTP/1 connection limit.</p>
+<p>Optimizing for h2 makes a lot of sense to me. It's well supported by common server technologies, cloud providers, and modern browsers released in the last few years. If there's obvious wins for h2 I think we should explore them.</p>
+<p>The write up collaborating with next and Gatsby is interesting. They were definitely optimizing a slightly different problem as they have to combat duplication across pages which we don't have. We may be able to use some of the ideas in a way that makes sense over in CRA such as the framework cache group as you suggested. The potential difference in JS parse/compile by splitting into smaller chunks is interesting.</p>
+<p><a class=""user-mention"" data-hovercard-type=""user"" data-hovercard-url=""/users/atcastle/hovercard"" data-octo-click=""hovercard-link-click"" data-octo-dimensions=""link_type:self"" href=""https://github.com/atcastle"">@atcastle</a> landed the feature in Next.js, and yep the main idea was definitely to optimize across pages. That's wholly different in CRA :)</p>
+<p>Happy to help explore if granular chunking could be useful in CRA!</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9161,alicialics,2020-06-20T06:02:52Z,,False,"<p>Obviously SPAs are different than NextJS and GatsbyJS, but I really like the idea of splitting into smaller lib bundles and increasing the framework chunk size.</p>
+<p>Custom webpack output:<br>
+<a target=""_blank"" rel=""noopener noreferrer"" href=""https://user-images.githubusercontent.com/31378877/85193651-71ea6980-b27f-11ea-9cd7-06f975a430d8.png""><img width=""595"" alt=""Screen Shot 2020-06-19 at 10 51 02 PM"" src=""https://user-images.githubusercontent.com/31378877/85193651-71ea6980-b27f-11ea-9cd7-06f975a430d8.png"" style=""max-width:100%;""></a></p>
+<p>CRA output:<br>
+<a target=""_blank"" rel=""noopener noreferrer"" href=""https://user-images.githubusercontent.com/31378877/85193652-73b42d00-b27f-11ea-9a4b-5bd9d5e0bcfc.png""><img width=""604"" alt=""Screen Shot 2020-06-19 at 10 51 11 PM"" src=""https://user-images.githubusercontent.com/31378877/85193652-73b42d00-b27f-11ea-9a4b-5bd9d5e0bcfc.png"" style=""max-width:100%;""></a><br>
+The lib chunks are smaller and can be better cached when there are no changes, and the framework chunk is larger than the runtime chunk in CRA.  The article probably can describe this better:<br>
+<a rel=""nofollow"" href=""https://web.dev/granular-chunking-nextjs/#improved-chunking"">https://web.dev/granular-chunking-nextjs/#improved-chunking</a></p>
+<blockquote>
+<p>Splitting large libraries and framework dependencies into separate chunks reduces the possibility of cache invalidation since both are unlikely to change until an upgrade is made.</p>
+</blockquote>
+<p>I used source-map-explorer to look at the lib chunks, one of date-fns-timezone, one was lodash, another was an internal ui library that gets changed on every release.</p>
+<p>In Chrome lighthouse (serving CRA/custom build output via http-server) I see a small difference for Max Potential First Input Delay (1350ms vs 1920ms), I think because Chrome is parsing a bunch of smaller files and can do it in parallel.  For the other metrics, I had assumed smaller chunks would result in better timing (FCP/TTI) but this doesn't show up in the runs.  I believe it is because the total bundle size downloaded is still the same, and since lighthouse is throttling network traffic, downloading the chunks in parallel does not make total download time any faster.</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9161,ianschmitz,2020-06-20T17:17:17Z,,False,"<p>Thanks. The tricky thing here is each application is unique - what may be optimal for one could be suboptimal for another. We've tried to strike a balance between total # of requests and cachability. We also don't have the idea of ""pages"" as mentioned. When there are too many chunks that are required as part of the critical rendering path, you start to run into HTTP request concurrency limits of the browsers.</p>
+<p>That's not to say our current configuration couldn't be improved. I'd love to hear if there's any obvious improvements that apply to projects of all shapes and sizes. We'd want to compare any chunking strategy changes across a variety of projects (varying amounts of first party code, varying amounts of third party, total number of third party libs, etc.) to compare metrics.</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9161,alicialics,2020-06-21T22:35:10Z,"[['👍'], [2]]",False,"<p>Yep, I agree with your points.  Webpack has the maxInitialRequests to configure the number of initial requests. At the end of the day, not sure whether CRA want to optimize for the 100% (all sites, including HTTP/1, maxInitialRequests =3) or whether we want to optimize for only (HTTP/2, maxInitialRequests=25).</p>
+<p>For the first case, I think a net win is to put react libraries into it as well since they rarely change, much less than changing other packages in node_modules.  That only increases the number of requests by one, and better long term caching than what we have today.</p>
+<p>similar to:</p>
+<pre><code>framework: {
+          chunks: 'all',
+          name: 'framework',
+          test: /[\\/]node_modules[\\/](react|react-dom|scheduler|prop-types|use-subscription)[\\/]/,
+          priority: 40,
+          enforce: true
+        },
+</code></pre>
+<p>For the second case, we can split larger vendor chunks out as well, to increase browser js parsing speed. From my tests, since we only have one entry point, the number of initial bundles only increased by a small amount in any case (four in my case for an insanely large 5MB bundle).  Also, since Gatsby and Next is using this as default, so it can't be that bad as an initial default.  Finally HTTP/1 sites might not take a huge performance hit because the sites will load fine anyway with a slight delay if we hit the HTTP/1 connection limit.</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9161,ianschmitz,2020-06-23T05:53:21Z,"[['👍'], [4]]",False,"<p>Optimizing for h2 makes a lot of sense to me. It's well supported by common server technologies, cloud providers, and modern browsers released in the last few years. If there's obvious wins for h2 I think we should explore them.</p>
+<p>The write up collaborating with next and Gatsby is interesting. They were definitely optimizing a slightly different problem as they have to combat duplication across pages which we don't have. We may be able to use some of the ideas in a way that makes sense over in CRA such as the framework cache group as you suggested. The potential difference in JS parse/compile by splitting into smaller chunks is interesting.</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9161,housseindjirdeh,2020-07-09T21:44:41Z,"[['👍'], [1]]",False,"<p><a class=""user-mention"" data-hovercard-type=""user"" data-hovercard-url=""/users/atcastle/hovercard"" data-octo-click=""hovercard-link-click"" data-octo-dimensions=""link_type:self"" href=""https://github.com/atcastle"">@atcastle</a> landed the feature in Next.js, and yep the main idea was definitely to optimize across pages. That's wholly different in CRA :)</p>
+<p>Happy to help explore if granular chunking could be useful in CRA!</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9282,jiaming0708,2020-07-09T14:53:46Z,,False,"<p>there have the <code>desc</code> in svg file, but the tag is not removed in build file</p>
+<p>example:</p>
+<pre><code>&lt;svg xmlns=""http://www.w3.org/2000/svg"" width=""24"" height=""24"" viewBox=""0 0 24 24""&gt;
+    &lt;desc&gt;Created with Sketch.&lt;/desc&gt;
+    &lt;g fill=""none"" fill-rule=""evenodd""&gt;
+        &lt;path d=""M0 24L24 24 24 0 0 0z""/&gt;
+        &lt;path fill=""#000"" d=""M12 2c5.522 0 10 4.478 10 10s-4.478 10-10 10C6.475 22 2 17.522 2 12S6.475 2 12 2zm4.991 6.436c-.39-.391-1.022-.391-1.413 0l-5.008 5.008-2.15-2.151c-.39-.39-1.022-.39-1.413 0s-.391 1.024 0 1.415l3.563 3.564 6.421-6.422c.392-.39.392-1.023 0-1.414z""/&gt;
+    &lt;/g&gt;
+&lt;/svg&gt;
+</code></pre>
+<p>check the webpack setting, you disable the svgo, so the svg file does not optimize, how can I do to remove the desc after building?</p>
+<pre><code>{
+  loaderMap: {
+    svg: {
+      ReactComponent:
+        '@svgr/webpack?-svgo,+titleProp,+ref![path]',
+    },
+  },
+},
+</code></pre>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9243,nol166,2020-07-01T15:31:52Z,,False,"<p>Hey everyone, I was just curious how CRA works when someone runs <code>npx create-react-app</code>. Does the npx command grab a binary of some sort and then run it or does it clone the whole package and run it from there?</p>
+<p>Thank you in advance.</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9243,eddiemonge,2020-07-06T16:22:54Z,"[['👍'], [2]]",True,"<p><a rel=""nofollow"" href=""https://blog.npmjs.org/post/162869356040/introducing-npx-an-npm-package-runner"">https://blog.npmjs.org/post/162869356040/introducing-npx-an-npm-package-runner</a></p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9093,Shrabon-ahamed,2020-05-30T22:24:18Z,,False,"<p><a target=""_blank"" rel=""noopener noreferrer"" href=""https://user-images.githubusercontent.com/56750436/83340136-7366e880-a2f6-11ea-8886-8698d6e6ef7d.png""><img src=""https://user-images.githubusercontent.com/56750436/83340136-7366e880-a2f6-11ea-8886-8698d6e6ef7d.png"" alt=""image"" style=""max-width:100%;""></a></p>
+<p>can you please give me the proper cause and solution for this problem??</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9093,mrmckeb,2020-05-31T08:30:41Z,"[['👍'], [1]]",False,"<p>Hi <a class=""user-mention"" data-hovercard-type=""user"" data-hovercard-url=""/users/Shrabon-ahamed/hovercard"" data-octo-click=""hovercard-link-click"" data-octo-dimensions=""link_type:self"" href=""https://github.com/Shrabon-ahamed"">@Shrabon-ahamed</a>, first - we don't recommend global installs of <code>create-react-app</code>. If you do this, it can break in future as we make updates to <code>react-scripts</code>.</p>
+<p>I think this could be a caching issue. Have you tried clearing your global cache?</p>
+<p>I am facing same problem &amp; i can't understand your answer i am new in React please help me</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9093,Amit1405,2020-06-29T12:11:53Z,,False,<p>I am facing same problem &amp; i can't understand your answer i am new in React please help me</p>
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9093,ShahrozTanveer,2020-06-29T18:35:46Z,,False,"<p>hi <a class=""user-mention"" data-hovercard-type=""user"" data-hovercard-url=""/users/Shrabon-ahamed/hovercard"" data-octo-click=""hovercard-link-click"" data-octo-dimensions=""link_type:self"" href=""https://github.com/Shrabon-ahamed"">@Shrabon-ahamed</a> &amp; <a class=""user-mention"" data-hovercard-type=""user"" data-hovercard-url=""/users/Amit1405/hovercard"" data-octo-click=""hovercard-link-click"" data-octo-dimensions=""link_type:self"" href=""https://github.com/Amit1405"">@Amit1405</a><br>
+try <code>npm cache clean --force</code><br>
+Then<br>
+<code>npm i -g create-react-app</code><br>
+Its posible your cache got corrupt.</p>
+<p>Hii  !  again same error -- see below<br>
+<a target=""_blank"" rel=""noopener noreferrer"" href=""https://user-images.githubusercontent.com/67499931/86072869-3b42f900-baa0-11ea-9421-50ba30fcb318.PNG""><img src=""https://user-images.githubusercontent.com/67499931/86072869-3b42f900-baa0-11ea-9421-50ba30fcb318.PNG"" alt=""npm1"" style=""max-width:100%;""></a><br>
+Please Help Me<br>
+&amp; after some time i got new error-- see below</p>
+<p><a target=""_blank"" rel=""noopener noreferrer"" href=""https://user-images.githubusercontent.com/67499931/86098151-5844ef80-bad3-11ea-87e1-3b2926ec9a77.PNG""><img src=""https://user-images.githubusercontent.com/67499931/86098151-5844ef80-bad3-11ea-87e1-3b2926ec9a77.PNG"" alt=""NpmNew"" style=""max-width:100%;""></a></p>
+<p>Please Help me Plzzzzzzzzzzzzzzzzz</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9093,Amit1405,2020-06-30T01:37:04Z,,False,"<p>Hii  !  again same error -- see below<br>
+<a target=""_blank"" rel=""noopener noreferrer"" href=""https://user-images.githubusercontent.com/67499931/86072869-3b42f900-baa0-11ea-9421-50ba30fcb318.PNG""><img src=""https://user-images.githubusercontent.com/67499931/86072869-3b42f900-baa0-11ea-9421-50ba30fcb318.PNG"" alt=""npm1"" style=""max-width:100%;""></a><br>
+Please Help Me<br>
+&amp; after some time i got new error-- see below</p>
+<p><a target=""_blank"" rel=""noopener noreferrer"" href=""https://user-images.githubusercontent.com/67499931/86098151-5844ef80-bad3-11ea-87e1-3b2926ec9a77.PNG""><img src=""https://user-images.githubusercontent.com/67499931/86098151-5844ef80-bad3-11ea-87e1-3b2926ec9a77.PNG"" alt=""NpmNew"" style=""max-width:100%;""></a></p>
+<p>Please Help me Plzzzzzzzzzzzzzzzzz</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9093,Amit1405,2020-06-30T06:36:20Z,,False,"<div class=""email-fragment"">Sir I have already tryed but facing same error again to again (4-5 times)
+but same error
+Please help mee</div>
+<span class=""email-hidden-toggle""><a href=""#"">…</a></span>
+<div class=""email-hidden-reply"">
+<div class=""email-quoted-reply"">On Tue, 30 Jun 2020, 12:01 am Sharoz Tanveer, ***@***.***&gt; wrote:
+ just trynpm cache clean --force then npm install -g create-react-app
+
+ —
+ You are receiving this because you commented.
+ Reply to this email directly, view it on GitHub
+ &lt;<a class=""issue-link js-issue-link"" data-error-text=""Failed to load title"" data-id=""5184"" data-permission-text=""Title is private"" data-url=""https://github.com/facebook/create-react-app/discussions/9093"" href=""https://github.com/facebook/create-react-app/discussions/9093#discussioncomment-31585"">#9093 (comment)</a>&gt;,
+ or unsubscribe
+ &lt;<a href=""https://github.com/notifications/unsubscribe-auth/AQC7PG3PCSEWR7EQH3GRLPLRZDMWXANCNFSM4NO4ECYA"">https://github.com/notifications/unsubscribe-auth/AQC7PG3PCSEWR7EQH3GRLPLRZDMWXANCNFSM4NO4ECYA</a>&gt;
+ .
+</div>
+<div class=""email-fragment""></div>
+</div>
+<blockquote>
+<p>Sir I have already tryed but facing same error again to again (4-5 times) but same error Please help mee<br>
+<a href=""#"">…</a><br>
+On Tue, 30 Jun 2020, 12:01 am Sharoz Tanveer, <em><strong>@</strong></em>.***&gt; wrote: just trynpm cache clean --force then npm install -g create-react-app — You are receiving this because you commented. Reply to this email directly, view it on GitHub &lt;<a href=""https://github.com/facebook/create-react-app/discussions/9093#discussioncomment-31585"" data-hovercard-type=""discussion"" data-hovercard-url=""/facebook/create-react-app/discussions/9093/hovercard?comment_id=31585"">#9093 (comment)</a>&gt;, or unsubscribe <a href=""https://github.com/notifications/unsubscribe-auth/AQC7PG3PCSEWR7EQH3GRLPLRZDMWXANCNFSM4NO4ECYA"">https://github.com/notifications/unsubscribe-auth/AQC7PG3PCSEWR7EQH3GRLPLRZDMWXANCNFSM4NO4ECYA</a> .</p>
+</blockquote>
+<p>hi <a class=""user-mention"" data-hovercard-type=""user"" data-hovercard-url=""/users/Amit1405/hovercard"" data-octo-click=""hovercard-link-click"" data-octo-dimensions=""link_type:self"" href=""https://github.com/Amit1405"">@Amit1405</a><br>
+try <code>npm cache clean --force</code><br>
+then delete your <code>node_modules</code> dir and <code>package-lock.json</code> file.<br>
+=&gt; run <code>npm install</code><br>
+then run <code>npm start</code></p>
+<p>sir again same error<br>
+please sir help me</p>
+<blockquote>
+<p>sir again same error<br>
+please sir help me</p>
+</blockquote>
+<p><a class=""user-mention"" data-hovercard-type=""user"" data-hovercard-url=""/users/Amit1405/hovercard"" data-octo-click=""hovercard-link-click"" data-octo-dimensions=""link_type:self"" href=""https://github.com/Amit1405"">@Amit1405</a> please provide debug log<br>
+or feel free to contact me on Discord at PerpendicularX#5804</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9093,ShahrozTanveer,2020-06-30T18:05:42Z,,False,"<blockquote>
+<p>Sir I have already tryed but facing same error again to again (4-5 times) but same error Please help mee<br>
+<a href=""#"">…</a><br>
+On Tue, 30 Jun 2020, 12:01 am Sharoz Tanveer, <em><strong>@</strong></em>.***&gt; wrote: just trynpm cache clean --force then npm install -g create-react-app — You are receiving this because you commented. Reply to this email directly, view it on GitHub &lt;<a href=""https://github.com/facebook/create-react-app/discussions/9093#discussioncomment-31585"" data-hovercard-type=""discussion"" data-hovercard-url=""/facebook/create-react-app/discussions/9093/hovercard?comment_id=31585"">#9093 (comment)</a>&gt;, or unsubscribe <a href=""https://github.com/notifications/unsubscribe-auth/AQC7PG3PCSEWR7EQH3GRLPLRZDMWXANCNFSM4NO4ECYA"">https://github.com/notifications/unsubscribe-auth/AQC7PG3PCSEWR7EQH3GRLPLRZDMWXANCNFSM4NO4ECYA</a> .</p>
+</blockquote>
+<p>hi <a class=""user-mention"" data-hovercard-type=""user"" data-hovercard-url=""/users/Amit1405/hovercard"" data-octo-click=""hovercard-link-click"" data-octo-dimensions=""link_type:self"" href=""https://github.com/Amit1405"">@Amit1405</a><br>
+try <code>npm cache clean --force</code><br>
+then delete your <code>node_modules</code> dir and <code>package-lock.json</code> file.<br>
+=&gt; run <code>npm install</code><br>
+then run <code>npm start</code></p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9093,Amit1405,2020-07-01T05:15:59Z,,False,"<p>sir again same error<br>
+please sir help me</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9093,ShahrozTanveer,2020-07-01T13:58:53Z,,False,"<blockquote>
+<p>sir again same error<br>
+please sir help me</p>
+</blockquote>
+<p><a class=""user-mention"" data-hovercard-type=""user"" data-hovercard-url=""/users/Amit1405/hovercard"" data-octo-click=""hovercard-link-click"" data-octo-dimensions=""link_type:self"" href=""https://github.com/Amit1405"">@Amit1405</a> please provide debug log<br>
+or feel free to contact me on Discord at PerpendicularX#5804</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9093,Amit1405,2020-07-01T15:36:42Z,,False,"<p>sir,i was  uninstall nodejs &amp; delete React app &amp; after sometime reinstall but facing same error<br>
+please  Help Mee<br>
+&amp;&amp;&amp;<br>
+what do you mean by this --"" please provide debug log""</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9093,ShahrozTanveer,2020-07-01T15:46:00Z,,False,"<p><a class=""user-mention"" data-hovercard-type=""user"" data-hovercard-url=""/users/Amit1405/hovercard"" data-octo-click=""hovercard-link-click"" data-octo-dimensions=""link_type:self"" href=""https://github.com/Amit1405"">@Amit1405</a>  <em>ERROR npm-cli.js"" prefix -g' is not recognized as an internal or external command</em><br>
+This error refers to your PATH var are not pointing to the right path of Node JS. Double check your environment variables.<br>
+Make sure they  are  set to the right path.</p>
+<p>this.error resolve &amp; see  myfirst error pic<br>
+&amp; it says<br>
+there is additional logging output above  &amp;<br>
+a complate log file run can be found in</p>
+<p>&amp; what is right path for nodejs</p>
+<blockquote>
+<p>this.error resolve &amp; see myfirst error pic<br>
+&amp; it says<br>
+there is additional logging output above &amp;<br>
+a complate log file run can be found in</p>
+<p>&amp; what is right path for nodejs</p>
+</blockquote>
+<p>Got to  your environmental variables and take screenshot.</p>
+<p><a target=""_blank"" rel=""noopener noreferrer"" href=""https://user-images.githubusercontent.com/67499931/86266532-fa9fc880-bbe2-11ea-8c23-7a23c871c02a.PNG""><img src=""https://user-images.githubusercontent.com/67499931/86266532-fa9fc880-bbe2-11ea-8c23-7a23c871c02a.PNG"" alt=""path"" style=""max-width:100%;""></a></p>
+<p>ComSpec allows one value but it seems like your ComSpec has multiple values.</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9093,Amit1405,2020-07-01T15:49:22Z,,False,"<p>this.error resolve &amp; see  myfirst error pic<br>
+&amp; it says<br>
+there is additional logging output above  &amp;<br>
+a complate log file run can be found in</p>
+<p>&amp; what is right path for nodejs</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9093,ShahrozTanveer,2020-07-01T16:03:17Z,,False,"<blockquote>
+<p>this.error resolve &amp; see myfirst error pic<br>
+&amp; it says<br>
+there is additional logging output above &amp;<br>
+a complate log file run can be found in</p>
+<p>&amp; what is right path for nodejs</p>
+</blockquote>
+<p>Got to  your environmental variables and take screenshot.</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9093,Amit1405,2020-07-01T16:07:03Z,,False,"<p><a target=""_blank"" rel=""noopener noreferrer"" href=""https://user-images.githubusercontent.com/67499931/86266532-fa9fc880-bbe2-11ea-8c23-7a23c871c02a.PNG""><img src=""https://user-images.githubusercontent.com/67499931/86266532-fa9fc880-bbe2-11ea-8c23-7a23c871c02a.PNG"" alt=""path"" style=""max-width:100%;""></a></p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9093,ShahrozTanveer,2020-07-01T16:52:26Z,,False,<p>ComSpec allows one value but it seems like your ComSpec has multiple values.</p>
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9093,ShahrozTanveer,2020-07-01T16:55:15Z,,False,"<p><a class=""user-mention"" data-hovercard-type=""user"" data-hovercard-url=""/users/Amit1405/hovercard"" data-octo-click=""hovercard-link-click"" data-octo-dimensions=""link_type:self"" href=""https://github.com/Amit1405"">@Amit1405</a></p>
+<h2>Node Installation on Windows</h2>
+<p>Use the MSI file and follow the prompts to install the Node.js. By default, the installer uses the Node.js distribution in C:\Program Files\nodejs. The installer should set the C:\Program Files\nodejs\bin directory in window's PATH environment variable. Restart any open command prompts for the change to take effect.<br>
+<a href=""https://www.tutorialspoint.com/nodejs/nodejs_environment_setup.htm"" rel=""nofollow"">source</a></p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9093,Amit1405,2020-07-02T01:33:34Z,,False,<p>sir again same Error</p>
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9093,shantanu9920,2020-07-08T11:36:02Z,,False,<p>I'm also facing the same error</p>
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9093,shantanu9920,2020-07-08T11:59:12Z,,False,"<p>I tried something that worked for me.</p>
+<p>I changed</p>
+<p><code>""start"": react-scripts start""</code></p>
+<p>to</p>
+<p><code>""start"": ""NODE_ENV=production node_modules/react-scripts/bin/react-scripts.js start""</code></p>
+<p>I don't know why? But if you know then please share</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9233,Amit1405,2020-06-29T11:37:27Z,"[['👍'], [1]]",False,"<p>when i create react app &amp; i am facing npm error<br>
+this--&gt;<br>
+npm ERR! code ELIFECYCLE<br>
+npm ERR! errno 1<br>
+npm ERR! my-app@0.1.0 start: <code>react-scripts start</code><br>
+npm ERR! Exit status 1<br>
+npm ERR!<br>
+npm ERR! Failed at the my-app@0.1.0 start script.<br>
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.</p>
+<p>npm ERR! A complete log of this run can be found in:<br>
+npm ERR!     C:\Users\mss2015\AppData\Roaming\npm-cache_logs\2020-06-29T11_32_37_058Z-debug.log</p>
+<p>""Please help Me  ""<br>
+below atech Error Picture<br>
+<a target=""_blank"" rel=""noopener noreferrer"" href=""https://user-images.githubusercontent.com/67499931/86006610-da7dd700-ba33-11ea-831e-f018cb553887.PNG""><img src=""https://user-images.githubusercontent.com/67499931/86006610-da7dd700-ba33-11ea-831e-f018cb553887.PNG"" alt=""Npm"" style=""max-width:100%;""></a></p>
+<p>""Please Help Me""</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9233,shantanu9920,2020-07-08T11:33:27Z,"[['👍'], [1]]",False,<p>I'm facing the same error</p>
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9267,umeshjain1999,2020-07-05T14:34:29Z,,False,"<p><strong>Code is about fetching random bad joke from api on press of a button</strong><br>
+I am see this warning in my console log<br>
+<em>./src/App.js<br>
+Line 67:7:  React Hook useEffect has a missing dependency: 'jokeState'. Either include it or remove the dependency array  react-hooks/exhaustive-deps</em></p>
+<p><strong>Problem description</strong><br>
+I google a lot <g-emoji class=""g-emoji"" alias=""sweat"" fallback-src=""https://github.githubassets.com/images/icons/emoji/unicode/1f613.png"">😓</g-emoji> but I couldn't find anything related to useEffect in which we have condition based dependency which is a state from useReducer. I gave the dependency as ""jokeState.buttonClick"" because I want the component to re-render after every click of button.<br>
+Any other way to do it <g-emoji class=""g-emoji"" alias=""heart_eyes"" fallback-src=""https://github.githubassets.com/images/icons/emoji/unicode/1f60d.png"">😍</g-emoji>? but not using useState because I want to try with useReducer.</p>
+<p><strong>Code here..</strong><br>
+`import React , {useEffect , useReducer}from 'react';<br>
+import './App.css';</p>
+<p>const initialState = {<br>
+joke : '',<br>
+buttonClick : false,<br>
+loading : false,<br>
+punchline : true<br>
+}</p>
+<p>const App = () =&gt; {</p>
+<p>/<em>useReducer here.......</em>/</p>
+<p>const reducer = (state , action) =&gt; {<br>
+switch (action.type) {<br>
+case 'FETCHING_JOKE' :<br>
+return {...state , joke : action.joke ,<br>
+punchline : !state.punchline }</p>
+<pre><code> case 'FETCH_ONE_MORE':
+     return {...state ,buttonClick : !state.buttonClick}
+
+ case 'LOADING':
+     return {...state ,loading : !state.loading}
+default :
+    return state
+</code></pre>
+<p>}<br>
+}<br>
+const [jokeState , dispatch] = useReducer(reducer,initialState);</p>
+<p>useEffect(<br>
+() =&gt; {</p>
+<pre><code>    dispatch({type : 'LOADING'})
+    let data = jokeApi('https://official-joke-api.appspot.com/jokes/random');
+    data.then(
+        (randomJoke) =&gt; {
+            let badJoke = {
+                joke : randomJoke.setup,
+                punchline : randomJoke.punchline
+            }
+            dispatch({type : 'FETCHING_JOKE' , joke : badJoke.joke})
+
+            setTimeout(()=&gt;{    
+            dispatch({type : 'FETCHING_JOKE' , joke : badJoke.punchline})
+            },4000)
+
+            dispatch({type : 'LOADING'})
+            
+            console.log(jokeState); 
+        }
+       
+    ).catch((error) =&gt; {console.log(error)
+    dispatch({type : 'LOADING'})
+    dispatch({type : 'FETCHING_JOKE' , joke: 'Aww Sed some issue came up'})
+    }
+    )
+
+    
+    
+},[jokeState.buttonClick]
+</code></pre>
+<p>)</p>
+<p>const jokeApi = async (endpoint) =&gt; {<br>
+const response = await fetch(endpoint);<br>
+const data = response.json();<br>
+return data;<br>
+}</p>
+<pre><code>return (
+    &lt;div className = 'main'&gt;
+        &lt;div className = 'content'&gt;
+
+            {
+                (jokeState.loading) ?  (
+                    /*&lt;!-- By Sam Herbert (@sherb), for everyone. More @ http://goo.gl/7AJzbL --&gt;*/
+                    &lt;svg width=""38"" height=""38"" viewBox=""0 0 38 38"" xmlns=""http://www.w3.org/2000/svg""&gt;
+                        &lt;defs&gt;
+                            &lt;linearGradient x1=""8.042%"" y1=""0%"" x2=""65.682%"" y2=""23.865%"" id=""a""&gt;
+                                &lt;stop stopColor=""#192a56"" stopOpacity=""0"" offset=""0%""/&gt;
+                                &lt;stop stopColor=""#192a56"" stopOpacity="".631"" offset=""63.146%""/&gt;
+                                &lt;stop stopColor=""#192a56"" offset=""100%""/&gt;
+                            &lt;/linearGradient&gt;
+                        &lt;/defs&gt;
+                        &lt;g fill=""none"" fillRule=""evenodd""&gt;
+                            &lt;g transform=""translate(1 1)""&gt;
+                                &lt;path d=""M36 18c0-9.94-8.06-18-18-18"" id=""Oval-2"" stroke=""url(#a)"" strokeWidth=""2""&gt;
+                                    &lt;animateTransform
+                                        attributeName=""transform""
+                                        type=""rotate""
+                                        from=""0 18 18""
+                                        to=""360 18 18""
+                                        dur=""0.9s""
+                                        repeatCount=""indefinite"" /&gt;
+                                &lt;/path&gt;
+                                &lt;circle fill=""#fff"" cx=""36"" cy=""18"" r=""1""&gt;
+                                    &lt;animateTransform
+                                        attributeName=""transform""
+                                        type=""rotate""
+                                        from=""0 18 18""
+                                        to=""360 18 18""
+                                        dur=""0.9s""
+                                        repeatCount=""indefinite"" /&gt;
+                                &lt;/circle&gt;
+                            &lt;/g&gt;
+                        &lt;/g&gt;
+                    &lt;/svg&gt;
+                ):(
+                    &lt;p className=""text""&gt;
+                    {jokeState.joke}
+                    &lt;/p&gt;
+                )
+            }
+
+
+
+            {(jokeState.punchline)? ('') : (&lt;p className=""alert""&gt;Wait for the punchline&lt;/p&gt;)}
+
+
+            &lt;button onClick = {() =&gt; {dispatch({type : 'FETCH_ONE_MORE'}) }}&gt;
+                One more?
+            &lt;/button&gt;
+
+        &lt;/div&gt;
+        
+    &lt;/div&gt;
+)
+</code></pre>
+<p>}</p>
+<p>export default App;</p>
+<p>`</p>
+<p>Thanks in advance <g-emoji class=""g-emoji"" alias=""grin"" fallback-src=""https://github.githubassets.com/images/icons/emoji/unicode/1f601.png"">😁</g-emoji><g-emoji class=""g-emoji"" alias=""pray"" fallback-src=""https://github.githubassets.com/images/icons/emoji/unicode/1f64f.png"">🙏</g-emoji></p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9267,eddiemonge,2020-07-06T16:20:16Z,"[['👍'], [1]]",False,"<p>this is a react issue, not a CRA issue.</p>
+<p>It would be helpful if this was a working (or not-working in this case) demo</p>
+<p>Oh I didn't know that this is an issue. I thought I am doing something wrong and this code is working properly just giving warning in console here is the link <a href=""https://github.com/umeshjain1999/Bad-Joke/tree/using_useReducer"">https://github.com/umeshjain1999/Bad-Joke/tree/using_useReducer</a><br>
+Thank you!</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9267,umeshjain1999,2020-07-06T16:53:41Z,,False,"<p>Oh I didn't know that this is an issue. I thought I am doing something wrong and this code is working properly just giving warning in console here is the link <a href=""https://github.com/umeshjain1999/Bad-Joke/tree/using_useReducer"">https://github.com/umeshjain1999/Bad-Joke/tree/using_useReducer</a><br>
+Thank you!</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9260,japacoder,2020-07-03T13:33:31Z,,False,"<p>Bonjour à tous,<br>
+Juste  dire merci à AhmadChai  pour sa proposition de solution au problème d'erreur:</p>
+<p>npm ERR! 404 Not Found - GET <a rel=""nofollow"" href=""https://registry"">https://registry</a></p>
+<p>Sur mon Terminal Windows 10 j'ai saisi :<br>
+npm install --save err  puis :</p>
+<p>npm config set Registry <a rel=""nofollow"" href=""https://skimdb.npmjs.com/registry"">https://skimdb.npmjs.com/registry</a><br>
+Cela à fonctionné pour moi.</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9260,eddiemonge,2020-07-06T16:22:07Z,,False,"<p>Do any npm installs work? if not, then its a npm issue that you need to get fixed first</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9271,developerarif55,2020-07-06T05:02:04Z,,False,"<p>events.js:292<br>
+throw er; // Unhandled 'error' event<br>
+^</p>
+<p>Error: spawn cmd ENOENT<br>
+at Process.ChildProcess._handle.onexit (internal/child_process.js:267:19)<br>
+at onErrorNT (internal/child_process.js:469:16)<br>
+at processTicksAndRejections (internal/process/task_queues.js:84:21)<br>
+Emitted 'error' event on ChildProcess instance at:<br>
+at Process.ChildProcess._handle.onexit (internal/child_process.js:273:12)<br>
+at onErrorNT (internal/child_process.js:469:16)<br>
+at processTicksAndRejections (internal/process/task_queues.js:84:21) {<br>
+errno: 'ENOENT',<br>
+code: 'ENOENT',<br>
+syscall: 'spawn cmd',<br>
+path: 'cmd',<br>
+spawnargs: [ '/s', '/c', 'start', '""""', '/b', '""http://localhost:3000/""' ]<br>
+}<br>
+npm ERR! code ELIFECYCLE<br>
+npm ERR! errno 1<br>
+npm ERR! my-app@0.1.0 start: <code>react-scripts start</code><br>
+npm ERR! Exit status 1<br>
+npm ERR!<br>
+npm ERR! Failed at the my-app@0.1.0 start script.<br>
+npm ERR! This is probably not a problem with npm. There is likely additional logging output abov</p>
+<p>npm ERR! A complete log of this run can be found in:<br>
+npm ERR!     C:\Users\Arif\AppData\Roaming\npm-cache_logs\2020-07-06T04_51_26_637Z-debug.log<br>
+PS C:\Users\Arif\my-app&gt;</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9237,vicpinm,2020-06-30T08:00:32Z,,False,"<p>Hi, I'm learning React, and I have created a small react app and built it, so is ready to production.<br>
+My react app is shown after the user is authenticated, so I'm not loading directly the app. Instead, I'm trying to fetch the app with an ajax request, and set the response html into a container, like this:</p>
+<pre><code>   var appContainer = document.getElementById(""app-container"");
+appContainer.outerHTML = request.responseText;
+eval(document.getElementById(""main-script"").innerHTML);
+</code></pre>
+<p>The thing here is that I don't know hot to execute the main script that renders the page, I don't know how to locate it in my compiled app. If I were able to identify the main script that is executed when the page is loaded, I could fetch it with <code>document.getElementById(""main-script"")</code> and execute its content with <code>eval</code>.</p>
+<p>The main body of my production-ready react app looks like this:</p>
+<pre lang=""&lt;body&gt;""><code>&lt;noscript&gt;You need to enable JavaScript to run this app.&lt;/noscript&gt;
+&lt;div id=""root""&gt;&lt;/div&gt;
+&lt;script &gt;!function (e) {
+        function r(r) {
+            for (var n, p, l = r[0], a = r[1], f = r[2], c = 0, s = []; c &lt; l.length; c++) p = l[c], 
+Object.prototype.hasOwnProperty.call(o, p) &amp;&amp; o[p] &amp;&amp; s.push(o[p][0]), o[p] = 0;
+       ...&lt;/script&gt;
+&lt;script src=""/static/js/2.034d6219.chunk.js""&gt;&lt;/script&gt;
+&lt;script src=""/static/js/main.06ee54e5.chunk.js""&gt;&lt;/script&gt;
+&lt;/body&gt;
+</code></pre>
+<p>This body is loaded correctly in my container, but the app is not rendered.</p>
+<p>I don't mind using a different method than eval to render the react app. My purpose here is to fecth the app from backend after authenticating the user and then render it on a container.</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9220,ryota-murakami,2020-06-25T16:17:48Z,,False,"<p>In the below initial page, <code>app-header</code> is only element that has height parameter.</p>
+<p><a target=""_blank"" rel=""noopener noreferrer"" href=""https://user-images.githubusercontent.com/5501268/85755056-91ced100-b748-11ea-8043-c72e7a1c4c74.png""><img width=""1781"" alt=""Screen Shot 2020-06-26 at 0 34 38 (2)"" src=""https://user-images.githubusercontent.com/5501268/85755056-91ced100-b748-11ea-8043-c72e7a1c4c74.png"" style=""max-width:100%;""></a></p>
+<p>So I add following css in <code>index.css</code> to make screen area for my React app at all times.</p>
+<div class=""highlight highlight-source-css""><pre><span class=""pl-ent"">html</span><span class=""pl-kos"">,</span> <span class=""pl-ent"">body</span><span class=""pl-kos"">,</span> <span class=""pl-kos"">#</span><span class=""pl-c1"">root</span> {
+  <span class=""pl-c1"">width</span>: <span class=""pl-c1"">100<span class=""pl-smi"">%</span></span>;
+  <span class=""pl-c1"">height</span>: <span class=""pl-c1"">100<span class=""pl-smi"">%</span></span>;
+}</pre></div>
+<p>I wonder what does people doing to make React app's screen area at initially! <g-emoji class=""g-emoji"" alias=""grinning"" fallback-src=""https://github.githubassets.com/images/icons/emoji/unicode/1f600.png"">😀</g-emoji></p>
+<p>Thank you <g-emoji class=""g-emoji"" alias=""hugs"" fallback-src=""https://github.githubassets.com/images/icons/emoji/unicode/1f917.png"">🤗</g-emoji></p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9220,lindskogen,2020-06-30T11:10:52Z,"[['😄'], [1]]",False,"<p>Basically the same, but watch out: if your content gets taller than 100% of the window height.</p>
+<p>I would set <code>min-height: 100%</code> instead, like you did for the child element</p>
+<p>Thank you for better suggestion!<br>
+I should use <code>min-height: 100%</code> <g-emoji class=""g-emoji"" alias=""hugs"" fallback-src=""https://github.githubassets.com/images/icons/emoji/unicode/1f917.png"">🤗</g-emoji></p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9220,ryota-murakami,2020-06-30T12:00:21Z,,False,"<p>Thank you for better suggestion!<br>
+I should use <code>min-height: 100%</code> <g-emoji class=""g-emoji"" alias=""hugs"" fallback-src=""https://github.githubassets.com/images/icons/emoji/unicode/1f917.png"">🤗</g-emoji></p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9229,krajasekhar,2020-06-27T11:00:39Z,,False,"<p>To have imports from absolute path, I am configuring baseUrl and paths in <code>jsconfig.json</code> and facing below issues.<br>
+My app folder structure:</p>
+<pre><code>&gt; src
+  &gt; assets
+  &gt; app
+     &gt; components
+     &gt; views
+</code></pre>
+<p>When I configure <code>jsconfig.json</code> like this<br>
+1.</p>
+<pre><code>{
+  ""compilerOptions"": {
+    ""baseUrl"": ""."",
+    ""module"": ""commonjs"",
+    ""paths"": {
+      ""src/*"": [""src/*""],
+      ""assets/*"": [""src/assets/*""],
+      ""components/*"": [""src/app/components/*""],
+      ""views/*"": [""src/app/views/*""]
+    }
+  },
+  ""include"": [""src""]
+}
+</code></pre>
+<p>it is failing at <code>import {someThing} from 'assets/someFile'</code> with error <code>Module not found: Can't resolve 'assets/someFile'</code>. No error for <code>components</code>/<code>views </code>folders imports.<br>
+2.</p>
+<pre><code>{
+  ""compilerOptions"": {
+    ""baseUrl"": ""src"",
+    ""module"": ""commonjs"",
+    ""paths"": {
+      ""components/*"": [""src/app/components/*""],
+      ""views/*"": [""src/app/views/*""]
+    }
+  },
+  ""include"": [""src""]
+}
+</code></pre>
+<p>it is failing at <code>import {someThing} from 'views/someFile'</code> with error <code>Module not found: Can't resolve 'views/someFile'</code>. No error for <code>assets</code> folders imports.<br>
+but vs code is navigating to the source file when I do 'Ctrl + click' on the path with any of above config.</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9206,unnatik,2020-06-24T04:21:51Z,,False,<p>Hey everyone! I had to manually configure CSS Modules in my project even after using create-react-app. Is it always that we have to manually configure or did I do something wrong when I created my project.</p>
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9206,PavanKu,2020-06-24T06:11:30Z,,True,"<p>Hi <a class=""user-mention"" data-hovercard-type=""user"" data-hovercard-url=""/users/unnatik/hovercard"" data-octo-click=""hovercard-link-click"" data-octo-dimensions=""link_type:self"" href=""https://github.com/unnatik"">@unnatik</a>, CSS module is turned on for files ending with .module.css.<br>
+It is also documented in <a href=""https://create-react-app.dev/docs/adding-a-css-modules-stylesheet/"" rel=""nofollow"">CRA docs </a></p>
+<p><a class=""user-mention"" data-hovercard-type=""user"" data-hovercard-url=""/users/PavanKu/hovercard"" data-octo-click=""hovercard-link-click"" data-octo-dimensions=""link_type:self"" href=""https://github.com/PavanKu"">@PavanKu</a> thank you.</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9206,unnatik,2020-06-29T04:27:20Z,,True,"<p><a class=""user-mention"" data-hovercard-type=""user"" data-hovercard-url=""/users/PavanKu/hovercard"" data-octo-click=""hovercard-link-click"" data-octo-dimensions=""link_type:self"" href=""https://github.com/PavanKu"">@PavanKu</a> thank you.</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9224,Obiwarn,2020-06-26T08:18:16Z,,False,"<p>I try to introduce DI (e.g. with inversifyJS or tsyringe).</p>
+<p>They both need reflect-metadata.</p>
+<p>But there is this problem:<br>
+<a class=""issue-link js-issue-link"" data-error-text=""Failed to load title"" data-id=""408500862"" data-permission-text=""Title is private"" data-url=""https://github.com/facebook/create-react-app/issues/6388"" data-hovercard-type=""issue"" data-hovercard-url=""/facebook/create-react-app/issues/6388/hovercard"" href=""https://github.com/facebook/create-react-app/issues/6388"">#6388</a></p>
+<p>Is there any workaround to enable any DI?</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9064,rahul-rxr,2020-05-26T14:53:18Z,"[['👍'], [1]]",False,"<p>Hi,</p>
+<p>I am using GitHub actions for CI/CD for my CRA.</p>
+<pre><code>// App.js
+import React from 'react';
+...
+const secret = process.env.REACT_APP_MY_SECRET;
+...
+</code></pre>
+<p>This works well on local but fails the CI/CD because the <code>secret</code> variable is not found.<br>
+How do I pass env variables in GitHub actions?</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9064,eddiemonge,2020-05-26T19:05:36Z,,True,"<p>I found this result by Googleing <code>github actions environment variables</code>: <a rel=""nofollow"" href=""https://help.github.com/en/actions/configuring-and-managing-workflows/using-environment-variables"">https://help.github.com/en/actions/configuring-and-managing-workflows/using-environment-variables</a></p>
+<p>Thanks <a class=""user-mention"" data-hovercard-type=""user"" data-hovercard-url=""/users/eddiemonge/hovercard"" data-octo-click=""hovercard-link-click"" data-octo-dimensions=""link_type:self"" href=""https://github.com/eddiemonge"">@eddiemonge</a>. <a class=""user-mention"" data-hovercard-type=""user"" data-hovercard-url=""/users/rahul-rxr/hovercard"" data-octo-click=""hovercard-link-click"" data-octo-dimensions=""link_type:self"" href=""https://github.com/rahul-rxr"">@rahul-rxr</a> I've marked this as the correct answer, let us know if you're still having issues with this :)</p>
+<p><a class=""user-mention"" data-hovercard-type=""user"" data-hovercard-url=""/users/eddiemonge/hovercard"" data-octo-click=""hovercard-link-click"" data-octo-dimensions=""link_type:self"" href=""https://github.com/eddiemonge"">@eddiemonge</a>, <a class=""user-mention"" data-hovercard-type=""user"" data-hovercard-url=""/users/rahul-rxr/hovercard"" data-octo-click=""hovercard-link-click"" data-octo-dimensions=""link_type:self"" href=""https://github.com/rahul-rxr"">@rahul-rxr</a> can you guys provide one sample.<br>
+In my <code>.env</code> suppose I have a variable <code>REACT_APP_API_ROOT</code><br>
+So to get that variable while building the project through GitHub action what I have to do.<br>
+By going through the documentation of <a href=""https://help.github.com/en/actions/configuring-and-managing-workflows/using-environment-variables"">Github env valriable</a>, I'm able to understand that we have to add <code>_PATH</code> as a suffix. But not able to follow where to add.</p>
+<pre><code>steps:
+  - name: Hello world
+    run: echo Hello world $FIRST_NAME $middle_name $Last_Name!
+    env:
+      REACT_APP_MY_SECRET: the_secret
+</code></pre>
+<p>You only add <code>_PATH</code> if the var is a path.</p>
+<p>Thanks <a class=""user-mention"" data-hovercard-type=""user"" data-hovercard-url=""/users/eddiemonge/hovercard"" data-octo-click=""hovercard-link-click"" data-octo-dimensions=""link_type:self"" href=""https://github.com/eddiemonge"">@eddiemonge</a>.</p>
+<p>For future readers, if you don't want to expose your secret in the <code>workflows/*.yml</code> file, you should store it as GitHub secret token and then import it as:</p>
+<pre><code>steps:
+  - name: Hello world
+    run: echo Hello world $FIRST_NAME $middle_name $Last_Name!
+    env:
+      REACT_APP_MY_SECRET: ${{ secrets.MY_SECRET }}
+</code></pre>
+<p>Thanks <a class=""user-mention"" data-hovercard-type=""user"" data-hovercard-url=""/users/rahul-rxr/hovercard"" data-octo-click=""hovercard-link-click"" data-octo-dimensions=""link_type:self"" href=""https://github.com/rahul-rxr"">@rahul-rxr</a>, I was in the confusion for defining the variable.</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9064,mrmckeb,2020-05-28T10:43:06Z,,True,"<p>Thanks <a class=""user-mention"" data-hovercard-type=""user"" data-hovercard-url=""/users/eddiemonge/hovercard"" data-octo-click=""hovercard-link-click"" data-octo-dimensions=""link_type:self"" href=""https://github.com/eddiemonge"">@eddiemonge</a>. <a class=""user-mention"" data-hovercard-type=""user"" data-hovercard-url=""/users/rahul-rxr/hovercard"" data-octo-click=""hovercard-link-click"" data-octo-dimensions=""link_type:self"" href=""https://github.com/rahul-rxr"">@rahul-rxr</a> I've marked this as the correct answer, let us know if you're still having issues with this :)</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9064,trdp30,2020-06-23T07:47:39Z,,True,"<p><a class=""user-mention"" data-hovercard-type=""user"" data-hovercard-url=""/users/eddiemonge/hovercard"" data-octo-click=""hovercard-link-click"" data-octo-dimensions=""link_type:self"" href=""https://github.com/eddiemonge"">@eddiemonge</a>, <a class=""user-mention"" data-hovercard-type=""user"" data-hovercard-url=""/users/rahul-rxr/hovercard"" data-octo-click=""hovercard-link-click"" data-octo-dimensions=""link_type:self"" href=""https://github.com/rahul-rxr"">@rahul-rxr</a> can you guys provide one sample.<br>
+In my <code>.env</code> suppose I have a variable <code>REACT_APP_API_ROOT</code><br>
+So to get that variable while building the project through GitHub action what I have to do.<br>
+By going through the documentation of <a href=""https://help.github.com/en/actions/configuring-and-managing-workflows/using-environment-variables"">Github env valriable</a>, I'm able to understand that we have to add <code>_PATH</code> as a suffix. But not able to follow where to add.</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9064,eddiemonge,2020-06-23T14:41:53Z,,True,"<pre><code>steps:
+  - name: Hello world
+    run: echo Hello world $FIRST_NAME $middle_name $Last_Name!
+    env:
+      REACT_APP_MY_SECRET: the_secret
+</code></pre>
+<p>You only add <code>_PATH</code> if the var is a path.</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9064,trdp30,2020-06-23T16:50:32Z,,True,"<p>Thanks <a class=""user-mention"" data-hovercard-type=""user"" data-hovercard-url=""/users/eddiemonge/hovercard"" data-octo-click=""hovercard-link-click"" data-octo-dimensions=""link_type:self"" href=""https://github.com/eddiemonge"">@eddiemonge</a>.</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9064,rahul-rxr,2020-06-25T17:09:20Z,,True,"<p>For future readers, if you don't want to expose your secret in the <code>workflows/*.yml</code> file, you should store it as GitHub secret token and then import it as:</p>
+<pre><code>steps:
+  - name: Hello world
+    run: echo Hello world $FIRST_NAME $middle_name $Last_Name!
+    env:
+      REACT_APP_MY_SECRET: ${{ secrets.MY_SECRET }}
+</code></pre>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9064,trdp30,2020-06-25T17:15:25Z,"[['👍'], [1]]",True,"<p>Thanks <a class=""user-mention"" data-hovercard-type=""user"" data-hovercard-url=""/users/rahul-rxr/hovercard"" data-octo-click=""hovercard-link-click"" data-octo-dimensions=""link_type:self"" href=""https://github.com/rahul-rxr"">@rahul-rxr</a>, I was in the confusion for defining the variable.</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9213,Ethan-Arrowood,2020-06-24T20:32:10Z,,False,"<p>In my CRA (react-scripts v3.4.1) I have extended eslint in my <code>package.json</code> with:</p>
+<div class=""highlight highlight-source-json""><pre>{
+  <span class=""pl-s""><span class=""pl-pds"">""</span>eslintConfig<span class=""pl-pds"">""</span></span>: {
+    <span class=""pl-s""><span class=""pl-pds"">""</span>extends<span class=""pl-pds"">""</span></span>: <span class=""pl-s""><span class=""pl-pds"">""</span>react-app<span class=""pl-pds"">""</span></span>,
+    <span class=""pl-s""><span class=""pl-pds"">""</span>rules<span class=""pl-pds"">""</span></span>: {
+      <span class=""pl-s""><span class=""pl-pds"">""</span>semi<span class=""pl-pds"">""</span></span>: [<span class=""pl-s""><span class=""pl-pds"">""</span>error<span class=""pl-pds"">""</span></span>, <span class=""pl-s""><span class=""pl-pds"">""</span>never<span class=""pl-pds"">""</span></span>],
+      <span class=""pl-s""><span class=""pl-pds"">""</span>indent<span class=""pl-pds"">""</span></span>: [<span class=""pl-s""><span class=""pl-pds"">""</span>error<span class=""pl-pds"">""</span></span>, <span class=""pl-s""><span class=""pl-pds"">""</span>tab<span class=""pl-pds"">""</span></span>, { <span class=""pl-s""><span class=""pl-pds"">""</span>SwitchCase<span class=""pl-pds"">""</span></span>: <span class=""pl-c1"">1</span> }],
+      <span class=""pl-s""><span class=""pl-pds"">""</span>quotes<span class=""pl-pds"">""</span></span>: [<span class=""pl-s""><span class=""pl-pds"">""</span>error<span class=""pl-pds"">""</span></span>, <span class=""pl-s""><span class=""pl-pds"">""</span>single<span class=""pl-pds"">""</span></span>]
+    }
+  },
+}</pre></div>
+<p>The property in question is <code>""indent""</code> which is configured for use with <code>tabs</code> and  1 tab indent for <code>case</code> blocks in <code>switch</code> statements.</p>
+<p>My <code>.env</code> file also contains: <code>EXTEND_ESLINT=true</code></p>
+<p>Now my editor (VSCode) doesn't complain, but when I run <code>npm run start</code> I get an eslint error related to the switch case indentation:</p>
+<pre><code>Failed to compile.
+
+./src/App.tsx
+  Line 29:1:  Expected indentation of 4 tabs but found 5  indent
+  Line 30:1:  Expected indentation of 5 tabs but found 6  indent
+  Line 31:1:  Expected indentation of 5 tabs but found 6  indent
+  Line 32:1:  Expected indentation of 4 tabs but found 5  indent
+  Line 33:1:  Expected indentation of 5 tabs but found 6  indent
+</code></pre>
+<p>For reference here is the component containing the block its referencing:</p>
+<div class=""highlight highlight-source-tsx""><pre><span class=""pl-k"">const</span> <span class=""pl-smi"">Main</span> <span class=""pl-c1"">=</span> <span class=""pl-kos"">(</span><span class=""pl-kos"">)</span> <span class=""pl-c1"">=&gt;</span> <span class=""pl-kos"">{</span>
+	<span class=""pl-k"">const</span> <span class=""pl-kos"">[</span> <span class=""pl-s1"">profile</span><span class=""pl-kos"">,</span> <span class=""pl-s1"">setProfile</span> <span class=""pl-kos"">]</span> <span class=""pl-c1"">=</span> <span class=""pl-smi"">React</span><span class=""pl-kos"">.</span><span class=""pl-en"">useState</span><span class=""pl-kos"">&lt;</span><span class=""pl-smi"">any</span><span class=""pl-kos"">&gt;</span><span class=""pl-kos"">(</span><span class=""pl-kos"">)</span>
+	<span class=""pl-k"">const</span> <span class=""pl-kos"">[</span> <span class=""pl-s1"">error</span><span class=""pl-kos"">,</span> <span class=""pl-s1"">setError</span> <span class=""pl-kos"">]</span> <span class=""pl-c1"">=</span> <span class=""pl-smi"">React</span><span class=""pl-kos"">.</span><span class=""pl-en"">useState</span><span class=""pl-kos"">&lt;</span><span class=""pl-smi"">any</span><span class=""pl-kos"">&gt;</span><span class=""pl-kos"">(</span><span class=""pl-kos"">)</span>
+
+	<span class=""pl-smi"">React</span><span class=""pl-kos"">.</span><span class=""pl-en"">useEffect</span><span class=""pl-kos"">(</span><span class=""pl-kos"">(</span><span class=""pl-kos"">)</span> <span class=""pl-c1"">=&gt;</span> <span class=""pl-kos"">{</span>
+		<span class=""pl-en"">fetch</span><span class=""pl-kos"">(</span><span class=""pl-s"">`/api/profile/<span class=""pl-s1""><span class=""pl-kos"">${</span><span class=""pl-s1"">crypto</span><span class=""pl-kos"">.</span><span class=""pl-en"">randomBytes</span><span class=""pl-kos"">(</span><span class=""pl-c1"">16</span><span class=""pl-kos"">)</span><span class=""pl-kos"">.</span><span class=""pl-en"">toString</span><span class=""pl-kos"">(</span><span class=""pl-s"">'hex'</span><span class=""pl-kos"">)</span><span class=""pl-kos"">}</span></span>`</span><span class=""pl-kos"">)</span>
+			<span class=""pl-kos"">.</span><span class=""pl-en"">then</span><span class=""pl-kos"">(</span><span class=""pl-s1"">res</span> <span class=""pl-c1"">=&gt;</span> <span class=""pl-kos"">{</span>
+				<span class=""pl-k"">if</span> <span class=""pl-kos"">(</span>!<span class=""pl-s1"">res</span><span class=""pl-kos"">.</span><span class=""pl-c1"">ok</span><span class=""pl-kos"">)</span> <span class=""pl-kos"">{</span>
+					<span class=""pl-k"">throw</span> <span class=""pl-smi"">Error</span><span class=""pl-kos"">(</span><span class=""pl-s1"">res</span><span class=""pl-kos"">.</span><span class=""pl-c1"">statusText</span><span class=""pl-kos"">)</span>
+				<span class=""pl-kos"">}</span>
+				<span class=""pl-s1"">res</span><span class=""pl-kos"">.</span><span class=""pl-en"">json</span><span class=""pl-kos"">(</span><span class=""pl-kos"">)</span>
+			<span class=""pl-kos"">}</span><span class=""pl-kos"">)</span>
+			<span class=""pl-kos"">.</span><span class=""pl-en"">then</span><span class=""pl-kos"">(</span><span class=""pl-s1"">res</span> <span class=""pl-c1"">=&gt;</span> <span class=""pl-kos"">{</span>
+				<span class=""pl-en"">setProfile</span><span class=""pl-kos"">(</span><span class=""pl-s1"">res</span><span class=""pl-kos"">)</span>
+			<span class=""pl-kos"">}</span><span class=""pl-kos"">)</span>
+			<span class=""pl-kos"">.</span><span class=""pl-en"">catch</span><span class=""pl-kos"">(</span><span class=""pl-s1"">err</span> <span class=""pl-c1"">=&gt;</span> <span class=""pl-kos"">{</span>
+				<span class=""pl-k"">switch</span> <span class=""pl-kos"">(</span><span class=""pl-s1"">err</span><span class=""pl-kos"">.</span><span class=""pl-c1"">message</span><span class=""pl-kos"">)</span> <span class=""pl-kos"">{</span> <span class=""pl-c"">// line 29</span>
+					<span class=""pl-k"">case</span> <span class=""pl-s"">'Not Found'</span>:
+						<span class=""pl-en"">setError</span><span class=""pl-kos"">(</span><span class=""pl-s"">'User Not Found'</span><span class=""pl-kos"">)</span>
+						<span class=""pl-k"">break</span>
+					<span class=""pl-k"">default</span>:
+						<span class=""pl-en"">setError</span><span class=""pl-kos"">(</span><span class=""pl-s1"">err</span><span class=""pl-kos"">.</span><span class=""pl-c1"">message</span><span class=""pl-kos"">)</span>
+				<span class=""pl-kos"">}</span>
+			<span class=""pl-kos"">}</span><span class=""pl-kos"">)</span>
+	<span class=""pl-kos"">}</span><span class=""pl-kos"">,</span> <span class=""pl-kos"">[</span><span class=""pl-kos"">]</span><span class=""pl-kos"">)</span>
+
+	<span class=""pl-k"">return</span> <span class=""pl-kos"">(</span>
+		<span class=""pl-c1"">&lt;</span><span class=""pl-ent"">main</span><span class=""pl-c1"">&gt;</span>
+			<span class=""pl-c1"">&lt;</span><span class=""pl-ent"">h2</span><span class=""pl-c1"">&gt;</span>Profile<span class=""pl-c1"">&lt;</span>/<span class=""pl-ent"">h2</span><span class=""pl-c1"">&gt;</span>
+			<span class=""pl-c1"">&lt;</span><span class=""pl-ent"">pre</span><span class=""pl-c1"">&gt;</span><span class=""pl-c1"">&lt;</span><span class=""pl-ent"">code</span><span class=""pl-c1"">&gt;</span><span class=""pl-kos"">{</span><span class=""pl-smi"">JSON</span><span class=""pl-kos"">.</span><span class=""pl-en"">stringify</span><span class=""pl-kos"">(</span><span class=""pl-s1"">error</span> <span class=""pl-c1"">||</span> <span class=""pl-s1"">profile</span><span class=""pl-kos"">,</span> undefined<span class=""pl-kos"">,</span> <span class=""pl-c1"">2</span><span class=""pl-kos"">)</span><span class=""pl-kos"">}</span><span class=""pl-c1"">&lt;</span>/<span class=""pl-ent"">code</span><span class=""pl-c1"">&gt;</span><span class=""pl-c1"">&lt;</span>/<span class=""pl-ent"">pre</span><span class=""pl-c1"">&gt;</span>
+		<span class=""pl-c1"">&lt;</span>/<span class=""pl-ent"">main</span><span class=""pl-c1"">&gt;</span>
+	<span class=""pl-kos"">)</span>
+<span class=""pl-kos"">}</span></pre></div>
+<p><strong>Any ideas what I'm doing wrong?</strong></p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9213,Ethan-Arrowood,2020-06-24T20:35:07Z,,True,<p>Of course after I post I manage to fix it... all I did was <code>SHIFT+TAB</code> and then <code>TAB</code> over the inner part of the switch statement and it fixed itself. Very strange behavior... maybe caching or something up with TS? I'll leave this open so someone else can comment if they have further ideas or whatever.</p>
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9152,sunilsharma2214,2020-06-13T15:02:53Z,,False,"<p>Hi All, I am working on a datepicker component package using npm publish, somehow it working as expected and I am able to use this package in other applications too. but, when I am doing npm start on datepicker CRA application, I am getting a blank page without any console error.</p>
+<p><strong>package.json</strong><br>
+{<br>
+""name"": ""Datepicker"",<br>
+""version"": ""0.3.2"",<br>
+""main"": ""dist/index.js"",<br>
+""types"": ""dist/index.d.ts"",<br>
+""dependencies"": {<br>
+""classnames"": ""2.2.5"",<br>
+""react-scripts"": ""3.4.0"",<br>
+""axios"": ""^0.18.0""<br>
+},<br>
+""peerDependencies"": {<br>
+""react"": ""&gt;=16.8.0"",<br>
+""react-dom"": ""&gt;=16.8.0"",<br>
+""typescript"": ""^3.7.5""<br>
+},<br>
+""husky"": {<br>
+""hooks"": {<br>
+""pre-commit"": ""lint-staged""<br>
+}<br>
+},<br>
+""lint-staged"": {<br>
+""src/<strong>/*.{js,jsx,tsx,}"": [<br>
+""npm run lint:ts"",<br>
+""git add""<br>
+]<br>
+},<br>
+""scripts"": {<br>
+""start"": ""react-scripts start"",<br>
+""build"": ""npm run build:lib"",<br>
+""build:lib"": ""babel-node scripts/build.js"",<br>
+""test"": ""react-scripts test"",<br>
+""eject"": ""react-scripts eject"",<br>
+""lint:ts"": ""eslint src/</strong>/<em>.{js,ts,jsx}  --fix"",<br>
+""lint:css"": ""stylelint src/**/</em>.css  --fix""<br>
+},<br>
+""eslintConfig"": {<br>
+""extends"": ""react-app""<br>
+},<br>
+""devDependencies"": {<br>
+""@testing-library/jest-dom"": ""^4.2.4"",<br>
+""@testing-library/react"": ""^9.5.0"",<br>
+""@testing-library/user-event"": ""^7.2.1"",<br>
+""@types/jest"": ""^24.9.1"",<br>
+""@types/node"": ""^12.12.30"",<br>
+""@types/react"": ""^16.9.23"",<br>
+""@types/react-dom"": ""^16.9.5"",<br>
+""@types/classnames"": ""2.2.3"",<br>
+""stylelint"": ""13.3.0"",<br>
+""stylelint-config-css-modules"": ""^2.2.0"",<br>
+""stylelint-config-standard"": ""^20.0.0"",<br>
+""tslint"": ""^6.1.1"",<br>
+""prettier"": ""^2.0.2"",<br>
+""eslint"": ""^5.16.0"",<br>
+""eslint-config-prettier"": ""^6.0.0"",<br>
+""eslint-plugin-import"": ""^2.18.2"",<br>
+""eslint-plugin-prettier"": ""^3.1.0"",<br>
+""eslint-plugin-react"": ""^7.14.3"",<br>
+""husky"": ""^4.2.3"",<br>
+""lint-staged"": ""^9.2.5"",<br>
+""@typescript-eslint/eslint-plugin"": ""^2.26.0"",<br>
+""@typescript-eslint/parser"": ""^2.26.0"",<br>
+""babel-cli"": ""6.26.0"",<br>
+""babel-preset-env"": ""^1.7.0"",<br>
+""bluebird"": ""3.5.1"",<br>
+""fs-extra"": ""^7.0.0"",<br>
+""glob"": ""^7.1.2"",<br>
+""typescript"": ""^3.7.5"",<br>
+""react"": ""^16.13.1"",<br>
+""react-dom"": ""^16.13.1"",<br>
+""core-js"": ""^3.6.4"",<br>
+""@types/core-js"": ""^2.5.3""<br>
+},<br>
+""author"": ""ABC"",<br>
+""license"": ""UNLICENSED"",<br>
+""repository"": {<br>
+""type"": ""git"",<br>
+""url"": """"<br>
+},<br>
+""browserslist"": {<br>
+""production"": [<br>
+""&gt;0.2%"",<br>
+""not dead"",<br>
+""not op_mini all""<br>
+],<br>
+""development"": [<br>
+""last 1 chrome version"",<br>
+""last 1 firefox version"",<br>
+""last 1 safari version""<br>
+]<br>
+}<br>
+}</p>
+<p><strong>tsconfig.json</strong><br>
+{<br>
+""compilerOptions"": {<br>
+""baseUrl"": ""src/"",<br>
+""experimentalDecorators"": true,<br>
+""module"": ""esnext"",<br>
+""target"": ""es5"",<br>
+""lib"": [<br>
+""es2017"",<br>
+""dom""<br>
+],<br>
+""strictPropertyInitialization"": false,<br>
+""sourceMap"": true,<br>
+""allowJs"": true,<br>
+""jsx"": ""react"",<br>
+""moduleResolution"": ""node"",<br>
+""rootDir"": ""src"",<br>
+""forceConsistentCasingInFileNames"": true,<br>
+""noImplicitReturns"": true,<br>
+""noImplicitThis"": true,<br>
+""noImplicitAny"": true,<br>
+""strictNullChecks"": true,<br>
+""suppressImplicitAnyIndexErrors"": true,<br>
+""skipLibCheck"": true,<br>
+""allowSyntheticDefaultImports"": true,<br>
+""esModuleInterop"": false,<br>
+""strict"": true,<br>
+""resolveJsonModule"": true,<br>
+""isolatedModules"": true,<br>
+""noEmit"": true,<br>
+""downlevelIteration"": true<br>
+},<br>
+""exclude"": [<br>
+""node_modules"",<br>
+""dist"",<br>
+""scripts"",<br>
+""webpack"",<br>
+""jest"",<br>
+""src/setupTests.ts"",<br>
+""src/index.tsx"",<br>
+],<br>
+""include"": [<br>
+""src""<br>
+]<br>
+}</p>
+<p><strong>tsconfig-build.json</strong> - used by build.js(npm build)<br>
+{<br>
+""compilerOptions"": {<br>
+""baseUrl"": ""."",<br>
+""target"": ""es5"",<br>
+""lib"": [<br>
+""es2017"",<br>
+""dom""<br>
+],<br>
+""declaration"": true,<br>
+""sourceMap"": true,<br>
+""jsx"": ""react"",<br>
+""moduleResolution"": ""node"",<br>
+""rootDir"": ""src"",<br>
+""forceConsistentCasingInFileNames"": true,<br>
+""noImplicitReturns"": true,<br>
+""noImplicitThis"": true,<br>
+""noImplicitAny"": true,<br>
+""strictNullChecks"": true,<br>
+""suppressImplicitAnyIndexErrors"": true,<br>
+""noUnusedLocals"": true,<br>
+""noUnusedParameters"": true,<br>
+""allowSyntheticDefaultImports"": true,<br>
+},<br>
+""exclude"": [<br>
+""node_modules"",<br>
+""dist"",<br>
+""scripts"",<br>
+""webpack"",<br>
+""jest"",<br>
+""src/setupTests.ts"",<br>
+""src/index.tsx"",<br>
+]<br>
+}</p>
+<p><strong>index.tsx</strong><br>
+import React from 'react';<br>
+import ReactDOM from 'react-dom';<br>
+import Datepicker from './Datepicker'</p>
+<p>ReactDOM.render(, rootHTMLElement);</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9152,PavanKu,2020-06-24T07:04:53Z,,False,"<p><a class=""user-mention"" data-hovercard-type=""user"" data-hovercard-url=""/users/sunilsharma2214/hovercard"" data-octo-click=""hovercard-link-click"" data-octo-dimensions=""link_type:self"" href=""https://github.com/sunilsharma2214"">@sunilsharma2214</a></p>
+<ul>
+<li>Mentioned config files doesn't looks like generated via CRA.</li>
+<li>index.tsx has rootHTMLElement not declared and defined. Also first argument of ReactDOM.render is missing.</li>
+</ul>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9163,vicasas,2020-06-15T21:48:37Z,,False,"<p>It is known that Create React App comes with built-in eslint, so there is no need to install the package once more in the project. But... How can eslint be used in scripts?</p>
+<p>In some issues regarding this topic I have seen that it is used in the following way:</p>
+<div class=""highlight highlight-source-json""><pre><span class=""pl-s""><span class=""pl-pds"">""</span>scripts<span class=""pl-pds"">""</span></span>: {
+    <span class=""pl-s""><span class=""pl-pds"">""</span>lint<span class=""pl-pds"">""</span></span>: <span class=""pl-s""><span class=""pl-pds"">""</span>eslint src<span class=""pl-pds"">""</span></span>
+    <span class=""pl-ii"">...</span>
+}</pre></div>
+<p>usage</p>
+<p><code>npm run lint</code></p>
+<p>I don't understand why this works, but if I do <code>npm run eslint</code> it gives error not having installed the package. What is the correct way to use it?</p>
+<p>I was reviewing some RPs from a while ago where the topic of <code>react-script lint</code> was discussed, which apparently never came to fruition ...</p>
+<p>Help ! <g-emoji class=""g-emoji"" alias=""pensive"" fallback-src=""https://github.githubassets.com/images/icons/emoji/unicode/1f614.png"">😔</g-emoji></p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9163,PavanKu,2020-06-24T06:54:47Z,,False,"<p><a class=""user-mention"" data-hovercard-type=""user"" data-hovercard-url=""/users/vicasas/hovercard"" data-octo-click=""hovercard-link-click"" data-octo-dimensions=""link_type:self"" href=""https://github.com/vicasas"">@vicasas</a>, <code>npm run eslint</code> will throw an error in case you don't have any script with name <strong>eslint</strong> in your package.json.</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9198,kydesnic,2020-06-21T21:24:50Z,,False,"<p>Hello! I'm trying to combine create-react-app with yarn 2.</p>
+<p>I'm using Yarn 2 according to its manual (<a rel=""nofollow"" href=""https://yarnpkg.com/getting-started/install"">https://yarnpkg.com/getting-started/install</a>). I had installed Yarn v1 globally (<code>npm install -g yarn</code>) previously. Now I create a project directory, and install Yarn 2 there (<code>yarn set version berry</code>).</p>
+<p>Then I try to create-react-app. The yarn manual uses the <code>dlx</code> command for this to bootstrap create-react-app, but they specify the folder name. That doesn't make any sense, having the instructions, described above, because then I will get a project folder inside my existing folder with Yarn installation. So I try <code>yarn dlx create-react-app .</code> The command doesn't work, it complains about the existing <code>.yarn</code> and <code>.yarnrc.yml</code>. Of course I have these with a per-project Yarn installation, moreover I want to reuse them further. This error doesn't make sense either, since create-react-app is supposed to <em>add</em> the necessary packages, not to rewrite the whole yarn cache.</p>
+<p>There are advices in the web to use Yarn 1 to run create-react-app, then to delete <code>node_modules</code> manually, then to install Yarn 2 inside the created project directory, then to install the packages back with Yarn 2 (<code>yarn install</code>). This way seems to be too twisted to start a project every time thusly. The tools are being designed to simplify the life, not otherwise.</p>
+<p>Please, how can I make create-react-app cooperate with a local yarn 2 installation?</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9177,AegonL,2020-06-17T16:18:43Z,,False,"<p>Hello everyone, i've recently encountered an issue that had not happened to me before (and i've not changed any settings or installed anything that should interfere).</p>
+<p>whenever i run create-react-app x, navigate to x and npm start it gives me this error :<br>
+<a target=""_blank"" rel=""noopener noreferrer"" href=""https://user-images.githubusercontent.com/42654981/84922904-2ee99400-b0cf-11ea-8249-f67596770bc3.png""><img src=""https://user-images.githubusercontent.com/42654981/84922904-2ee99400-b0cf-11ea-8249-f67596770bc3.png"" alt=""Screenshot_314"" style=""max-width:100%;""></a></p>
+<p>I looked for a solution , and there is one, running ""npm install @babel/core --save"" solves the problem, yet it takes some time and i have to do it for each project i create.</p>
+<p>I would appreciate any kind of help,<br>
+thanks in advance!</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9177,vicasas,2020-06-17T16:58:11Z,,False,"<p>Your error is rare, when I use <code>create-react-app my-app</code> does not give me that error, you could give more information maybe the versions you are working with.</p>
+<p>Additionally, I recommend that you try running <code>npx create-react-app my-app</code></p>
+<p>I don't really know how to provide you with that information (no idea how to do that)<br>
+also, ""npx create-react-app my-app"" gives the same error.</p>
+<p><a target=""_blank"" rel=""noopener noreferrer"" href=""https://user-images.githubusercontent.com/42654981/85142478-20c38100-b251-11ea-9aa8-24f6d528c113.png""><img src=""https://user-images.githubusercontent.com/42654981/85142478-20c38100-b251-11ea-9aa8-24f6d528c113.png"" alt=""image"" style=""max-width:100%;""></a></p>
+<p>maybe this will somehow help</p>
+<p>To check the versions that you have installed in your project, go to package.json and in the dependencies or devDependencies you find this information.</p>
+<p>Running <code>npx create-react-app my-app</code> do you install something else before doing <code>npm start?</code></p>
+<p>No, the only thing i do after i create-react-app is navigating to the folder and run npm start.<br>
+<a target=""_blank"" rel=""noopener noreferrer"" href=""https://user-images.githubusercontent.com/42654981/85200812-18c41980-b303-11ea-8c2e-3d625cf44fdd.png""><img src=""https://user-images.githubusercontent.com/42654981/85200812-18c41980-b303-11ea-8c2e-3d625cf44fdd.png"" alt=""image"" style=""max-width:100%;""></a></p>
+<p>this is the package.json folder</p>
+<p>Is there a way to simply update this permanently (apparently npm install works after i create a new app)</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9177,AegonL,2020-06-19T14:18:26Z,,False,"<p>I don't really know how to provide you with that information (no idea how to do that)<br>
+also, ""npx create-react-app my-app"" gives the same error.</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9177,AegonL,2020-06-19T14:20:18Z,,False,"<p><a target=""_blank"" rel=""noopener noreferrer"" href=""https://user-images.githubusercontent.com/42654981/85142478-20c38100-b251-11ea-9aa8-24f6d528c113.png""><img src=""https://user-images.githubusercontent.com/42654981/85142478-20c38100-b251-11ea-9aa8-24f6d528c113.png"" alt=""image"" style=""max-width:100%;""></a></p>
+<p>maybe this will somehow help</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9177,vicasas,2020-06-19T14:32:56Z,,False,"<p>To check the versions that you have installed in your project, go to package.json and in the dependencies or devDependencies you find this information.</p>
+<p>Running <code>npx create-react-app my-app</code> do you install something else before doing <code>npm start?</code></p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9177,AegonL,2020-06-20T11:34:19Z,,False,"<p>No, the only thing i do after i create-react-app is navigating to the folder and run npm start.<br>
+<a target=""_blank"" rel=""noopener noreferrer"" href=""https://user-images.githubusercontent.com/42654981/85200812-18c41980-b303-11ea-8c2e-3d625cf44fdd.png""><img src=""https://user-images.githubusercontent.com/42654981/85200812-18c41980-b303-11ea-8c2e-3d625cf44fdd.png"" alt=""image"" style=""max-width:100%;""></a></p>
+<p>this is the package.json folder</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9177,AegonL,2020-06-20T11:35:12Z,,False,<p>Is there a way to simply update this permanently (apparently npm install works after i create a new app)</p>
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9180,mzrLab,2020-06-18T06:48:08Z,,False,"<p>I've been searching a lot about merging two different project and I've tried lots of ways to merge two different project(dashboard and some main pages) with redux , putting ./src's of two project beside each other and etc ...</p>
+<p>but the thing happened in all the process of merging is css conflict which my ui elements gets messy</p>
+<p><a target=""_blank"" rel=""noopener noreferrer"" href=""https://user-images.githubusercontent.com/44894379/84987281-1ae87580-b155-11ea-8fa9-4d7d6df51b5c.png""><img src=""https://user-images.githubusercontent.com/44894379/84987281-1ae87580-b155-11ea-8fa9-4d7d6df51b5c.png"" alt=""image"" style=""max-width:100%;""></a></p>
+<p><strong>this is my index.js of dashboard</strong></p>
+<div class=""highlight highlight-source-js""><pre><span class=""pl-k"">import</span> <span class=""pl-v"">React</span> <span class=""pl-k"">from</span> <span class=""pl-s"">'react'</span><span class=""pl-kos"">;</span>
+<span class=""pl-k"">import</span> <span class=""pl-kos"">{</span> <span class=""pl-v"">BrowserRouter</span> <span class=""pl-k"">as</span> <span class=""pl-v"">Router</span><span class=""pl-kos"">,</span> <span class=""pl-v"">Route</span> <span class=""pl-kos"">,</span> <span class=""pl-v"">Switch</span> <span class=""pl-kos"">}</span> <span class=""pl-k"">from</span> <span class=""pl-s"">'react-router-dom'</span><span class=""pl-kos"">;</span>
+<span class=""pl-k"">import</span> <span class=""pl-kos"">{</span> <span class=""pl-s1"">connect</span> <span class=""pl-kos"">}</span> <span class=""pl-k"">from</span> <span class=""pl-s"">'react-redux'</span><span class=""pl-kos"">;</span>
+<span class=""pl-k"">import</span> <span class=""pl-s1"">cx</span> <span class=""pl-k"">from</span> <span class=""pl-s"">'classnames'</span><span class=""pl-kos"">;</span>
+<span class=""pl-k"">import</span> <span class=""pl-kos"">{</span> <span class=""pl-s1"">setMobileNavVisibility</span> <span class=""pl-kos"">}</span> <span class=""pl-k"">from</span> <span class=""pl-s"">'../../reducers/Layout'</span><span class=""pl-kos"">;</span>
+<span class=""pl-k"">import</span> <span class=""pl-kos"">{</span> <span class=""pl-s1"">withRouter</span> <span class=""pl-kos"">}</span> <span class=""pl-k"">from</span> <span class=""pl-s"">'react-router-dom'</span><span class=""pl-kos"">;</span>
+<span class=""pl-k"">import</span> <span class=""pl-v"">Header</span> <span class=""pl-k"">from</span> <span class=""pl-s"">'./Header'</span><span class=""pl-kos"">;</span>
+<span class=""pl-k"">import</span> <span class=""pl-v"">Footer</span> <span class=""pl-k"">from</span> <span class=""pl-s"">'./Footer'</span><span class=""pl-kos"">;</span>
+<span class=""pl-k"">import</span> <span class=""pl-v"">SideBar</span> <span class=""pl-k"">from</span> <span class=""pl-s"">'../../components/SideBar'</span><span class=""pl-kos"">;</span>
+<span class=""pl-k"">import</span> <span class=""pl-v"">ThemeOptions</span> <span class=""pl-k"">from</span> <span class=""pl-s"">'../../components/ThemeOptions'</span><span class=""pl-kos"">;</span>
+<span class=""pl-k"">import</span> <span class=""pl-v"">MobileMenu</span> <span class=""pl-k"">from</span> <span class=""pl-s"">'../../components/MobileMenu'</span><span class=""pl-kos"">;</span>
+<span class=""pl-k"">import</span> <span class=""pl-v"">Dashboard</span> <span class=""pl-k"">from</span> <span class=""pl-s"">'../Dashboard'</span><span class=""pl-kos"">;</span>
+<span class=""pl-k"">import</span> <span class=""pl-v"">Components</span> <span class=""pl-k"">from</span> <span class=""pl-s"">'../Components'</span><span class=""pl-kos"">;</span>
+<span class=""pl-k"">import</span> <span class=""pl-v"">Wallet</span> <span class=""pl-k"">from</span> <span class=""pl-s"">'../Wallet'</span><span class=""pl-kos"">;</span>
+<span class=""pl-k"">import</span> <span class=""pl-v"">UserProfile</span> <span class=""pl-k"">from</span> <span class=""pl-s"">'../UserProfile'</span><span class=""pl-kos"">;</span>
+<span class=""pl-k"">import</span> <span class=""pl-v"">Forms</span> <span class=""pl-k"">from</span> <span class=""pl-s"">'../Forms'</span><span class=""pl-kos"">;</span>
+<span class=""pl-k"">import</span> <span class=""pl-v"">Charts</span> <span class=""pl-k"">from</span> <span class=""pl-s"">'../Charts'</span><span class=""pl-kos"">;</span>
+<span class=""pl-k"">import</span> <span class=""pl-v"">Annoncements</span> <span class=""pl-k"">from</span> <span class=""pl-s"">'../Annoncements'</span><span class=""pl-kos"">;</span>
+<span class=""pl-k"">import</span> <span class=""pl-v"">Setting</span> <span class=""pl-k"">from</span> <span class=""pl-s"">'../Setting'</span><span class=""pl-kos"">;</span>
+<span class=""pl-k"">import</span> <span class=""pl-v"">Tables</span> <span class=""pl-k"">from</span> <span class=""pl-s"">'../Tables'</span><span class=""pl-kos"">;</span>
+<span class=""pl-k"">import</span> <span class=""pl-v"">Intern</span> <span class=""pl-k"">from</span> <span class=""pl-s"">'../Employer/Intern'</span><span class=""pl-kos"">;</span>
+<span class=""pl-k"">import</span> <span class=""pl-v"">Employer</span> <span class=""pl-k"">from</span> <span class=""pl-s"">'../Employer'</span><span class=""pl-kos"">;</span>
+<span class=""pl-k"">import</span> <span class=""pl-v"">TableWallet</span> <span class=""pl-k"">from</span> <span class=""pl-s"">'../Wallet/TableWallet'</span><span class=""pl-kos"">;</span>
+<span class=""pl-k"">import</span> <span class=""pl-v"">SavedAnnoncements</span> <span class=""pl-k"">from</span> <span class=""pl-s"">'../SavedAnnoncements'</span><span class=""pl-kos"">;</span>
+<span class=""pl-k"">import</span> <span class=""pl-v"">NotificationPage</span> <span class=""pl-k"">from</span> <span class=""pl-s"">'./NotificationPage'</span><span class=""pl-kos"">;</span>
+<span class=""pl-k"">import</span> <span class=""pl-v"">Packages</span> <span class=""pl-k"">from</span> <span class=""pl-s"">'../Wallet'</span><span class=""pl-kos"">;</span>
+<span class=""pl-k"">import</span> <span class=""pl-v"">SubApp</span> <span class=""pl-k"">from</span> <span class=""pl-s"">'../../Showings/subApp'</span><span class=""pl-kos"">;</span>
+
+<span class=""pl-c"">/*</span>
+<span class=""pl-c"">import Home from '../../componentss/Homepage.js';</span>
+<span class=""pl-c"">import SignIn from '../../componentss/SignInForm.js';</span>
+<span class=""pl-c"">import MainPage from '../../componentss/MainPage.js';</span>
+<span class=""pl-c"">import About from '../../componentss/About.js';</span>
+<span class=""pl-c"">import InnerIntern from '../../componentss/InnerPageIntern.js';</span>
+<span class=""pl-c"">import InnerEmp from '../../componentss/InnerPagesEmployer.js';</span>
+<span class=""pl-c"">import FiltersIntern from '../../componentss/MoreFiltersInterns.js';</span>
+<span class=""pl-c"">import Annoncement from '../../componentss/Annoncement.js';</span>
+<span class=""pl-c"">import SuccessfullPage from '../../componentss/SuccessfulPage.js';</span>
+<span class=""pl-c"">import Welcome from '../../componentss/Welcoming.js';</span>
+<span class=""pl-c"">import NotFound from '../../componentss/FourOFour.js';</span>
+<span class=""pl-c"">import Help from '../../componentss/Help.js';</span>
+<span class=""pl-c"">*/</span>
+<span class=""pl-c"">//import Help from '../Help/Help.js';</span>
+<span class=""pl-k"">const</span> <span class=""pl-v"">Main</span> <span class=""pl-c1"">=</span> <span class=""pl-kos"">(</span><span class=""pl-kos"">{</span>
+  mobileNavVisibility<span class=""pl-kos"">,</span>
+  hideMobileMenu<span class=""pl-kos"">,</span>
+  history
+<span class=""pl-kos"">}</span><span class=""pl-kos"">)</span> <span class=""pl-c1"">=&gt;</span> <span class=""pl-kos"">{</span>
+  <span class=""pl-s1"">history</span><span class=""pl-kos"">.</span><span class=""pl-en"">listen</span><span class=""pl-kos"">(</span><span class=""pl-kos"">(</span><span class=""pl-kos"">)</span> <span class=""pl-c1"">=&gt;</span> <span class=""pl-kos"">{</span>
+    <span class=""pl-k"">if</span> <span class=""pl-kos"">(</span><span class=""pl-s1"">mobileNavVisibility</span> <span class=""pl-c1"">===</span> <span class=""pl-c1"">true</span><span class=""pl-kos"">)</span> <span class=""pl-kos"">{</span>
+      <span class=""pl-en"">hideMobileMenu</span><span class=""pl-kos"">(</span><span class=""pl-kos"">)</span><span class=""pl-kos"">;</span>
+    <span class=""pl-kos"">}</span>
+  <span class=""pl-kos"">}</span><span class=""pl-kos"">)</span><span class=""pl-kos"">;</span>
+  
+  <span class=""pl-k"">return</span> <span class=""pl-kos"">(</span>
+    <span class=""pl-c1"">&lt;</span><span class=""pl-v"">React</span><span class=""pl-kos"">.</span><span class=""pl-v"">Fragment</span><span class=""pl-c1"">&gt;</span>
+      <span class=""pl-c1"">&lt;</span><span class=""pl-ent"">div</span> <span class=""pl-c1"">className</span><span class=""pl-c1"">=</span><span class=""pl-kos"">{</span><span class=""pl-en"">cx</span><span class=""pl-kos"">(</span><span class=""pl-kos"">{</span><span class=""pl-s"">'nav-open'</span>: <span class=""pl-s1"">mobileNavVisibility</span> <span class=""pl-c1"">===</span> <span class=""pl-c1"">true</span><span class=""pl-kos"">}</span><span class=""pl-kos"">)</span><span class=""pl-kos"">}</span><span class=""pl-c1"">&gt;</span>
+        <span class=""pl-c1"">&lt;</span><span class=""pl-ent"">div</span> <span class=""pl-c1"">className</span><span class=""pl-c1"">=</span><span class=""pl-s"">""wrapper""</span><span class=""pl-c1"">&gt;</span>
+          <span class=""pl-c1"">&lt;</span><span class=""pl-ent"">div</span> <span class=""pl-c1"">className</span><span class=""pl-c1"">=</span><span class=""pl-s"">""close-layer""</span> <span class=""pl-c1"">onClick</span><span class=""pl-c1"">=</span><span class=""pl-kos"">{</span><span class=""pl-s1"">hideMobileMenu</span><span class=""pl-kos"">}</span><span class=""pl-c1"">&gt;</span><span class=""pl-c1"">&lt;</span>/<span class=""pl-ent"">div</span><span class=""pl-c1"">&gt;</span>
+          <span class=""pl-c1"">&lt;</span><span class=""pl-ent"">SideBar</span> /<span class=""pl-c1"">&gt;</span>
+          <span class=""pl-c1"">&lt;</span><span class=""pl-ent"">div</span> <span class=""pl-c1"">className</span><span class=""pl-c1"">=</span><span class=""pl-s"">""main-panel""</span><span class=""pl-c1"">&gt;</span>
+            <span class=""pl-c1"">&lt;</span><span class=""pl-ent"">Header</span> /<span class=""pl-c1"">&gt;</span>
+              <span class=""pl-c1"">&lt;</span><span class=""pl-ent"">Router</span><span class=""pl-c1"">&gt;</span>
+                <span class=""pl-c1"">&lt;</span><span class=""pl-ent"">Switch</span><span class=""pl-c1"">&gt;</span>
+                  <span class=""pl-c1"">&lt;</span><span class=""pl-ent"">Route</span> <span class=""pl-c1"">exact</span> <span class=""pl-c1"">path</span><span class=""pl-c1"">=</span><span class=""pl-s"">""/""</span> <span class=""pl-c1"">component</span><span class=""pl-c1"">=</span><span class=""pl-kos"">{</span><span class=""pl-v"">Dashboard</span><span class=""pl-kos"">}</span> /<span class=""pl-c1"">&gt;</span>              
+                  <span class=""pl-c1"">&lt;</span><span class=""pl-ent"">Route</span> <span class=""pl-c1"">path</span><span class=""pl-c1"">=</span><span class=""pl-s"">""/Wallet""</span> <span class=""pl-c1"">component</span><span class=""pl-c1"">=</span><span class=""pl-kos"">{</span><span class=""pl-v"">Wallet</span><span class=""pl-kos"">}</span> /<span class=""pl-c1"">&gt;</span>
+                  <span class=""pl-c1"">&lt;</span><span class=""pl-ent"">Route</span> <span class=""pl-c1"">path</span><span class=""pl-c1"">=</span><span class=""pl-s"">""/Annoncements""</span> <span class=""pl-c1"">component</span><span class=""pl-c1"">=</span><span class=""pl-kos"">{</span><span class=""pl-v"">Annoncements</span><span class=""pl-kos"">}</span> /<span class=""pl-c1"">&gt;</span>
+                  <span class=""pl-c1"">&lt;</span><span class=""pl-ent"">Route</span> <span class=""pl-c1"">path</span><span class=""pl-c1"">=</span><span class=""pl-s"">""/Setting""</span> <span class=""pl-c1"">component</span><span class=""pl-c1"">=</span><span class=""pl-kos"">{</span><span class=""pl-v"">Setting</span><span class=""pl-kos"">}</span> /<span class=""pl-c1"">&gt;</span>
+                  <span class=""pl-c1"">&lt;</span><span class=""pl-ent"">Route</span> <span class=""pl-c1"">path</span><span class=""pl-c1"">=</span><span class=""pl-s"">""/SavedAnnoncements""</span> <span class=""pl-c1"">component</span><span class=""pl-c1"">=</span><span class=""pl-kos"">{</span><span class=""pl-v"">SavedAnnoncements</span><span class=""pl-kos"">}</span> /<span class=""pl-c1"">&gt;</span>
+                  <span class=""pl-c1"">&lt;</span><span class=""pl-ent"">Route</span> <span class=""pl-c1"">path</span><span class=""pl-c1"">=</span><span class=""pl-s"">""/Intern""</span> <span class=""pl-c1"">component</span><span class=""pl-c1"">=</span><span class=""pl-kos"">{</span><span class=""pl-v"">Intern</span><span class=""pl-kos"">}</span> /<span class=""pl-c1"">&gt;</span>
+                  <span class=""pl-c1"">&lt;</span><span class=""pl-ent"">Route</span> <span class=""pl-c1"">path</span><span class=""pl-c1"">=</span><span class=""pl-s"">""/Employer""</span> <span class=""pl-c1"">component</span><span class=""pl-c1"">=</span><span class=""pl-kos"">{</span><span class=""pl-v"">Employer</span><span class=""pl-kos"">}</span> /<span class=""pl-c1"">&gt;</span>
+                  <span class=""pl-c1"">&lt;</span><span class=""pl-ent"">Route</span> <span class=""pl-c1"">path</span><span class=""pl-c1"">=</span><span class=""pl-s"">""/NotificationPage""</span> <span class=""pl-c1"">component</span><span class=""pl-c1"">=</span><span class=""pl-kos"">{</span><span class=""pl-v"">NotificationPage</span><span class=""pl-kos"">}</span> /<span class=""pl-c1"">&gt;</span>
+                  <span class=""pl-c1"">&lt;</span><span class=""pl-ent"">Route</span> <span class=""pl-c1"">exact</span> <span class=""pl-c1"">path</span><span class=""pl-c1"">=</span><span class=""pl-s"">""/TableWallet""</span> <span class=""pl-c1"">component</span><span class=""pl-c1"">=</span><span class=""pl-kos"">{</span><span class=""pl-v"">TableWallet</span><span class=""pl-kos"">}</span> /<span class=""pl-c1"">&gt;</span>
+                <span class=""pl-c1"">&lt;</span>/<span class=""pl-ent"">Switch</span><span class=""pl-c1"">&gt;</span>
+              <span class=""pl-c1"">&lt;</span>/<span class=""pl-ent"">Router</span><span class=""pl-c1"">&gt;</span>
+            <span class=""pl-c1"">&lt;</span><span class=""pl-ent"">Footer</span> /<span class=""pl-c1"">&gt;</span>
+          <span class=""pl-c1"">&lt;</span>/<span class=""pl-ent"">div</span><span class=""pl-c1"">&gt;</span>
+        <span class=""pl-c1"">&lt;</span>/<span class=""pl-ent"">div</span><span class=""pl-c1"">&gt;</span>
+      <span class=""pl-c1"">&lt;</span>/<span class=""pl-ent"">div</span><span class=""pl-c1"">&gt;</span>
+      <span class=""pl-c1"">&lt;</span>/<span class=""pl-v"">React</span><span class=""pl-kos"">.</span><span class=""pl-v"">Fragment</span><span class=""pl-c1"">&gt;</span>
+  <span class=""pl-kos"">)</span>
+<span class=""pl-kos"">}</span><span class=""pl-kos"">;</span>
+<span class=""pl-k"">const</span> <span class=""pl-en"">mapStateToProp</span> <span class=""pl-c1"">=</span> <span class=""pl-s1"">state</span> <span class=""pl-c1"">=&gt;</span> <span class=""pl-kos"">(</span><span class=""pl-kos"">{</span>
+  <span class=""pl-c1"">mobileNavVisibility</span>: <span class=""pl-s1"">state</span><span class=""pl-kos"">.</span><span class=""pl-c1"">Layout</span><span class=""pl-kos"">.</span><span class=""pl-c1"">mobileNavVisibility</span>
+<span class=""pl-kos"">}</span><span class=""pl-kos"">)</span><span class=""pl-kos"">;</span>
+
+<span class=""pl-k"">const</span> <span class=""pl-en"">mapDispatchToProps</span> <span class=""pl-c1"">=</span> <span class=""pl-kos"">(</span><span class=""pl-s1"">dispatch</span><span class=""pl-kos"">,</span> <span class=""pl-s1"">ownProps</span><span class=""pl-kos"">)</span> <span class=""pl-c1"">=&gt;</span> <span class=""pl-kos"">(</span><span class=""pl-kos"">{</span>
+  <span class=""pl-en"">hideMobileMenu</span>: <span class=""pl-kos"">(</span><span class=""pl-kos"">)</span> <span class=""pl-c1"">=&gt;</span> <span class=""pl-s1"">dispatch</span><span class=""pl-kos"">(</span><span class=""pl-en"">setMobileNavVisibility</span><span class=""pl-kos"">(</span><span class=""pl-c1"">false</span><span class=""pl-kos"">)</span><span class=""pl-kos"">)</span>
+<span class=""pl-kos"">}</span><span class=""pl-kos"">)</span><span class=""pl-kos"">;</span>
+
+<span class=""pl-k"">export</span> <span class=""pl-k"">default</span> <span class=""pl-en"">withRouter</span><span class=""pl-kos"">(</span><span class=""pl-en"">connect</span><span class=""pl-kos"">(</span><span class=""pl-en"">mapStateToProp</span><span class=""pl-kos"">,</span> <span class=""pl-en"">mapDispatchToProps</span><span class=""pl-kos"">)</span><span class=""pl-kos"">(</span><span class=""pl-v"">Main</span><span class=""pl-kos"">)</span><span class=""pl-kos"">)</span><span class=""pl-kos"">;</span></pre></div>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9180,ianschmitz,2020-06-19T03:30:23Z,,False,"<p>It's a tough question to answer generically. The answer could vary depending on the specifics of your project. Not sure you're gonna get much guidance on this unfortunately <g-emoji class=""g-emoji"" alias=""frowning_face"" fallback-src=""https://github.githubassets.com/images/icons/emoji/unicode/2639.png"">☹️</g-emoji></p>
+<p>I tried the json output manupluating from webpack , and merging two projects with putting src's together but no result</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9180,mzrLab,2020-06-20T05:16:31Z,,False,"<p>I tried the json output manupluating from webpack , and merging two projects with putting src's together but no result</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9158,akp2020,2020-06-15T13:27:54Z,,False,"<p>Hi,<br>
+Is there a way to implement server-side-rendering in create-react-app with minimal changes?<br>
+Like: running on same port -3000, share all resources..<br>
+I have implemented in a different way where both client and server run on different port.<br>
+But my intention is to reuse the eslint, test and build features of create-react-app ..</p>
+<p>Thanks in advance..<br>
+Anjan</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9158,ianschmitz,2020-06-19T03:26:50Z,,True,"<p>Not really, no. I recommend taking a look at <a href=""https://nextjs.org/"" rel=""nofollow"">Next.js</a> if you have a good use case for SSR.</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9158,akp2020,2020-06-19T05:53:34Z,,False,<p>thanks..</p>
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9182,ShubhamGargCTH,2020-06-18T09:47:37Z,,False,"<p>Hello All,</p>
+<p>I have a react app which i want to serve from a sub directory.  Application is hosted in kubernetes cluster with ingress controller e.t.c.<br>
+I have added the homepage as ""."" in package.json referring to <a rel=""nofollow"" href=""https://create-react-app.dev/docs/deployment#serving-the-same-build-from-different-paths"">https://create-react-app.dev/docs/deployment#serving-the-same-build-from-different-paths</a></p>
+<p>Issue i am facing is i need to add extra trailing ""/"" in the url.</p>
+<p>So - <a href=""http://www.hostname.com/app/"" rel=""nofollow"">www.hostname.com/app/</a> - Works<br>
+<a href=""http://www.hostname.com/app"" rel=""nofollow"">www.hostname.com/app</a> - does not work</p>
+<p>i noticed index.html is served fine but the network request for js/css etc changes based on url.</p>
+<p>with trainling ""/"" request for js and css goes to <a href=""http://www.hostname.com/app/min.js"" rel=""nofollow"">www.hostname.com/app/min.js</a><br>
+without trailing ""/"" request for js and css goes to <a href=""http://www.hostname.com/min.js"" rel=""nofollow"">www.hostname.com/min.js</a></p>
+<p>Is there something i am missing or this is the expected behavior ?</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9118,Sunilkengond,2020-06-06T16:41:28Z,,False,"<p>Creating a new React app in D:\project\demo-project.</p>
+<p>Installing packages. This might take a couple of minutes.<br>
+Installing react, react-dom, and react-scripts with cra-template...</p>
+<blockquote>
+<p>core-js@2.6.11 postinstall D:\project\demo-project\node_modules\babel-runtime\node_modules\core-js<br>
+node -e ""try{require('./postinstall')}catch(e){}""</p>
+</blockquote>
+<blockquote>
+<p>core-js@3.6.5 postinstall D:\project\demo-project\node_modules\core-js<br>
+node -e ""try{require('./postinstall')}catch(e){}""</p>
+</blockquote>
+<blockquote>
+<p>core-js-pure@3.6.5 postinstall D:\project\demo-project\node_modules\core-js-pure<br>
+node -e ""try{require('./postinstall')}catch(e){}""</p>
+</blockquote>
+<ul>
+<li>cra-template@1.0.3</li>
+<li>react-dom@16.13.1</li>
+<li>react@16.13.1</li>
+<li>react-scripts@3.4.1<br>
+added 1626 packages from 750 contributors and audited 1630 packages in 231.379s</li>
+</ul>
+<p>59 packages are looking for funding<br>
+run <code>npm fund</code> for details</p>
+<p>found 1 low severity vulnerability<br>
+run <code>npm audit fix</code> to fix them, or <code>npm audit</code> for details</p>
+<p>D:\amex\demo-project&gt;npm audit</p>
+<pre><code>                   === npm audit security report ===                        
+                                                                            
+                                                                            
+                             Manual Review                                  
+         Some vulnerabilities require your attention to resolve             
+                                                                            
+      Visit https://go.npm.me/audit-guide for additional guidance           
+</code></pre>
+<p>Low             Prototype Pollution</p>
+<p>Package         yargs-parser</p>
+<p>Patched in      &gt;=13.1.2 &lt;14.0.0 || &gt;=15.0.1 &lt;16.0.0 || &gt;=18.1.2</p>
+<p>Dependency of   react-scripts</p>
+<p>Path            react-scripts &gt; webpack-dev-server &gt; yargs &gt; yargs-parser</p>
+<p>More info       <a rel=""nofollow"" href=""https://npmjs.com/advisories/1500"">https://npmjs.com/advisories/1500</a></p>
+<p>found 1 low severity vulnerability in 1630 scanned packages<br>
+1 vulnerability requires manual review. See the full report for details.</p>
+<p>details:<br>
+node :14.4.0<br>
+npm :6.14.5</p>
+<p>on npx create-react-app  run it is just generating<br>
+node folder ,package.json , and pacakage.lock-json file</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9118,eddiemonge,2020-06-12T16:16:06Z,,False,"<p>This should be opened in issues, not discussion. What version of CRA?</p>
+<p>Thanks for response.Will raise this in issue section.<br>
+CRA version : 3.4.1</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9118,Sunilkengond,2020-06-15T15:22:02Z,,False,"<p>Thanks for response.Will raise this in issue section.<br>
+CRA version : 3.4.1</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9153,akshayjai1,2020-06-14T15:15:19Z,,False,"<p>details are given in this question</p>
+<p><a rel=""nofollow"" href=""https://stackoverflow.com/questions/62374082/why-is-sessionid-generated-for-create-react-app?noredirect=1#comment110313793_62374082"">https://stackoverflow.com/questions/62374082/why-is-sessionid-generated-for-create-react-app?noredirect=1#comment110313793_62374082</a></p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9146,lukasra92,2020-06-12T16:44:55Z,,False,"<p>Hi everyone,</p>
+<p>While trying to migrate my react app (currently written in JS) to TypeScript, I am having some trouble regarding the <code>setupProxy.js</code> file. The file is inside the <code>src/</code> directory of my code and it has the following content:</p>
+<div class=""highlight highlight-source-js""><pre><span class=""pl-k"">const</span> <span class=""pl-kos"">{</span> createProxyMiddleware <span class=""pl-kos"">}</span> <span class=""pl-c1"">=</span> <span class=""pl-en"">require</span><span class=""pl-kos"">(</span><span class=""pl-s"">'http-proxy-middleware'</span><span class=""pl-kos"">)</span><span class=""pl-kos"">;</span>
+<span class=""pl-smi"">module</span><span class=""pl-kos"">.</span><span class=""pl-en"">exports</span> <span class=""pl-c1"">=</span> <span class=""pl-k"">function</span> <span class=""pl-kos"">(</span><span class=""pl-s1"">app</span><span class=""pl-kos"">)</span> <span class=""pl-kos"">{</span>
+  <span class=""pl-s1"">app</span><span class=""pl-kos"">.</span><span class=""pl-en"">use</span><span class=""pl-kos"">(</span>
+    <span class=""pl-kos"">[</span><span class=""pl-s"">'/api'</span><span class=""pl-kos"">]</span><span class=""pl-kos"">,</span>
+    <span class=""pl-en"">createProxyMiddleware</span><span class=""pl-kos"">(</span><span class=""pl-kos"">{</span>
+      <span class=""pl-c1"">target</span>: <span class=""pl-s"">'http://localhost:5000'</span>
+    <span class=""pl-kos"">}</span><span class=""pl-kos"">)</span>
+  <span class=""pl-kos"">)</span><span class=""pl-kos"">;</span>
+<span class=""pl-kos"">}</span><span class=""pl-kos"">;</span></pre></div>
+<p>This worked finde when writing my app in JS completely. However, when I try to start my TypeScript based react app, I get this error:</p>
+<pre><code>createProxyMiddleware is not a function
+</code></pre>
+<p>Can anybody tell me how to fix this? I found several issues here, but all of them seem to be closed without a solution <g-emoji class=""g-emoji"" alias=""confused"" fallback-src=""https://github.githubassets.com/images/icons/emoji/unicode/1f615.png"">😕</g-emoji></p>
+<p>In the <a href=""https://create-react-app.dev/docs/proxying-api-requests-in-development/"" rel=""nofollow"">documentation</a> it says that you can simply add an entry like this to your package.json file:</p>
+<div class=""highlight highlight-source-json""><pre>  <span class=""pl-s""><span class=""pl-pds"">""</span>proxy<span class=""pl-pds"">""</span></span>: <span class=""pl-s""><span class=""pl-pds"">""</span>http://localhost:5000<span class=""pl-pds"">""</span></span>,</pre></div>
+<p>This also did not work for me. Is this still up to date?</p>
+<p>Thank you in advance for any kind of help!</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9146,eddiemonge,2020-06-12T17:49:52Z,,True,"<p>What version of <code>http-proxy-middleware</code> did you install?</p>
+<p>Oops, this is awkward. It looks like I was in the wrong directory when I ran the <code>npm install http-proxy-middlware</code>... It is working fine after I have installed it in the right project.</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9146,lukasra92,2020-06-12T17:57:27Z,,True,"<p>Oops, this is awkward. It looks like I was in the wrong directory when I ran the <code>npm install http-proxy-middlware</code>... It is working fine after I have installed it in the right project.</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9092,baeharam,2020-05-30T03:53:02Z,"[['👍'], [1]]",False,"<p>When I type <code>yarn start</code> in terminal, how can I measure build time? like <strong>""compilation successfully in [some time]!""</strong>. I'm optimizing build time of my react app so I have to know about current build time. Is there an option for this? There is only one message ""compilation successfully"" and no time is appeared.</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9092,mrmckeb,2020-05-31T08:56:15Z,,False,"<p>Hi <a class=""user-mention"" data-hovercard-type=""user"" data-hovercard-url=""/users/baeharam/hovercard"" data-octo-click=""hovercard-link-click"" data-octo-dimensions=""link_type:self"" href=""https://github.com/baeharam"">@baeharam</a>, every time you run a command with Yarn, you should see something like this screenshot. As a simple solution, this might solve your problem?<br>
+<a target=""_blank"" rel=""noopener noreferrer"" href=""https://user-images.githubusercontent.com/5043083/83348481-b6947c00-a335-11ea-9b11-90d0865f4d8d.png""><img src=""https://user-images.githubusercontent.com/5043083/83348481-b6947c00-a335-11ea-9b11-90d0865f4d8d.png"" alt=""image"" style=""max-width:100%;""></a></p>
+<p>CRA clears the console so those messages aren't shown. Any rebuilds also keep the console clear.<br>
+<a target=""_blank"" rel=""noopener noreferrer"" href=""https://user-images.githubusercontent.com/127535/84523360-0f94d600-ac8d-11ea-9bc6-0c36f4370f1f.png""><img src=""https://user-images.githubusercontent.com/127535/84523360-0f94d600-ac8d-11ea-9bc6-0c36f4370f1f.png"" alt=""image"" style=""max-width:100%;""></a></p>
+<p>The <code>Done in</code> happens for builds, not for start.</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9092,eddiemonge,2020-06-12T16:14:07Z,,False,"<p>CRA clears the console so those messages aren't shown. Any rebuilds also keep the console clear.<br>
+<a target=""_blank"" rel=""noopener noreferrer"" href=""https://user-images.githubusercontent.com/127535/84523360-0f94d600-ac8d-11ea-9bc6-0c36f4370f1f.png""><img src=""https://user-images.githubusercontent.com/127535/84523360-0f94d600-ac8d-11ea-9bc6-0c36f4370f1f.png"" alt=""image"" style=""max-width:100%;""></a></p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9092,eddiemonge,2020-06-12T17:46:21Z,"[['👍'], [1]]",False,"<p>The <code>Done in</code> happens for builds, not for start.</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9104,eddiemonge,2020-06-03T18:41:10Z,"[['👍', '👀'], [5, 1]]",False,"<p>From the community perspective, its been going on almost 3 months with out a release and without feedback as to why. I think having a blog at <a rel=""nofollow"" href=""https://create-react-app.dev/"">https://create-react-app.dev/</a> with some updates would be beneficial.</p>
+<p>Another thing is Issues and Pull Requests seem out of control. Perhaps asking for community volunteers to help triage would be good but I don't know how that would work since this is still very much a Facebook project and not really an OSS community project.</p>
+<p>I think that last point is my current issue, the lack of transparency on who this project is supposed to be for and how controls it.</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9104,petetnt,2020-06-05T08:48:51Z,"[['👍', '❤️'], [5, 1]]",False,"<p>Hi <a class=""user-mention"" data-hovercard-type=""user"" data-hovercard-url=""/users/eddiemonge/hovercard"" data-octo-click=""hovercard-link-click"" data-octo-dimensions=""link_type:self"" href=""https://github.com/eddiemonge"">@eddiemonge</a>,</p>
+<p>I am an very occasional maintainer of CRA so my answer only represents my view but there's my two cents:</p>
+<p>The CRA core team is really small, basically <a class=""user-mention"" data-hovercard-type=""user"" data-hovercard-url=""/users/iansu/hovercard"" data-octo-click=""hovercard-link-click"" data-octo-dimensions=""link_type:self"" href=""https://github.com/iansu"">@iansu</a> / <a class=""user-mention"" data-hovercard-type=""user"" data-hovercard-url=""/users/ianschmitz/hovercard"" data-octo-click=""hovercard-link-click"" data-octo-dimensions=""link_type:self"" href=""https://github.com/ianschmitz"">@ianschmitz</a> / <a class=""user-mention"" data-hovercard-type=""user"" data-hovercard-url=""/users/mrmckeb/hovercard"" data-octo-click=""hovercard-link-click"" data-octo-dimensions=""link_type:self"" href=""https://github.com/mrmckeb"">@mrmckeb</a>, who do all of the heavy lifting along with the few other current and past maintainers and large amounts of community members (many of whom work on other large projects like Jest, Babel, TypeScript and service workers). It should be noted that none of them work at Facebook or work on Create-React-App full time so I wouldn't consider CRA being a ""very much Facebook project"".</p>
+<p>The CRA team meets every other wednesday, which is an open call and the meeting notes and decisions are visible in <a href=""https://github.com/iansu/create-react-app-meta/issues"">https://github.com/iansu/create-react-app-meta/issues</a>. We also have a Dischord server for discussion at <a rel=""nofollow"" href=""https://discord.gg/9zN9uY"">https://discord.gg/9zN9uY</a>. I agree that the governance model could be outlined better in our <a href=""https://github.com/facebook/create-react-app/blob/master/CONTRIBUTING.md"">CONTRIBUTING</a> document.</p>
+<p>That said, we are still amid of a global COVID-19 pandemic and in the middle of an important fight against inequality not only in the US, but across the world so we can only ask for patience for receiving new features and bug fixes and suggest to #TakeAction instead, joining forces for justice. #blacklivesmatter</p>
+<p>I must say that I do a lot less than some of the other contributors to Create React App, and I wish I could do more - but as <a class=""user-mention"" data-hovercard-type=""user"" data-hovercard-url=""/users/petetnt/hovercard"" data-octo-click=""hovercard-link-click"" data-octo-dimensions=""link_type:self"" href=""https://github.com/petetnt"">@petetnt</a> says, we're volunteers and the time I spend on Create React App is 100% my own time. I'm also a maintainer of Storybook, and as part of my work there I try to ensure great out-of-the-box experiences with Create React App.</p>
+<p>Open source can in some cases literally just mean that the source code is open to the public, but that's not what's happening here. We listen to the community, and very regularly discuss what we can do to meet community needs and wants. We also revisit those decisions regularly.</p>
+<p>Again, as <a class=""user-mention"" data-hovercard-type=""user"" data-hovercard-url=""/users/petetnt/hovercard"" data-octo-click=""hovercard-link-click"" data-octo-dimensions=""link_type:self"" href=""https://github.com/petetnt"">@petetnt</a> points out, our decisions often come down to what we can support... not what we want to support.</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9104,mrmckeb,2020-06-05T13:22:56Z,"[['❤️'], [2]]",False,"<p>I must say that I do a lot less than some of the other contributors to Create React App, and I wish I could do more - but as <a class=""user-mention"" data-hovercard-type=""user"" data-hovercard-url=""/users/petetnt/hovercard"" data-octo-click=""hovercard-link-click"" data-octo-dimensions=""link_type:self"" href=""https://github.com/petetnt"">@petetnt</a> says, we're volunteers and the time I spend on Create React App is 100% my own time. I'm also a maintainer of Storybook, and as part of my work there I try to ensure great out-of-the-box experiences with Create React App.</p>
+<p>Open source can in some cases literally just mean that the source code is open to the public, but that's not what's happening here. We listen to the community, and very regularly discuss what we can do to meet community needs and wants. We also revisit those decisions regularly.</p>
+<p>Again, as <a class=""user-mention"" data-hovercard-type=""user"" data-hovercard-url=""/users/petetnt/hovercard"" data-octo-click=""hovercard-link-click"" data-octo-dimensions=""link_type:self"" href=""https://github.com/petetnt"">@petetnt</a> points out, our decisions often come down to what we can support... not what we want to support.</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9104,eddiemonge,2020-06-12T16:29:23Z,"[['👍', '❤️'], [4, 3]]",False,"<h3>Feedback</h3>
+<blockquote>
+<p>The CRA team meets every other wednesday, which is an open call and the meeting notes and decisions are visible in <a href=""https://github.com/iansu/create-react-app-meta/issues"">https://github.com/iansu/create-react-app-meta/issues</a>.</p>
+</blockquote>
+<p>Those things should be moved here to make it more transparent. Other than getting posted here, how would anyone have known about the meetings or the resulting notes? When are the next ones scheduled as a I would like and didn't get to for the last one.</p>
+<p>As for the review notes, have those been turned into issues so people in the community can help with them?</p>
+<blockquote>
+<p>We also have a Discord server for discussion at <a href=""https://discord.gg/9zN9uY"" rel=""nofollow"">https://discord.gg/9zN9uY</a>.</p>
+</blockquote>
+<p>Can that be moved here to discussions? (also the link expired and thats one of the problems with Discord).</p>
+<h3>Other things that could be improved:</h3>
+<ul>
+<li>The Twitter and Help links on <a href=""https://create-react-app.dev/"" rel=""nofollow"">https://create-react-app.dev/</a> is for React and not CRA. It would be better if there was a Twitter account with news about CRA like new releases or exciting things or projects created with it. Help link should be for CRA since a lot of people seem to need help with it (as evidenced by the number of open issues).</li>
+</ul>
+<p><strong>I am highly appreciative of all the work that has been done here</strong>. Having been part of a number of OSS projects in the past (jQuery, Yeoman, UI-Router, ...), I know how difficult doing volunteer work is. Between the day job, family life and other hobbies and projects, finding time to devote to one project is a challenge. I've been trying to help with the issues but its hard without having the power to close issues or tag them or anything else. I will continue to do my best to help the project as I have gotten so much value from it.</p>
+<h2>TL;DR:</h2>
+<p>I would like to volunteer to help and I feel other people may as well but there doesn't seem to be a good path to do so. <strong>How can we help?</strong></p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9106,kentcdodds,2020-06-04T03:44:17Z,"[['👍', '❤️'], [1, 13]]",False,"<p>As a React instructor, I need a way to spin up react projects easily in a way that works flawlessly on anyone's machine and create-react-app does that super well. It's also flexible enough for me to do some really advanced stuff behind the scenes while still avoiding touching tooling configuration.</p>
+<p>I wouldn't be nearly as productive as I am without it. Thank you so much <g-emoji class=""g-emoji"" alias=""clap"" fallback-src=""https://github.githubassets.com/images/icons/emoji/unicode/1f44f.png"">👏</g-emoji></p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9106,petetnt,2020-06-05T09:04:19Z,"[['👍', '❤️'], [3, 2]]",True,"<p>Thank you <a class=""user-mention"" data-hovercard-type=""user"" data-hovercard-url=""/users/kentcdodds/hovercard"" data-octo-click=""hovercard-link-click"" data-octo-dimensions=""link_type:self"" href=""https://github.com/kentcdodds"">@kentcdodds</a> for the immense amounts of knowledge and tools you have shared with the community ! <g-emoji class=""g-emoji"" alias=""heart"" fallback-src=""https://github.githubassets.com/images/icons/emoji/unicode/2764.png"">❤️</g-emoji></p>
+<p>Thanks <a class=""user-mention"" data-hovercard-type=""user"" data-hovercard-url=""/users/kentcdodds/hovercard"" data-octo-click=""hovercard-link-click"" data-octo-dimensions=""link_type:self"" href=""https://github.com/kentcdodds"">@kentcdodds</a> - and thanks to you too. Like <a class=""user-mention"" data-hovercard-type=""user"" data-hovercard-url=""/users/petetnt/hovercard"" data-octo-click=""hovercard-link-click"" data-octo-dimensions=""link_type:self"" href=""https://github.com/petetnt"">@petetnt</a> says, you've made invaluable contributions to the community and shifted mindsets around testing.</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9106,mrmckeb,2020-06-05T13:25:05Z,"[['❤️'], [1]]",True,"<p>Thanks <a class=""user-mention"" data-hovercard-type=""user"" data-hovercard-url=""/users/kentcdodds/hovercard"" data-octo-click=""hovercard-link-click"" data-octo-dimensions=""link_type:self"" href=""https://github.com/kentcdodds"">@kentcdodds</a> - and thanks to you too. Like <a class=""user-mention"" data-hovercard-type=""user"" data-hovercard-url=""/users/petetnt/hovercard"" data-octo-click=""hovercard-link-click"" data-octo-dimensions=""link_type:self"" href=""https://github.com/petetnt"">@petetnt</a> says, you've made invaluable contributions to the community and shifted mindsets around testing.</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9044,iansu,2020-05-22T00:28:45Z,"[['👍', '❤️'], [8, 5]]",False,<p>We just got the new Discussions beta featured enabled in this repo. We currently have a Spectrum community but having something right in GitHub seems more useful. I propose we try out the Discussions feature for a little while and if we like it we use it in place of Spectrum.</p>
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9044,mrmckeb,2020-05-22T07:05:44Z,,False,"<p>I feel that this will work better for us than Spectrum, as we will have the ability to convert issues to discussions, and I'm sure more features later.</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9044,iansu,2020-05-30T20:00:13Z,,True,<p>We have decided to move forward with this. I've posted on Spectrum that we're moving to GitHub Discussions.</p>
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9044,elektronik2k5,2020-05-31T08:21:39Z,,False,"<p>Am I missing an obvious way to subscribe to the new discussions or is there no such feature?</p>
+<p>I see this on the sidebar - this is a beta feature, maybe not everyone will see all features at all times.<br>
+<a target=""_blank"" rel=""noopener noreferrer"" href=""https://user-images.githubusercontent.com/5043083/83348023-d9249600-a331-11ea-8adc-717c3b2459ef.png""><img src=""https://user-images.githubusercontent.com/5043083/83348023-d9249600-a331-11ea-8adc-717c3b2459ef.png"" alt=""image"" style=""max-width:100%;""></a></p>
+<p>No, I mean a notification per each new discussion.</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9044,mrmckeb,2020-05-31T08:28:37Z,,False,"<p>I see this on the sidebar - this is a beta feature, maybe not everyone will see all features at all times.<br>
+<a target=""_blank"" rel=""noopener noreferrer"" href=""https://user-images.githubusercontent.com/5043083/83348023-d9249600-a331-11ea-8adc-717c3b2459ef.png""><img src=""https://user-images.githubusercontent.com/5043083/83348023-d9249600-a331-11ea-8adc-717c3b2459ef.png"" alt=""image"" style=""max-width:100%;""></a></p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9044,elektronik2k5,2020-05-31T08:32:44Z,,False,"<p>No, I mean a notification per each new discussion.</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9069,goleary,2020-05-27T22:51:03Z,,False,"<p>What is the reason this lib doesn't install all of it's dependencies?</p>
+<p>in the readme this is listed as the install command:</p>
+<pre><code>npm install --save-dev eslint-config-react-app @typescript-eslint/eslint-plugin@2.x @typescript-eslint/parser@2.x babel-eslint@10.x eslint@6.x eslint-plugin-flowtype@4.x eslint-plugin-import@2.x eslint-plugin-jsx-a11y@6.x eslint-plugin-react@7.x eslint-plugin-react-hooks@2.x
+</code></pre>
+<p>I glossed over the readme and figured that I could use the plugin by running <code>yarn add eslint-config-react-app</code>, but I had to do multiple rounds trips of installing additional packages after encountering errors.</p>
+<p>You could say I should've done a better job of reading the readme before trying to use the package, but why require users to copy and paste this huge command instead of relying on the package manager to install these dependencies?</p>
+<p>Isn't this one of the benefits of package managers? that the manage and install the dependencies of libraries needed by a package?</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9069,brunogonzales,2020-05-27T23:31:23Z,,False,<p>I believe <code>eslint-config-react-app</code> is just a configuration module. It still needs the parsers and plugins to work properly so you need to install them separately.</p>
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9069,goleary,2020-05-28T03:01:00Z,,False,"<p><a class=""user-mention"" data-hovercard-type=""user"" data-hovercard-url=""/users/brunogonzales/hovercard"" data-octo-click=""hovercard-link-click"" data-octo-dimensions=""link_type:self"" href=""https://github.com/brunogonzales"">@brunogonzales</a> yeah i guess my question is: if it needs these parsers and plugins to work properly why are they not dependencies (and listed as such in it's package.json for npm to pick up)?</p>
+<p>Perhaps there is some valid reason behind this, I'm just genuinely curious what it is. Would love to get pointed towards some reading that explains why this is better than my suggestion.</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9069,mrmckeb,2020-05-28T10:40:01Z,"[['👍'], [2]]",True,"<p>There are limitations around this in ESLint today, which they're looking to address. It might be addressed as a part of <a class=""issue-link js-issue-link"" data-error-text=""Failed to load title"" data-id=""401891243"" data-permission-text=""Title is private"" data-url=""https://github.com/eslint/rfcs/issues/9"" data-hovercard-type=""pull_request"" data-hovercard-url=""/eslint/rfcs/pull/9/hovercard"" href=""https://github.com/eslint/rfcs/pull/9"">eslint/rfcs#9</a>.</p>
+<p>Currently, ESLint recommends to place dependencies in <code>peerDependencies</code>:<br>
+<a rel=""nofollow"" href=""https://eslint.org/docs/developer-guide/shareable-configs#publishing-a-shareable-config"">https://eslint.org/docs/developer-guide/shareable-configs#publishing-a-shareable-config</a></p>
+<p>You can see that the Airbnb config does the same:<br>
+<a href=""https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb"">https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb</a></p>
+<p>PS: I hope it's OK that I converted this to a discussion - we want to try using this a lot more now that it's enabled :)</p>
+<p>Yeah, happy for it to be a discussion, seems like a perfect use case :)</p>
+<p>Thanks for the links, seems as though this problem is not specific to <code>eslint-config-react-app</code>, so it doesn't need to remain as an issue here.</p>
+<p>Wow there's a lot to parse in that eslint rfc, I guess I'll cross my fingers and hope that the process of adding configs is simplified in the future (although many people seem to be concerned the updates will make configuring eslint <em>less</em> user friendly).</p>
+<p>Thanks again for the pointers!</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9069,goleary,2020-05-28T16:24:30Z,"[['👍'], [2]]",True,"<p>Yeah, happy for it to be a discussion, seems like a perfect use case :)</p>
+<p>Thanks for the links, seems as though this problem is not specific to <code>eslint-config-react-app</code>, so it doesn't need to remain as an issue here.</p>
+<p>Wow there's a lot to parse in that eslint rfc, I guess I'll cross my fingers and hope that the process of adding configs is simplified in the future (although many people seem to be concerned the updates will make configuring eslint <em>less</em> user friendly).</p>
+<p>Thanks again for the pointers!</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9058,yogesnsamy,2020-05-24T08:19:29Z,,False,"<p>I've posted the question on <a href=""https://stackoverflow.com/questions/61973740/embedding-react-app-as-a-widget-with-javascript-is-failing-with-different-messag"" rel=""nofollow"">StackOverflow</a> but has not received any response so trying to get some guidance from here.</p>
+<p>I tried to embed my react app as a widget into another site with the following code:</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=""en""&gt;
+  &lt;head&gt;
+    &lt;meta charset=""UTF-8""&gt;
+    &lt;meta name=""viewport"" content=""width=device-width, initial-scale=1.0""&gt;
+    &lt;title&gt;Test&lt;/title&gt;
+    &lt;style&gt;
+      body {
+        background-color: #ddd;
+      }
+      #mhub-opencalculator-root {
+        margin: 10rem auto;
+        width: 70vw;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+      &lt;h1&gt;Hello Calculator&lt;/h1&gt;
+    &lt;div id=""mhub-opencalculator-root""&gt;&lt;/div&gt;
+    &lt;script
+      src=""https://dev.mhub.my:3000/static/js/main.{{latest}}.js"" type=""text/javascript""&gt;&lt;/script&gt;
+    &lt;script&gt;
+        document.cookie = 'cross-site-cookie=bar; SameSite=None; Secure';
+      window.addEventListener('load', function () {
+        const el = document.getElementById('mhub-opencalculator-root');
+        if (el) {
+          const w = new MHubOpenCalculatorWidget({
+            document: '/lawyer/cases/case-b0000000000000000000',
+            uploader: false,
+            theme: {
+              palette: {
+                primary: {
+                  main: '#2185d0',
+                },
+                background: {
+                  paper: '#eee',
+                },
+              },
+            },
+          });
+          w.render(el);
+        }
+      });
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>It's failing with the following message:</p>
+<pre><code>(index):27 Uncaught ReferenceError: MHubOpenCalculatorWidget is not defined
+    at (index):27
+</code></pre>
+<p>MHubOpenCalculatorWidget.jsx in the react app has the following code (not handling the sent parameters yet):</p>
+<pre><code>import React from 'react';
+import ReactDOM from 'react-dom';
+import { ThemeProvider } from '@material-ui/core/styles';
+import { customTheme } from './contexts/theme';
+import App from './App';
+
+export default class MHubOpenCalculatorWidget {
+
+  render(el) {
+    console.log('inside widget');
+    ReactDOM.render(
+      &lt;React.StrictMode&gt;
+        &lt;ThemeProvider theme={customTheme}&gt;
+          &lt;App /&gt;
+        &lt;/ThemeProvider&gt;
+      &lt;/React.StrictMode&gt;,
+      el,
+    );
+  }
+}
+
+window.MHubOpenCalculatorWidget = MHubOpenCalculatorWidget;
+</code></pre>
+<p>As a standalone, the react app runs fine:<br>
+<a target=""_blank"" rel=""noopener noreferrer"" href=""https://user-images.githubusercontent.com/28777569/82749163-e5609e80-9dd9-11ea-924f-d0d7c16e6b50.png""><img src=""https://user-images.githubusercontent.com/28777569/82749163-e5609e80-9dd9-11ea-924f-d0d7c16e6b50.png"" alt=""image"" style=""max-width:100%;""></a><br>
+But fails when called from the other site:<br>
+<a target=""_blank"" rel=""noopener noreferrer"" href=""https://user-images.githubusercontent.com/28777569/82749203-1c36b480-9dda-11ea-9f8e-ca978a102b77.png""><img src=""https://user-images.githubusercontent.com/28777569/82749203-1c36b480-9dda-11ea-9f8e-ca978a102b77.png"" alt=""image"" style=""max-width:100%;""></a></p>
+<p>Any tips will be appreciated, many thanks.</p>"
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9058,mrmckeb,2020-05-27T18:06:02Z,,False,<p>Are you able to share a small demo/reproduction of this project? I could take a look for you and see what's happening.</p>
