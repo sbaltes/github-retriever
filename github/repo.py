@@ -48,7 +48,7 @@ class Repo(object):
     def get_discussion_rows(self):
         rows = []
         if len(self.discussions) == 0:
-            rows.append([self.full_name, "n/a"])
+            rows.append([self.full_name] + ["n/a"] * 9)
         else:
             for discussion in self.discussions:
                 rows.append(discussion.get_column_values())
