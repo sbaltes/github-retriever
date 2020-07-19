@@ -52,13 +52,13 @@ class RepoList(object):
         self.filename = os.path.basename(self.input_file)
         logger.info(str(len(self.repos)) + " repos have been imported.")
 
-    def retrieve_data(self, features, discussions, discussion_posts):
+    def retrieve_data(self, backup_frequency, features, discussions, discussion_posts):
         n = len(self.repos)
         for index, repo in enumerate(self.repos):
             if (index+1) % 50 == 0:
                 # wait every 50th request for 5 seconds to prevent getting blocked
                 time.sleep(5)
-            if (index + 1) % 500 == 0:
+            if index > 0 and (index + 1) % backup_frequency == 0:
                 progress = round((index + 1)/n*100, 2)
                 logger.info("Reached {0}%, backing up retrieved information...".format(progress))
                 if features:

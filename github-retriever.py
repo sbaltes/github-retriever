@@ -47,8 +47,15 @@ def get_argument_parser():
         '-p', '--retrieve-discussion-posts',
         required=True,
         default=False,
-        help='retrieve discussions threads from list of duscussions (default: False)',
+        help='retrieve discussions threads from list of discussions (default: False)',
         dest='retrieve_discussion_posts'
+    )
+    arg_parser.add_argument(
+        '-b', '--backup-frequency',
+        required=False,
+        default=100,
+        help='number of repos to process before saving the current state (default: 100)',
+        dest='backup_frequency'
     )
     return arg_parser
 
@@ -60,11 +67,12 @@ def main():
     retrieve_features = args.retrieve_features == "True"
     retrieve_discussions = args.retrieve_discussions == "True"
     retrieve_discussion_posts = args.retrieve_discussion_posts == "True"
+    backup_frequency = int(args.backup_frequency)
 
     # process repos
     repo_list = RepoList(args.input_file, args.output_dir, args.delimiter)
     repo_list.read_from_csv()
-    repo_list.retrieve_data(retrieve_features, retrieve_discussions, retrieve_discussion_posts)
+    repo_list.retrieve_data(backup_frequency, retrieve_features, retrieve_discussions, retrieve_discussion_posts)
     if retrieve_features:
         repo_list.write_repos_to_csv()
     if retrieve_discussions:
