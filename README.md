@@ -27,7 +27,7 @@ and [virtualenv](https://github.com/pyenv/pyenv-virtualenv) before executing the
 
 Basic usage:
 
-    python3 github-retriever.py -i <path_to_input_file> -o <path_to_output_dir> -f <True-or-False> -r <True-or-False> -p <True-or-False>
+    python3 github-retriever.py -i <path_to_input_file> -o <path_to_output_dir> -f <True-or-False> -r <True-or-False> -p <True-or-False> -b <Backup-Frequency>
 
 Call `github-retriever.py` without parameters to get a list of available parameters.
 
@@ -46,7 +46,7 @@ An exemplary input file can be found [here](input/repos.csv):
 
 To retrieve the activated features (issues, pull requests, discussions, etc.) for the configured repos, you just need to run the following command:
 
-    python3 github-retriever.py -i input/repos.csv -o output -f True -e False
+    python3 github-retriever.py -i input/repos.csv -o output -f True -e False -p False
 
 The tool logs the retrieval process:
 
