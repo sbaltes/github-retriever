@@ -1,12 +1,4 @@
 repo_name
-twbs/bootstrap
-facebook/create-react-app
-vercel/next.js
-storybookjs/storybook
-babel/babel
-parcel-bundler/parcel
-gulpjs/gulp
-slatedocs/slate
 strapi/strapi
 vuetifyjs/vuetify
 tailwindcss/tailwindcss

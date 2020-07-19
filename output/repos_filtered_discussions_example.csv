@@ -1,0 +1,113 @@
+repo_name,discussion,title,number,state,author,timestamp,emoji,category,converted_from_issue
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/31321,Still no semi colon in JS for v5 ?,31321,Answered,MathRobin,2020-07-17T18:12:59Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/31320,Open Modal through the corresponding button and switch to the corresponding Tab,31320,Unanswered,zhangchenglin,2020-07-17T16:26:53Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/31316,bootstrap.Tab.getInstance(triggerEl) who should triggerEL,31316,Answered,zhangchenglin,2020-07-17T02:35:00Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/31197,Is there a Bootstrap v5 UI in Figma or Sketch?,31197,Unanswered,adrianoresende,2020-06-28T22:51:40Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/31293,"""Edit this page on GitHub"" links in the docs",31293,Unanswered,rohit2sharma95,2020-07-14T09:44:41Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/31281,Is there something similar to tailwind @apply for new bootstrap utilities,31281,Answered,leomao10,2020-07-12T02:31:31Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/31287,Dropdowns couldn't keep up with a responsive table,31287,Unanswered,smplyjr-dev,2020-07-13T09:56:44Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/31286,bootstrap 5 with display grid ?,31286,Unanswered,hassanbinsafdar,2020-07-12T23:14:17Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/31273,Carousel,31273,Answered,ghostyu2,2020-07-10T17:59:44Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/31260,I am getting funny values for the gradient class bg-gradient,31260,Answered,keef-ui,2020-07-08T10:32:59Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/31267,V5 Docs typo,31267,Unanswered,jramiresbrito,2020-07-09T09:40:17Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/31263,Why is Bootstrap so verbose?,31263,Answered,ugultopu,2020-07-08T20:44:09Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/31264,"Webhint: ""Pitfall: prefixed css first"" in 5.0.0-alpha1",31264,Unanswered,Chrysippus,2020-07-09T04:21:04Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/31239,Open modal programmatically - ReferenceError: bootstrap is not defined,31239,Answered,realrecordzLab,2020-07-04T19:30:27Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/31209,Main.css file only applying to idex file and not other pages,31209,Unanswered,j-sny,2020-06-30T10:41:25Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/31224,Extending btn-group / btn-group-toggle,31224,Unanswered,laventnc,2020-07-02T18:00:02Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/31222,Internet Explorer 11 and Polyfills for Bootstrap 5,31222,Unanswered,ray73864,2020-07-02T07:17:32Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/31218,Check-group should replace btn-group here,31218,Unanswered,zhangchenglin,2020-07-01T08:34:06Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/31215,404 at https://codeload.github.com/twbs/bootstrap/zip/v5.0.0,31215,Unanswered,IntegralWorks,2020-06-30T19:44:27Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/31147,one class to make all shrink,31147,Answered,arcanisgk,2020-06-22T17:28:53Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/31146,Why few members in the core team are fully inactive?,31146,Answered,rohit2sharma95,2020-06-22T17:12:31Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/30887,How are we actually meant to use responsive font sizes?,30887,Unanswered,jeffmarshall,2020-05-24T16:18:10Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/31159,Standard Button,31159,Unanswered,ysds,2020-06-24T10:17:13Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/31158,How do you customize mixin and then import bootstrap?,31158,Unanswered,jsphkm,2020-06-24T06:43:41Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/31150,How are Bootstrap styles generated using Sass?,31150,Answered,jsphkm,2020-06-22T23:45:08Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/31157,Blog designs?,31157,Unanswered,stinhambo,2020-06-24T03:33:44Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/31152,Why use   [].slice.call(),31152,Answered,zhangchenglin,2020-06-23T09:36:16Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/31141,[BS4] Navs on mobile,31141,Unanswered,marceloverdijk,2020-06-21T20:36:09Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/31129,Migration to v5 - jQuery,31129,Unanswered,chrisdavies71,2020-06-21T08:35:43Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/31140,[BS4] Showing 2 icons in select-menu,31140,Answered,marceloverdijk,2020-06-21T20:31:07Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/31065,Bootstrap 5 - Popper.js v2.x,31065,Answered,nicolomonili,2020-06-17T08:02:29Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/31039,The first Bootstrap 5 alpha is almost ready!,31039,Answered,techboyg5,2020-06-16T00:44:10Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/30763,Carousel data-pause on each slide,30763,Unanswered,crustamet,2020-05-07T18:28:20Z,,,True
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/31034,Questions about Bootstrap 4 to 5 upgrade,31034,Answered,techboyg5,2020-06-14T22:46:44Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/31031,Are the Bootstrap 5 docs available for viewing?,31031,Answered,techboyg5,2020-06-14T14:54:13Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/30867,Do we really need support for IE 11 in v5?,30867,Answered,lorvent,2020-05-19T16:04:00Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/31030,Hows it coming along?,31030,Answered,bubsly,2020-06-14T13:14:47Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/30834,Will Bootstrap 5 Drop jQuery?,30834,Answered,trymeouteh,2020-05-14T22:46:29Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/30955,How can I remove the black outline when i focus on the certain component.,30955,Answered,TammyCT,2020-06-03T04:00:24Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/30705,Supporting XHTML5?,30705,Unanswered,Felistrix,2020-05-01T21:52:38Z,,,True
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/30975,slider / carousel,30975,Unanswered,kyulol,2020-06-06T16:43:13Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/30937,Why bootstrap is using blue color as the primary color?,30937,Answered,rohit2sharma95,2020-06-01T03:46:17Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/30962,Can you re-license scss files in site/assets/scss/ folder to MIT?,30962,Unanswered,danny-laa,2020-06-03T20:57:08Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/30875,"Choose whether the menu should have a style to control the position of the content, such as left and right.",30875,Answered,zhangchenglin,2020-05-21T08:04:19Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/30876,Will the form elements in v5 be changed in the future?,30876,Unanswered,zhangchenglin,2020-05-21T08:07:05Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/30870,Changelog references wrong pull request.,30870,Answered,VictorioBerra,2020-05-20T00:55:04Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/30850,You can improve the mixin _forms.scss,30850,Unanswered,maikycourse,2020-05-19T00:31:18Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/30874,"Bootstrap Modal not clickable, backdrop occupies the whole screen",30874,Unanswered,pavankjadda,2020-05-20T22:01:44Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/30586,Welcome to the Discussions beta!,30586,Unanswered,mdo,2020-04-14T22:58:24Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/30780,When is V5 scheduled for release,30780,Answered,linjialiang,2020-05-12T00:49:44Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/30841,Current marker with active class for dropdown-toggle Title,30841,Unanswered,Allmedialab,2020-05-16T19:02:58Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/30833,IE 11 and Chrome Version 81 Issues with button dropdown,30833,Unanswered,morencigirl,2020-05-14T19:53:39Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/30824,Consider display classes for touch devices?,30824,Unanswered,BartzikWebdesign,2020-05-14T11:30:35Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/30823,Can I use both only Bootstrap-v3 CSS and bootstrap-v4 JS in same HTML file in angular,30823,Answered,ajaysharma92,2020-05-14T11:30:35Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/30832,button-variant mixin in master is older than released version,30832,Answered,jeffmarshall,2020-05-14T19:05:37Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/30794,I have one SVG that is rotate around a svg but is not fixed,30794,Unanswered,venus222-ux,2020-05-12T21:50:40Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/30795,Text is not center in small device,30795,Answered,venus222-ux,2020-05-12T21:53:45Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/30754,Adding custom image sizes limited to 1170 px width?,30754,Unanswered,raoulunger,2020-05-06T19:16:14Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/30602,Release cadence?,30602,Unanswered,mdo,2020-04-15T23:55:24Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/30776,Could we get a 4.4.2?,30776,Answered,jeffmarshall,2020-05-11T16:22:04Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/30688,Are the words server side and client side misplaced in /docs/4.1/components/forms?,30688,Answered,sagarvd01,2020-04-29T18:17:38Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/30659,needs-validation-feedback,30659,Unanswered,zhangchenglin,2020-04-28T03:17:03Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/30649,Should we enable negative margins by default?,30649,Unanswered,MartijnCuppens,2020-04-26T09:57:42Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/30636,How can we help you with v.5?,30636,Unanswered,ascensus-mdb,2020-04-23T08:47:55Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/30630,Using the CSS filter declaration to invert colors of svg icons loaded via an img element.,30630,Answered,fantasyui-com,2020-04-21T17:20:32Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/30643,Using SCSS to modify the default style elements.,30643,Unanswered,jproque,2020-04-24T14:29:30Z,,,True
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/30604,Bootstrap column and children max-width,30604,Unanswered,r-obeen,2020-04-16T11:46:36Z,,,True
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/30608,Toggle Button Validation,30608,Answered,mclamanna,2020-04-16T18:10:54Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/30616,Drop down menu sometime won't work correctly,30616,Answered,SahnounM91,2020-04-19T16:52:14Z,,,False
+twbs/bootstrap,https://github.com/twbs/bootstrap/discussions/30610,v5 release plan,30610,Unanswered,ascensus-mdb,2020-04-17T06:21:48Z,,,False
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9292,urgent,9292,Unanswered,abhijithurs,2020-07-11T20:05:00Z,🙏,Help,True
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9313,Running npm start does not start the development server. No error is given,9313,Unanswered,adityataps,2020-07-16T05:08:14Z,🙏,Help,False
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9203,Import and use native module (*.node),9203,Answered,sylvainDNS,2020-06-23T14:53:48Z,🙏,Help,False
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9306,How to log processes and timings for npm start?,9306,Unanswered,DiegoMcDipster,2020-07-14T21:17:36Z,🙏,Help,False
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9246,best way to store tokens,9246,Unanswered,akp2020,2020-07-02T07:28:17Z,🤔,Ideas,False
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9131,How can we get v4 across the finish line?,9131,Unanswered,kentcdodds,2020-06-09T23:14:10Z,#️⃣,General,False
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9295,"After writing ""cd udemy- course"". It appears that ""ls"" is not recognized as a command",9295,Unanswered,ezepale,2020-07-12T16:47:46Z,🙏,Help,False
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9305,Any ETA on the next release?,9305,Answered,Svish,2020-07-14T13:28:38Z,#️⃣,General,False
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9291,create-react-app took about 2 hours,9291,Unanswered,dephraiim,2020-07-10T19:26:14Z,🙏,Help,False
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9277,Recommended Docker Workflow?,9277,Unanswered,Buuntu,2020-07-07T23:44:28Z,🤔,Ideas,False
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9276,react-app-polyfill seems to be unaffected by browserslist,9276,Unanswered,seansean11,2020-07-07T13:53:20Z,🙏,Help,False
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9161,Webpack for granular chunking,9161,Unanswered,alicialics,2020-06-15T18:28:01Z,🤔,Ideas,False
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9282,why not remove desc tag in svg file,9282,Unanswered,jiaming0708,2020-07-09T14:53:46Z,#️⃣,General,False
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9243,How does CRA work as an executable?,9243,Answered,nol166,2020-07-01T15:31:52Z,#️⃣,General,False
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9093,NPM ERR!,9093,Unanswered,Shrabon-ahamed,2020-05-30T22:24:18Z,🙏,Help,False
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9233,npm start error,9233,Unanswered,Amit1405,2020-06-29T11:37:27Z,🙏,Help,False
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9267,useReducer and useEffect dependency,9267,Unanswered,umeshjain1999,2020-07-05T14:34:29Z,🙏,Help,False
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9260,npm ERR! 404 Not Found - GET https://registry,9260,Unanswered,japacoder,2020-07-03T13:33:31Z,#️⃣,General,False
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9271,after installed everything when i am trying to run npm start then given me folllowing error,9271,Unanswered,developerarif55,2020-07-06T05:02:04Z,🙏,Help,False
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9237,Fetch react app via ajax request and execute it,9237,Unanswered,vicpinm,2020-06-30T08:00:32Z,🙏,Help,False
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9220,What does everyone doing to getting full screen DOM area at the after immediately generate new cra app?,9220,Unanswered,ryota-murakami,2020-06-25T16:17:48Z,#️⃣,General,False
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9229,Imports not picking absolute path other than immediate sub folder to baseUrl path (src),9229,Unanswered,krajasekhar,2020-06-27T11:00:39Z,🙏,Help,False
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9206,CSS Modules,9206,Answered,unnatik,2020-06-24T04:21:51Z,🙏,Help,False
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9224,How to use dependency injection?,9224,Unanswered,Obiwarn,2020-06-26T08:18:16Z,🙏,Help,False
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9064,Passing env variables in GitHub actions,9064,Answered,rahul-rxr,2020-05-26T14:53:18Z,🙏,Help,True
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9213,Extended eslint configuration is not behaving as expected,9213,Answered,Ethan-Arrowood,2020-06-24T20:32:10Z,🙏,Help,False
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9152,Blank page with npm start,9152,Unanswered,sunilsharma2214,2020-06-13T15:02:53Z,🙏,Help,False
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9163,run eslint pre-installed in create react app,9163,Unanswered,vicasas,2020-06-15T21:48:37Z,🙏,Help,False
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9198,Using per-project Yarn 2 (berry) installation,9198,Unanswered,kydesnic,2020-06-21T21:24:50Z,🙏,Help,False
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9177,Failed to compile,9177,Unanswered,AegonL,2020-06-17T16:18:43Z,🙏,Help,False
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9180,How to Merging two different project without css conflict,9180,Unanswered,mzrLab,2020-06-18T06:48:08Z,🙏,Help,True
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9158,Server side rendering,9158,Answered,akp2020,2020-06-15T13:27:54Z,🙏,Help,False
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9182,Service from sub folders,9182,Unanswered,ShubhamGargCTH,2020-06-18T09:47:37Z,🙏,Help,False
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9118,Not able create React.js App using create-react-app,9118,Unanswered,Sunilkengond,2020-06-06T16:41:28Z,🙏,Help,False
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9153,what is the reason for storing sessionId in cookie in create-react-app,9153,Unanswered,akshayjai1,2020-06-14T15:15:19Z,🙏,Help,False
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9146,setupProxy.js not working with TypeScript,9146,Answered,lukasra92,2020-06-12T16:44:55Z,🙏,Help,False
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9092,Measurement of build time,9092,Unanswered,baeharam,2020-05-30T03:53:02Z,🙏,Help,True
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9104,Team Feedback/Transparency,9104,Unanswered,eddiemonge,2020-06-03T18:41:10Z,#️⃣,General,False
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9106,Thanks for the productivity!!,9106,Answered,kentcdodds,2020-06-04T03:44:17Z,💖,Thanks,False
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9044,Should we move from Spectrum to Discussions?,9044,Answered,iansu,2020-05-22T00:28:45Z,#️⃣,General,False
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9069,"Why are does eslint-config-react-app have ""no"" dependencies",9069,Answered,goleary,2020-05-27T22:51:03Z,#️⃣,General,True
+facebook/create-react-app,https://github.com/facebook/create-react-app/discussions/9058,Unable to embed a React app as a widget with JavaScript,9058,Unanswered,yogesnsamy,2020-05-24T08:19:29Z,🙏,Help,True

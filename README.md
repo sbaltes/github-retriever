@@ -27,14 +27,10 @@ and [virtualenv](https://github.com/pyenv/pyenv-virtualenv) before executing the
 
 Basic usage:
 
-    python3 github-retriever.py -i <path_to_input_file> -o <path_to_output_dir> -f <True-or-False> -r <True-or-False>
+    python3 github-retriever.py -i <path_to_input_file> -o <path_to_output_dir> -f <True-or-False> -r <True-or-False> -p <True-or-False>
 
-Call without parameters to get information about possible parameters:
+Call `github-retriever.py` without parameters to get a list of available parameters.
 
-    usage: github-retriever.py [-h] -i INPUT_FILE -o OUTPUT_DIR [-d DELIMITER] -f
-                               RETRIEVE_FEATURES -r RETRIEVE_DISCUSSIONS
-    github-retriever.py: error: the following arguments are required: -i/--input-file, -o/--output-dir, -f/--retrieve-features, -r/--retrieve-discussions
-    
 # Configuration
 
 As input, the tool expects a CSV file with one column containing GitHub repository names (`repo_name`).
@@ -50,7 +46,7 @@ An exemplary input file can be found [here](input/repos.csv):
 
 To retrieve the activated features (issues, pull requests, discussions, etc.) for the configured repos, you just need to run the following command:
 
-    python3 github-retriever.py -i input/repos.csv -o output/ -f True -e False
+    python3 github-retriever.py -i input/repos.csv -o output -f True -e False
 
 The tool logs the retrieval process:
 
@@ -73,31 +69,39 @@ And writes the [retrieved data](output/repos.csv) to the configured output direc
 
 Further, to retrieve the content of discussions, execute:
 
-    python3 github-retriever.py -i input/repos_filtered.csv -o output/ -f False -e True
+    python3 github-retriever.py -i input/repos_filtered.csv -o output -f False -r True -p True -b 1
 
 The tool logs the retrieval process:
 
-    2020-06-27 11:00:17,692 github-retriever_logger INFO: Reading repos from input/repos_filtered.csv...
-    2020-06-27 11:00:17,714 github-retriever_logger INFO: 90 repos have been imported.
-    2020-06-27 11:00:19,185 github-retriever_logger INFO: Successfully accessed discussions page 1 of repo: twbs/bootstrap
-    2020-06-27 11:00:19,210 github-retriever_logger INFO: 25 discussions found on page: 1
-    2020-06-27 11:00:19,896 github-retriever_logger INFO: Successfully accessed discussions page 2 of repo: twbs/bootstrap
-    2020-06-27 11:00:19,937 github-retriever_logger INFO: 25 discussions found on page: 2
-    2020-06-27 11:00:20,419 github-retriever_logger INFO: Successfully accessed discussions page 3 of repo: twbs/bootstrap
-    2020-06-27 11:00:20,430 github-retriever_logger INFO: 1 discussions found on page: 3
-    2020-06-27 11:00:20,821 github-retriever_logger INFO: Successfully accessed discussions page 4 of repo: twbs/bootstrap
-    2020-06-27 11:00:20,842 github-retriever_logger INFO: No discussions found on page: 4
+    2020-07-18 16:46:02,188 github-retriever_logger INFO: Reading repos from input/repos_filtered.csv...
+    2020-07-18 16:46:02,193 github-retriever_logger INFO: 90 repos have been imported.
+    2020-07-18 16:46:03,495 github-retriever_logger INFO: Successfully accessed discussions page 1 of repo: twbs/bootstrap
+    2020-07-18 16:46:03,513 github-retriever_logger INFO: 25 discussions found on page: 1
+    2020-07-18 16:46:05,281 github-retriever_logger INFO: Successfully accessed discussion posts: https://github.com/twbs/bootstrap/discussions/31321
+    2020-07-18 16:46:05,291 github-retriever_logger INFO: Retrieving discussion metadata...
     ...
-    2020-06-27 11:04:20,577 github-retriever_logger INFO: Exporting discussions to output/repos_filtered_discussions.csv...
-    2020-06-27 11:04:20,606 github-retriever_logger INFO: 5306 discussion(s) has/have been exported.
+    2020-07-18 21:02:53,916 github-retriever_logger INFO: Exporting discussions to output/repos_filtered_discussions.csv...
+    2020-07-18 21:02:53,953 github-retriever_logger INFO: 6851 discussion(s) has/have been exported.
+    2020-07-18 21:02:53,956 github-retriever_logger INFO: Exporting discussion posts to output/repos_filtered_discussion_posts.csv...
+    2020-07-18 21:02:54,591 github-retriever_logger INFO: 27940 discussion post(s) has/have been exported.
 
-And writes the [retrieved data](output/repos_filtered_discussions.csv) to the configured output directory:
+And writes the [retrieved discussions](output/repos_filtered_discussions_example.csv)...
 
-| repo_name | discussion |
-|------|------|
-| twbs/bootstrap | https://github.com/twbs/bootstrap/discussions/31146 |
-| twbs/bootstrap | https://github.com/twbs/bootstrap/discussions/30887 |
-| twbs/bootstrap | https://github.com/twbs/bootstrap/discussions/31147 |
-| twbs/bootstrap | https://github.com/twbs/bootstrap/discussions/31159 |
-| twbs/bootstrap | https://github.com/twbs/bootstrap/discussions/31158 |
-| ... | ... |
+| repo_name | discussion | title | number | state | author | timestamp | emoji | category | converted_from_issue |
+| --- | ---  | ---  | ---  | ---  | ---  | ---  | ---  | ---  | ---  |
+| ... | ...  | ...  | ...  | ...  | ...  | ...  | ...  | ...  | ...  |
+facebook/create-react-app|https://github.com/facebook/create-react-app/discussions/9092|Measurement of build time|9092|Unanswered|baeharam|2020-05-30T03:53:02Z|🙏|Help|True|
+facebook/create-react-app|https://github.com/facebook/create-react-app/discussions/9104|Team Feedback/Transparency|9104|Unanswered|eddiemonge|2020-06-03T18:41:10Z|#️⃣|General|False|
+facebook/create-react-app|https://github.com/facebook/create-react-app/discussions/9106|Thanks for the productivity!!|9106|Answered|kentcdodds|2020-06-04T03:44:17Z|💖|Thanks|False|
+| ... | ...  | ...  | ...  | ...  | ...  | ...  | ...  | ...  | ...  |
+
+...and [posts](output/repos_filtered_discussions_posts_example.csv) to the configured output directory.
+
+| repo_name | discussion | author | timestamp | reactions | is_part_of_selected_answer | content |
+| --- | ---  | ---  | ---  | ---  | ---  | ---  |
+| ... | ...  | ...  | ...  | ...  | ...  | ...  |
+facebook/create-react-app|https://github.com/facebook/create-react-app/discussions/9104|eddiemonge|2020-06-03T18:41:10Z|[['👍', '👀'], [5, 1]]|False|&lt;p&gt;From the community perspective,...|
+facebook/create-react-app|https://github.com/facebook/create-react-app/discussions/9104|petetnt|2020-06-05T08:48:51Z|[['👍', '❤️'], [5, 1]]|False|&ltp&gtHi &lta class="user-mention"...|
+facebook/create-react-app|https://github.com/facebook/create-react-app/discussions/9104|mrmckeb|2020-06-05T13:22:56Z|[['❤️'], [2]]|False|&ltp&gtI must say that I do a lot less than...|
+facebook/create-react-app|https://github.com/facebook/create-react-app/discussions/9104|eddiemonge|2020-06-12T16:29:23Z|[['👍', '❤️'], [4, 3]]|False|&lth3&gtFeedback&lt/h3&gt...|
+| ... | ...  | ...  | ...  | ...  | ...  | ...  |
