@@ -65,8 +65,10 @@ class Discussion(object):
         if self.title is None:
             logger.error("Error retrieving title of discussion in: " + str(self))
 
-        self.number = int(_retrieve_element_content(root, "span", "gh-header-number").replace("#", ""))
-        if self.number is None:
+        self.number = _retrieve_element_content(root, "span", "gh-header-number")
+        if self.number:
+            self.number = int(self.number.replace("#", ""))
+        else:
             logger.error("Error retrieving number of discussion in: " + str(self))
 
         header_prefix = '//' + _select_elements_with_class("div", "gh-header-meta")
@@ -76,10 +78,10 @@ class Discussion(object):
             logger.error("Error retrieving state of discussion in: " + str(self))
 
         self.author = _retrieve_element_content(root, "a", "author", "@href", header_prefix)
-        if self.author is None:
-            logger.error("Error retrieving author of discussion in: " + str(self))
-        else:
+        if self.author:
             self.author = self.author.replace("/", "")
+        else:
+            logger.error("Error retrieving author of discussion in: " + str(self))
 
         self.emoji = _retrieve_element_content(root, "g-emoji", "f5", "text", header_prefix)
         if self.emoji is None:
@@ -109,10 +111,10 @@ class Discussion(object):
             post = Post(self)
 
             post.author = _retrieve_element_content(post_div, "a", "author", "@href")
-            if post.author is None:
-                logger.error("Error retrieving author of discussion post in: " + str(self))
-            else:
+            if post.author:
                 post.author = post.author.replace("/", "")
+            else:
+                logger.error("Error retrieving author of discussion post in: " + str(self))
 
             post.timestamp = _retrieve_element_content(post_div, "time-ago", None, "@datetime")
             if post.timestamp is None:
