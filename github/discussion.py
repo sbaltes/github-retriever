@@ -12,9 +12,9 @@ logger = logging.getLogger("github-retriever_logger")
 class Discussion(object):
     """ A GitHub Discussion. """
 
-    def __init__(self, repo, relative_uri):
+    def __init__(self, repo, github_path):
         self.repo = repo
-        self.uri = "https://github.com" + relative_uri
+        self.uri = "https://github.com" + github_path
 
         # discussion metadata
         self.title = None
@@ -125,7 +125,7 @@ class Discussion(object):
                 or len(post_div.xpath('.//ancestor::' + _select_elements_with_class("div", "discussion-comment") + '//'
                                       + _select_elements_with_class("svg", "octicon-check"))) > 0
 
-            content_elements = post_div.xpath('.//' + _select_elements_with_class("td", "comment-body") + '/node()')
+            content_elements = post_div.xpath('./*/*/*/*/*/*/' + _select_elements_with_class("td", "comment-body") + '/node()')
             post.content = "\n".join(list(map(lambda elem: str(
                 html.tostring(elem, pretty_print=True, encoding="unicode", with_tail=False)).strip(),
                                               filter(lambda elem: type(elem) is HtmlElement, content_elements))))
